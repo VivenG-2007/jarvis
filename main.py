@@ -1,445 +1,246 @@
 """
-main.py — JARVIS Face Recognition & HUD Display
-Entry point for the real-time recognition pipeline.
+main.py — JARVIS Core Execution Pipeline
 
-Controls:
-  Q / ESC   — quit
-  F         — toggle fullscreen
-  S         — screenshot
-  R         — reload known persons from DB
+Synthesizes Vision, Voice, Context, Security Rules, and LLM Intelligence 
+into a highly-concurrent > 20 FPS edge-ready pipeline.
 """
 
-import logging
 import os
+import cv2
+import time
+import logging
+import threading
+import queue
+from typing import List, Dict, Any
 
-# Suppress noisy DLL loading warnings from ONNX Runtime C++ backend
+import warnings
+warnings.filterwarnings("ignore", category=FutureWarning, module="insightface")
+
+
 os.environ["ORT_LOGGING_LEVEL"] = "4"
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
-
-# EXTREME CPU OPTIMIZATION: Stop ONNX and PyTorch from spawning 16+ threads and killing the CPU L3 Cache
 os.environ["OMP_NUM_THREADS"] = "2"
 os.environ["OPENBLAS_NUM_THREADS"] = "2"
 os.environ["MKL_NUM_THREADS"] = "2"
-os.environ["VECLIB_MAXIMUM_THREADS"] = "2"
-os.environ["NUMEXPR_NUM_THREADS"] = "2"
 
-import sys
-import threading
-import time
-import warnings
-from collections import deque
-from datetime import datetime
+# Suppress HuggingFace download noise
+os.environ["HF_HUB_DISABLE_SYMLINKS_WARNING"] = "1"
+os.environ["TRANSFORMERS_VERBOSITY"] = "error"
 
-warnings.filterwarnings("ignore")  # Suppress internal library deprecation warnings
+# Suppress httpx INFO logs (used internally by HuggingFace Hub)
+import logging as _logging
+_logging.getLogger("httpx").setLevel(_logging.WARNING)
+_logging.getLogger("httpcore").setLevel(_logging.WARNING)
+_logging.getLogger("huggingface_hub").setLevel(_logging.WARNING)
 
-import cv2
-import numpy as np
-
-import config
+# ── Import JARVIS Modules ──────────────────────────────────────
+from modules.face_engine import FaceEngine
+from modules.object_engine import ObjectEngine
+from modules.context_builder import SemanticContextBuilder
+from modules.rules_engine import RulesEngine
+from modules.reasoning_engine import ReasoningEngine
+from modules.hud_overlay import HUDOverlay
+from modules.audio_engine import WhisperEngine
 from modules.db import PersonDB
-from modules.face_engine import FaceEngine, BBox, FaceMatch
-from modules.object_engine import ObjectEngine, ObjectDetection
-from modules.hud import draw_hud
 
-# ── Logging setup ──────────────────────────────────────────────
-os.makedirs("logs", exist_ok=True)
-handlers = [logging.StreamHandler()]
-if config.LOG_TO_FILE:
-    handlers.append(logging.FileHandler(config.LOG_FILE, encoding="utf-8"))
+# Setup Logger
+logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
+logger = logging.getLogger("JARVIS.Core")
 
-logging.basicConfig(
-    level=getattr(logging, config.LOG_LEVEL, logging.INFO),
-    format="%(asctime)s  %(levelname)-7s  %(name)s — %(message)s",
-    handlers=handlers,
-)
-logger = logging.getLogger("jarvis.main")
+class JarvisSystem:
+    def __init__(self, camera_index: int = 0):
+        logger.info("Initializing JARVIS Subsystems...")
+        
+        # 1. Vision Hardware
+        self.cap = cv2.VideoCapture(camera_index)
+        self.cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
+        self.cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 720)
+        
+        # 2. Engines
+        self.db = PersonDB()
+        self.face_engine = FaceEngine(db=self.db)
+        self.object_engine = ObjectEngine(model_path="yolov8s.pt")
+        self.context_builder = SemanticContextBuilder()
+        self.rules_engine = RulesEngine()
+        self.reasoning_engine = ReasoningEngine(model_name="llama3")
+        self.hud = HUDOverlay()
+        
+        self.audio_engine = WhisperEngine(model_size="tiny.en")
+        
+        # 3. State Memory (For sharing data between threads)
+        self.running = True
+        self.current_frame = None
+        self.latest_objects = []
+        self.latest_faces = []
+        self.face_matches_cache = []
+        
+        self.latest_context_json = ""
+        self.active_alerts = []
+        self.ai_insight = ""
+        
+        # 4. Wake Word & Session State
+        self.wake_active = False
+        self.last_voice_time = 0
+        
+        # 5. Asynchronous Queues
+        self.llm_query_queue = queue.Queue()
+        
+        logger.info("JARVIS Systems Online.")
 
-
-# ── Shared state for multi-threaded pipeline ───────────────────
-
-class SharedState:
-    def __init__(self):
-        self.frame:    np.ndarray | None = None
-        self.matches:  list              = []
-        self.objects:  list              = []
-        self.show_objects: bool          = True   # Display objects on screen by default
-        self.object_filter: set          = set()  # set() means show all if show_objects is True
-        self.fps:      float             = 0.0
-        self.lock      = threading.Lock()
-        self.running   = True
-
-
-# ── Recognition worker thread ──────────────────────────────────
-
-def recognition_worker(state: SharedState, engine: FaceEngine):
-    """Runs in a background thread; processes frames and updates matches."""
-    fps_buf = deque(maxlen=30)
-    prev_t  = time.time()
-
-    while state.running:
-        with state.lock:
-            frame = state.frame.copy() if state.frame is not None else None
-
-        if frame is None:
-            time.sleep(0.005)
-            continue
-
-        t0      = time.time()
-        matches = engine.process_frame(frame)
-        elapsed = time.time() - t0
-        fps_buf.append(1.0 / max(elapsed, 1e-6))
-
-        with state.lock:
-            state.matches = matches
-            state.fps     = sum(fps_buf) / len(fps_buf)
-
-        # Cap recognition rate to avoid overloading CPU
-        sleep_ms = max(0, 0.01 - elapsed)  # Reduced sleep for higher throughput
-        time.sleep(sleep_ms)
-
-
-# ── Object Detection worker thread ─────────────────────────────
-
-def object_worker(state: SharedState, engine: ObjectEngine, db):
-    """Runs in a background thread; processes every other frame for objects."""
-    frame_count = 0
-    while state.running:
-        with state.lock:
-            frame = state.frame.copy() if state.frame is not None else None
-
-        if frame is None:
-            time.sleep(0.01)
-            continue
-
-        frame_count += 1
-        # Run YOLO every 12 frames (highly async, offloads heavy YOLOv8s CPU footprint)
-        if frame_count % 12 == 0:
-            try:
-                t0      = time.time()
-                objects = engine.detect(frame)
-                elapsed = time.time() - t0
+    # ── Background Thread: YOLO Object Detection ───────────────
+    def _object_worker(self):
+        """Runs YOLO detection independently to secure high FPS."""
+        while self.running:
+            if self.current_frame is not None:
+                detections = self.object_engine.detect(self.current_frame.copy(), conf=0.50)
+                self.latest_objects = detections
                 
-                # Log objects to database natively
-                for obj in objects:
-                    db.log_object(obj.label, obj.confidence)
-                
-                with state.lock:
-                    state.objects = objects
-                
-                # Dynamic sleep based on performance
-                sleep_ms = max(0, 0.033 - elapsed)
-                time.sleep(sleep_ms)
-            except Exception as e:
-                logger.error("Object detection thread error: %s", e)
-                time.sleep(0.1)
-        else:
-            # Short sleep to yield when skipping frame
-            time.sleep(0.005)
+                # Log each detected object into MongoDB (count + last_seen)
+                for obj in detections:
+                    if obj.class_id != 0:  # Skip persons (handled by FaceEngine)
+                        self.db.log_object(obj.label, obj.confidence)
+                        
+            time.sleep(0.1)
 
-
-# ── Zoom management ───────────────────────────────────────────
-
-class ZoomManager:
-    """Handles smooth 2x face zoom upon first detection."""
-    def __init__(self):
-        self.active             = False
-        self.start_t            = 0.0
-        self.duration           = 2.0  # Zoom animation lasts precisely 2 seconds
-        self.target_track_id    = -1
-        self.max_zoom           = 2.0
-        self.triggered_tracks   = set()
-        
-        # Smoothing state
-        self.current_zoom       = 1.0
-        self.smoothed_cx        = 0.0
-        self.smoothed_cy        = 0.0
-        self.first_frame        = True
-
-    def update(self, matches):
-        now = time.time()
-        
-        # If no zoom active, check if we should start one
-        if not self.active:
-            for m in matches:
-                if m.track_id not in self.triggered_tracks:
-                    self.active = True
-                    self.start_t = now
-                    self.target_track_id = m.track_id
-                    self.triggered_tracks.add(m.track_id)
-                    self.first_frame = True
-                    logger.info("Smooth zoom activated for track %d", m.track_id)
-                    break
-        
-        # If zoom active, check if it should expire
-        if self.active:
-            elapsed = now - self.start_t
-            if elapsed > self.duration:
-                # Smoothly returning to 1.0 before fully deactivating
-                if self.current_zoom < 1.01:
-                    self.active = False
-                    self.target_track_id = -1
-                    logger.info("Zoom deactivated")
-            else:
-                # Check if target is still present
-                target_present = any(m.track_id == self.target_track_id for m in matches)
-                if not target_present:
-                    # If target lost, smoothly zoom out then deactivate
-                    self.start_t = now - (self.duration * 0.8) # force near-end state
-
-    def apply_zoom(self, frame, matches, objects=[]):
-        """Crops and resizes frame with smooth interpolation."""
-        now = time.time()
-        h, w = frame.shape[:2]
-
-        if not self.active:
-            # Gradually return to 1.0 zoom if we just finished
-            if self.current_zoom > 1.0:
-                self.current_zoom = self.current_zoom + (1.0 - self.current_zoom) * 0.15
-                if self.current_zoom < 1.001: self.current_zoom = 1.0
-            
-            if self.current_zoom == 1.0:
-                return frame, matches, objects
-
-        if self.active:
-            elapsed = now - self.start_t
-            progress = elapsed / self.duration
-            if progress < 0.5:
-                target_z = 1.0 + (self.max_zoom - 1.0) * (progress * 2)
-            else:
-                target_z = self.max_zoom - (self.max_zoom - 1.0) * ((progress - 0.5) * 2)
-            target_z = max(1.0, target_z)
-        else:
-            target_z = 1.0
-
-        self.current_zoom = self.current_zoom + (target_z - self.current_zoom) * 0.2
-
-        if self.current_zoom <= 1.0:
-            return frame, matches, objects
-
-        target = next((m for m in matches if m.track_id == self.target_track_id), None)
-        if target:
-            tx, ty = target.bbox.center
-            if self.first_frame:
-                self.smoothed_cx, self.smoothed_cy = tx, ty
-                self.first_frame = False
-            else:
-                self.smoothed_cx += (tx - self.smoothed_cx) * 0.15
-                self.smoothed_cy += (ty - self.smoothed_cy) * 0.15
-
-        crop_w = int(w / self.current_zoom)
-        crop_h = int(h / self.current_zoom)
-        
-        x1 = int(max(0, self.smoothed_cx - crop_w // 2))
-        y1 = int(max(0, self.smoothed_cy - crop_h // 2))
-        x2 = min(w, x1 + crop_w)
-        y2 = min(h, y1 + crop_h)
-        if x2 == w: x1 = w - crop_w
-        if y2 == h: y1 = h - crop_h
-        x1, y1 = max(0, x1), max(0, y1)
-
-        cropped = frame[y1:y2, x1:x2]
-        zoomed  = cv2.resize(cropped, (w, h), interpolation=cv2.INTER_LINEAR)
-
-        scale_x = w / crop_w
-        scale_y = h / crop_h
-        
-        # Transform Faces
-        zoomed_matches = []
-        for m in matches:
-            new_bbox = BBox(
-                int((m.bbox.x1 - x1) * scale_x),
-                int((m.bbox.y1 - y1) * scale_y),
-                int((m.bbox.x2 - x1) * scale_x),
-                int((m.bbox.y2 - y1) * scale_y)
-            )
-            m_zoomed = FaceMatch(
-                bbox=new_bbox,
-                embedding=m.embedding,
-                person_id=m.person_id,
-                name=m.name,
-                department=m.department,
-                role=m.role,
-                confidence=m.confidence,
-                is_known=m.is_known,
-                track_id=m.track_id,
-                last_seen=m.last_seen
-            )
-            zoomed_matches.append(m_zoomed)
-
-        # Transform Objects
-        from modules.object_engine import ObjectDetection
-        zoomed_objects = []
-        for obj in objects:
-            ox1, oy1, ox2, oy2 = obj.bbox
-            nx1 = int((ox1 - x1) * scale_x)
-            ny1 = int((oy1 - y1) * scale_y)
-            nx2 = int((ox2 - x1) * scale_x)
-            ny2 = int((oy2 - y1) * scale_y)
-            
-            # Clip to frame
-            nx1, ny1 = max(0, nx1), max(0, ny1)
-            nx2, ny2 = min(w, nx2), min(h, ny2)
-            
-            if nx2 > nx1 and ny2 > ny1:
-                zoomed_objects.append(ObjectDetection(
-                    label=obj.label,
-                    confidence=obj.confidence,
-                    bbox=[nx1, ny1, nx2, ny2],
-                    class_id=obj.class_id
-                ))
-
-        return zoomed, zoomed_matches, zoomed_objects
-
-
-# ── Main loop ──────────────────────────────────────────────────
-
-def run():
-    logger.info("=== JARVIS Face Recognition System starting ===")
-
-    # Init DB
-    db = PersonDB()
-    if not db.is_connected():
-        logger.warning("MongoDB unavailable — face data will not persist.")
-        enrolled = db.list_persons()
-    else:
-        enrolled = db.list_persons()
-        logger.info("Persons in database: %d", len(enrolled))
-
-    # Init face engine
-    engine = FaceEngine(db)
-    
-    # Init object engine
-    obj_engine = ObjectEngine()
-
-    # Init camera
-    cap = cv2.VideoCapture(config.CAMERA_INDEX)
-    cap.set(cv2.CAP_PROP_FRAME_WIDTH,  config.CAMERA_WIDTH)
-    cap.set(cv2.CAP_PROP_FRAME_HEIGHT, config.CAMERA_HEIGHT)
-    cap.set(cv2.CAP_PROP_FPS,          config.CAMERA_FPS)
-
-    if not cap.isOpened():
-        logger.error("Cannot open camera index %d", config.CAMERA_INDEX)
-        sys.exit(1)
-
-    # Shared state
-    state = SharedState()
-    zoom_mgr = ZoomManager()
-
-    # Start recognition thread
-    worker = threading.Thread(
-        target=recognition_worker,
-        args=(state, engine),
-        daemon=True,
-        name="RecognitionWorker"
-    )
-    worker.start()
-
-    # Start object detection thread (YOLO)
-    obj_worker_thread = threading.Thread(
-        target=object_worker,
-        args=(state, obj_engine, db),
-        daemon=True,
-        name="ObjectWorker"
-    )
-    obj_worker_thread.start()
-    
-    logger.info("Advanced background threads started (Face + YOLO).")
-
-    # Window setup
-    win = "JARVIS"
-    cv2.namedWindow(win, cv2.WINDOW_NORMAL)
-    if config.FULLSCREEN:
-        cv2.setWindowProperty(win, cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
-
-    screenshot_dir = "screenshots"
-    os.makedirs(screenshot_dir, exist_ok=True)
-    fullscreen = config.FULLSCREEN
-
-    logger.info("Entering main loop. Press Q/ESC to quit.")
-
-    while True:
-        ret, raw_frame = cap.read()
-        if not ret:
-            logger.warning("Frame capture failed — retrying…")
+    # ── Background Thread: Face Recognition ─────────────────────
+    def _face_worker(self):
+        """Offloads heavy InsightFace math from the main UI thread."""
+        while self.running:
+            if self.current_frame is not None:
+                # InsightFace runs as fast as the CPU allows without blocking the camera
+                self.face_matches_cache = self.face_engine.process_frame(self.current_frame.copy())
             time.sleep(0.05)
-            continue
 
-        with state.lock:
-            state.frame = raw_frame
-            matches     = list(state.matches)
-            all_objs    = list(state.objects)
-            
-            # Filter objects if display is enabled (Must meet >= 50% probability)
-            if state.show_objects:
-                if not state.object_filter:
-                    objects = [o for o in all_objs if o.confidence >= 0.50]
-                else:
-                    objects = [o for o in all_objs if o.confidence >= 0.50 and o.label.lower() in state.object_filter]
-            else:
-                objects = []
+    # ── Background Thread: AI Semantic Reasoning ───────────────
+    def _reasoning_worker(self):
+        """Processes heavy LLM JSON-Context inference without freezing the UI."""
+        while self.running:
+            try:
+                # Wait for an audio query or system prompt
+                query = self.llm_query_queue.get(timeout=1)
                 
-            fps = state.fps
+                # Snapshot the exact semantic memory of the room
+                context_snapshot = self.latest_context_json
+                logger.info(f"LLM Thinking about: '{query}'...")
+                
+                # Generate grounded response
+                self.ai_insight = self.reasoning_engine.analyze_scene(context_snapshot, query)
+                logger.info(f"JARVIS: {self.ai_insight}")
+                
+            except queue.Empty:
+                pass
 
-        # Update zoom state
-        zoom_mgr.update(matches)
+    # ── Core Pipeline ──────────────────────────────────────────
+    def run(self):
+        """Primary System Loop."""
         
-        # Optimization: Only copy and process zoom if actually needed
-        if zoom_mgr.active or zoom_mgr.current_zoom > 1.0:
-            display, display_matches, zoomed_objs = zoom_mgr.apply_zoom(raw_frame.copy(), matches, objects)
-        else:
-            display = raw_frame
-            display_matches = matches
-            zoomed_objs = objects
+        # Boot Daemon Threads
+        threading.Thread(target=self._object_worker, daemon=True, name="YOLO").start()
+        threading.Thread(target=self._face_worker, daemon=True, name="InsightFace").start()
+        threading.Thread(target=self._reasoning_worker, daemon=True, name="LLM").start()
+        self.audio_engine.start_background_listening()
+        
+        logger.info("Booting Camera Feed...")
+        frame_time = time.time()
+        fps = 0.0
 
-        # Draw HUD on display frame
-        draw_hud(display, display_matches, zoomed_objs, all_objs, fps)
+        while self.running:
+            start_t = time.time()
+            ret, frame = self.cap.read()
+            if not ret:
+                break
+                
+            self.current_frame = frame.copy()
 
-        cv2.imshow(win, display)
+            # 1. Map Vision Thread Arrays
+            # We no longer block the UI loop for AI processing! We only map the results cache asynchronously.
+            faces_payload = []
+            faces_names = []
+            for m in self.face_matches_cache:
+                bbox = m.bbox.as_list()
+                faces_payload.append({
+                    "id": m.track_id,
+                    "bbox": bbox,
+                    "name": m.name or "Unknown",
+                    "department": m.department or "",
+                    "role": m.role or "",
+                    "confidence": m.confidence
+                })
+                faces_names.append(m.name or "Unknown")
+                
+            objects_payload = []
+            objects_labels = []
+            for obj in self.latest_objects:
+                if obj.class_id == 0: continue # Exclude human bounding boxes from YOLO (InsightFace handles them)
+                objects_payload.append({"bbox": obj.bbox, "label": obj.label})
+                objects_labels.append(obj.label)
 
-        key = cv2.waitKey(1) & 0xFF
+            # 2. Semantic Context Builder
+            self.latest_context_json = self.context_builder.build_context(faces_names, objects_labels)
 
-        if key in (ord("q"), 27):             # Q / ESC → quit
-            logger.info("Quit signal received.")
-            break
+            # 3. Security Rules Engine
+            rules_output_json = self.rules_engine.process_context(self.latest_context_json)
+            import json
+            rules_output = json.loads(rules_output_json)
+            self.active_alerts = rules_output.get("alerts", [])
 
-        elif key == ord("f"):                 # F → toggle fullscreen
-            fullscreen = not fullscreen
-            prop = cv2.WINDOW_FULLSCREEN if fullscreen else cv2.WINDOW_NORMAL
-            cv2.setWindowProperty(win, cv2.WND_PROP_FULLSCREEN, prop)
+            # 4. Audio Input Intercept
+            voice_command = self.audio_engine.get_latest_command()
+            if voice_command:
+                logger.info(f"AUDIO CAPTURED: '{voice_command}'")
+                cmd_lower = voice_command.lower().strip(".,! ")
+                
+                # Check for Wake Word variations
+                if "hey jarvis" in cmd_lower or "jarvis" == cmd_lower:
+                    self.wake_active = True
+                    self.last_voice_time = time.time()
+                    self.active_alerts.append("JARVIS: System Wakened.")
+                    # Strip wake word if present in a larger command
+                    voice_command = voice_command.replace("Hey JARVIS", "").replace("hey jarvis", "").strip()
 
-        elif key == ord("s"):                 # S → screenshot
-            ts   = datetime.now().strftime("%Y%m%d_%H%M%S")
-            path = os.path.join(screenshot_dir, f"jarvis_{ts}.png")
-            cv2.imwrite(path, display)
-            logger.info("Screenshot saved: %s", path)
+                # Process command ONLY if wake word is active
+                if self.wake_active:
+                    self.last_voice_time = time.time()
+                    if voice_command:
+                        self.llm_query_queue.put(voice_command)
+                        self.active_alerts.append(f"Command: '{voice_command}'")
 
-        elif key == ord("r"):                 # R → reload persons
-            engine._known_ts = 0.0            # force cache refresh
-            logger.info("Person cache invalidated — will reload on next frame.")
+            # Auto-timeout Session (5 seconds)
+            if self.wake_active and (time.time() - self.last_voice_time > 5.0):
+                self.wake_active = False
+                self.active_alerts.append("JARVIS: Entering Standby.")
 
-        elif key == ord("o"):                 # O → toggle objects (Show All)
-            with state.lock:
-                state.show_objects = not state.show_objects
-                state.object_filter = set() # Reset to show all on toggle
-                status = "VISIBLE (ALL)" if state.show_objects else "HIDDEN"
-                logger.info("Object detection display: %s", status)
+            # 5. UI Overlay Render
+            display_text = self.ai_insight if self.ai_insight else "JARVIS Standby. Say 'Hey JARVIS' to activate."
 
-        elif key == ord("w"):                 # W → Filter: Window
-            with state.lock:
-                state.show_objects = True
-                if "window" in state.object_filter:
-                    state.object_filter.remove("window")
-                else:
-                    state.object_filter.add("window")
-                logger.info("Current object filter: %s", state.object_filter)
+            hud_frame = self.hud.render(
+                frame=frame,
+                faces=faces_payload,
+                objects=objects_payload,
+                alerts=self.active_alerts,
+                context_summary=display_text,
+                is_listening=self.wake_active
+            )
+            
+            # Draw FPS
+            cv2.putText(hud_frame, f"FPS: {int(fps)}", (20, 20), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 1)
+            
+            # 6. Output to Screen
+            cv2.imshow("JARVIS Main HUD", hud_frame)
 
-    # Shutdown
-    state.running = False
-    cap.release()
-    cv2.destroyAllWindows()
-    db.close()
-    logger.info("JARVIS shutdown complete.")
+            # Calculate precise main-loop FPS
+            elapsed = time.time() - start_t
+            fps = 1.0 / elapsed if elapsed > 0 else 0
+            
+            if cv2.waitKey(1) & 0xFF == 27: # ESC to quit
+                self.running = False
+                break
 
+        # Shutdown sequence
+        logger.info("Deactivating JARVIS Systems...")
+        self.cap.release()
+        cv2.destroyAllWindows()
 
 if __name__ == "__main__":
-    run()
+    jarvis = JarvisSystem()
+    jarvis.run()

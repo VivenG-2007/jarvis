@@ -95,17 +95,28 @@ class FaceEngine:
             sess_opts.graph_optimization_level = ort.GraphOptimizationLevel.ORT_ENABLE_ALL
             sess_opts.execution_mode = ort.ExecutionMode.ORT_SEQUENTIAL
             
-            # Try to use CUDA if available, fallback to CPU
-            # We explicitly check for cublas errors mentioned in logs by trying to load
-            providers = ["CUDAExecutionProvider", "CPUExecutionProvider"]
+            # Only request CUDA if it is natively detected to prevent messy ONNX missing-dll logging
+            has_cuda = False
+            try:
+                has_cuda = cv2.cuda.getCudaEnabledDeviceCount() > 0
+            except AttributeError:
+                pass
+                
+            if has_cuda:
+                providers = ["CUDAExecutionProvider", "CPUExecutionProvider"]
+                provider_opts = [{}, {}]
+                ctx = 0 # GPU
+            else:
+                providers = ["CPUExecutionProvider"]
+                provider_opts = [{}]
+                ctx = -1 # CPU
             
             self.app = FaceAnalysis(
                 name=config.FACE_DETECTION_MODEL,
                 providers=providers,
-                provider_options=[{}, {}] # Can be tuned further
+                provider_options=provider_opts
             )
-            # ctx_id=0 uses GPU; -1 uses CPU
-            self.app.prepare(ctx_id=0, det_size=(320, 320))
+            self.app.prepare(ctx_id=ctx, det_size=(640, 640))
             
             # Verify which provider was actually used
             actual_providers = []
