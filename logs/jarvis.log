@@ -130,3 +130,191 @@
 2026-04-08 19:46:00,787  INFO     jarvis.main — Entering main loop. Press Q/ESC to quit.
 2026-04-08 19:46:01,802  INFO     jarvis.main — Smooth zoom activated for track 0
 2026-04-08 19:46:03,862  INFO     jarvis.main — Zoom deactivated
+2026-04-08 19:52:44,272  INFO     jarvis.main — === JARVIS Face Recognition System starting ===
+2026-04-08 19:52:44,290  INFO     jarvis.db — [OK]  MongoDB connected → mongodb://localhost:27017 / jarvis_db
+2026-04-08 19:52:44,292  INFO     jarvis.main — Persons in database: 2
+2026-04-08 19:52:44,293  INFO     jarvis.face_engine — Loading InsightFace model 'buffalo_s'…
+2026-04-08 19:52:47,477  INFO     jarvis.face_engine — InsightFace loaded with providers: ['CUDAExecutionProvider', 'CPUExecutionProvider'] ✓
+2026-04-08 19:52:50,201  INFO     jarvis.object_engine — YOLOv8 model 'yolov8n.pt' loaded ✓
+2026-04-08 19:53:30,141  INFO     jarvis.main — === JARVIS Face Recognition System starting ===
+2026-04-08 19:53:30,158  INFO     jarvis.db — [OK]  MongoDB connected → mongodb://localhost:27017 / jarvis_db
+2026-04-08 19:53:30,160  INFO     jarvis.main — Persons in database: 2
+2026-04-08 19:53:30,160  INFO     jarvis.face_engine — Loading InsightFace model 'buffalo_s'…
+2026-04-08 19:53:31,664  INFO     jarvis.face_engine — InsightFace loaded with providers: ['CUDAExecutionProvider', 'CPUExecutionProvider'] ✓
+2026-04-08 19:53:31,769  INFO     jarvis.object_engine — YOLOv8 model 'yolov8n.pt' loaded ✓
+2026-04-08 19:53:57,107  INFO     jarvis.main — Advanced background threads started (Face + YOLO).
+2026-04-08 19:53:57,149  INFO     jarvis.main — Entering main loop. Press Q/ESC to quit.
+2026-04-08 19:55:37,996  INFO     jarvis.main — === JARVIS Face Recognition System starting ===
+2026-04-08 19:55:38,013  INFO     jarvis.db — [OK]  MongoDB connected → mongodb://localhost:27017 / jarvis_db
+2026-04-08 19:55:38,015  INFO     jarvis.main — Persons in database: 2
+2026-04-08 19:55:38,016  INFO     jarvis.face_engine — Loading InsightFace model 'buffalo_s'…
+2026-04-08 19:55:39,538  INFO     jarvis.face_engine — InsightFace initialized. Active Providers: {'CPUExecutionProvider'} ✓
+2026-04-08 19:55:39,647  INFO     jarvis.object_engine — YOLOv8 loaded on cpu ✓
+2026-04-08 19:56:05,016  INFO     jarvis.main — Advanced background threads started (Face + YOLO).
+2026-04-08 19:56:05,057  INFO     jarvis.main — Entering main loop. Press Q/ESC to quit.
+2026-04-08 19:58:08,592  INFO     jarvis.main — === JARVIS Face Recognition System starting ===
+2026-04-08 19:58:08,611  INFO     jarvis.db — [OK]  MongoDB connected → mongodb://localhost:27017 / jarvis_db
+2026-04-08 19:58:08,611  INFO     jarvis.main — Persons in database: 2
+2026-04-08 19:58:08,613  INFO     jarvis.face_engine — Loading InsightFace model 'buffalo_s'…
+2026-04-08 19:58:10,157  INFO     jarvis.face_engine — InsightFace initialized. Active Providers: {'CPUExecutionProvider'} ✓
+2026-04-08 19:58:10,270  INFO     jarvis.object_engine — YOLOv8 loaded on cpu ✓
+2026-04-08 19:58:35,567  INFO     jarvis.main — Advanced background threads started (Face + YOLO).
+2026-04-08 19:58:35,606  INFO     jarvis.main — Entering main loop. Press Q/ESC to quit.
+2026-04-08 19:58:36,678  INFO     jarvis.main — Smooth zoom activated for track 0
+2026-04-08 19:58:38,750  INFO     jarvis.main — Zoom deactivated
+2026-04-08 19:59:01,751  INFO     jarvis.main — Object detection display: VISIBLE (ALL)
+2026-04-08 19:59:08,836  INFO     jarvis.main — Object detection display: HIDDEN
+2026-04-08 19:59:11,731  INFO     jarvis.main — Object detection display: VISIBLE (ALL)
+2026-04-08 19:59:21,448  INFO     jarvis.main — Current object filter: {'window'}
+2026-04-08 19:59:23,916  INFO     jarvis.main — Smooth zoom activated for track 1
+2026-04-08 19:59:25,687  INFO     jarvis.main — Zoom deactivated
+2026-04-08 19:59:27,691  INFO     jarvis.main — Smooth zoom activated for track 2
+2026-04-08 19:59:29,327  INFO     jarvis.main — Zoom deactivated
+2026-04-08 19:59:41,583  INFO     jarvis.main — Object detection display: HIDDEN
+2026-04-08 19:59:43,732  INFO     jarvis.main — Object detection display: VISIBLE (ALL)
+2026-04-08 20:00:22,863  INFO     jarvis.main — Smooth zoom activated for track 3
+2026-04-08 20:00:24,621  INFO     jarvis.main — Zoom deactivated
+2026-04-08 20:00:30,680  INFO     jarvis.main — Smooth zoom activated for track 4
+2026-04-08 20:00:31,840  INFO     jarvis.main — Zoom deactivated
+2026-04-08 20:00:54,083  INFO     jarvis.main — Smooth zoom activated for track 5
+2026-04-08 20:00:55,353  INFO     jarvis.main — Zoom deactivated
+2026-04-08 20:01:31,038  INFO     jarvis.main — Smooth zoom activated for track 6
+2026-04-08 20:01:32,398  INFO     jarvis.main — Zoom deactivated
+2026-04-08 20:02:46,588  INFO     jarvis.main — Smooth zoom activated for track 7
+2026-04-08 20:03:03,612  INFO     jarvis.main — === JARVIS Face Recognition System starting ===
+2026-04-08 20:03:03,629  INFO     jarvis.db — [OK]  MongoDB connected → mongodb://localhost:27017 / jarvis_db
+2026-04-08 20:03:03,632  INFO     jarvis.main — Persons in database: 2
+2026-04-08 20:03:03,632  INFO     jarvis.face_engine — Loading InsightFace model 'buffalo_s'…
+2026-04-08 20:03:05,195  INFO     jarvis.face_engine — InsightFace initialized. Active Providers: {'CPUExecutionProvider'} ✓
+2026-04-08 20:03:05,326  INFO     jarvis.object_engine — YOLOv8 loaded on cpu ✓
+2026-04-08 20:03:31,578  INFO     jarvis.main — Advanced background threads started (Face + YOLO).
+2026-04-08 20:03:31,604  INFO     jarvis.main — Entering main loop. Press Q/ESC to quit.
+2026-04-08 20:03:32,415  INFO     jarvis.main — Smooth zoom activated for track 0
+2026-04-08 20:03:34,429  INFO     jarvis.main — Zoom deactivated
+2026-04-08 20:03:43,890  INFO     jarvis.main — Object detection display: VISIBLE (ALL)
+2026-04-08 20:03:48,292  INFO     jarvis.main — Smooth zoom activated for track 1
+2026-04-08 20:03:50,036  INFO     jarvis.main — Zoom deactivated
+2026-04-08 20:04:08,089  INFO     jarvis.main — Smooth zoom activated for track 2
+2026-04-08 20:04:10,075  INFO     jarvis.main — Zoom deactivated
+2026-04-08 20:04:33,689  INFO     jarvis.main — === JARVIS Face Recognition System starting ===
+2026-04-08 20:04:33,706  INFO     jarvis.db — [OK]  MongoDB connected → mongodb://localhost:27017 / jarvis_db
+2026-04-08 20:04:33,708  INFO     jarvis.main — Persons in database: 2
+2026-04-08 20:04:33,709  INFO     jarvis.face_engine — Loading InsightFace model 'buffalo_s'…
+2026-04-08 20:05:15,217  INFO     jarvis.face_engine — InsightFace initialized. Active Providers: {'CPUExecutionProvider'} ✓
+2026-04-08 20:05:15,315  INFO     jarvis.object_engine — YOLOv8 loaded on cpu ✓
+2026-04-08 20:05:41,134  INFO     jarvis.main — Advanced background threads started (Face + YOLO).
+2026-04-08 20:05:41,172  INFO     jarvis.main — Entering main loop. Press Q/ESC to quit.
+2026-04-08 20:05:42,286  INFO     jarvis.main — Smooth zoom activated for track 0
+2026-04-08 20:05:43,738  INFO     jarvis.main — Zoom deactivated
+2026-04-08 20:05:46,439  INFO     jarvis.main — Smooth zoom activated for track 1
+2026-04-08 20:05:48,523  INFO     jarvis.main — Zoom deactivated
+2026-04-08 20:05:48,590  INFO     jarvis.main — Smooth zoom activated for track 2
+2026-04-08 20:06:08,968  INFO     jarvis.main — Object detection display: VISIBLE (ALL)
+2026-04-08 20:06:23,027  INFO     jarvis.main — Current object filter: {'window'}
+2026-04-08 20:07:12,257  INFO     jarvis.main — === JARVIS Face Recognition System starting ===
+2026-04-08 20:07:12,273  INFO     jarvis.db — [OK]  MongoDB connected → mongodb://localhost:27017 / jarvis_db
+2026-04-08 20:07:12,275  INFO     jarvis.main — Persons in database: 2
+2026-04-08 20:07:12,276  INFO     jarvis.face_engine — Loading InsightFace model 'buffalo_l'…
+2026-04-08 20:08:37,526  INFO     jarvis.face_engine — InsightFace initialized. Active Providers: {'CPUExecutionProvider'} ✓
+2026-04-08 20:08:37,710  INFO     jarvis.object_engine — YOLOv8 loaded on cpu ✓
+2026-04-08 20:09:24,522  INFO     jarvis.main — === JARVIS Face Recognition System starting ===
+2026-04-08 20:09:24,540  INFO     jarvis.db — [OK]  MongoDB connected → mongodb://localhost:27017 / jarvis_db
+2026-04-08 20:09:24,543  INFO     jarvis.main — Persons in database: 2
+2026-04-08 20:09:24,543  INFO     jarvis.face_engine — Loading InsightFace model 'buffalo_l'…
+2026-04-08 20:09:26,702  INFO     jarvis.face_engine — InsightFace initialized. Active Providers: {'CPUExecutionProvider'} ✓
+2026-04-08 20:09:26,825  INFO     jarvis.object_engine — YOLOv8 loaded on cpu ✓
+2026-04-08 20:09:52,781  INFO     jarvis.main — Advanced background threads started (Face + YOLO).
+2026-04-08 20:09:52,817  INFO     jarvis.main — Entering main loop. Press Q/ESC to quit.
+2026-04-08 20:09:54,262  INFO     jarvis.main — Smooth zoom activated for track 0
+2026-04-08 20:09:56,257  INFO     jarvis.main — Zoom deactivated
+2026-04-08 20:09:59,189  INFO     jarvis.main — Smooth zoom activated for track 1
+2026-04-08 20:10:01,405  INFO     jarvis.main — Zoom deactivated
+2026-04-08 20:10:01,622  INFO     jarvis.main — Smooth zoom activated for track 2
+2026-04-08 20:10:03,451  INFO     jarvis.main — Zoom deactivated
+2026-04-08 20:10:16,735  INFO     jarvis.main — Current object filter: {'window'}
+2026-04-08 20:10:35,277  INFO     jarvis.main — Smooth zoom activated for track 3
+2026-04-08 20:10:37,044  INFO     jarvis.main — Zoom deactivated
+2026-04-08 20:10:37,071  INFO     jarvis.main — Smooth zoom activated for track 5
+2026-04-08 20:10:38,824  INFO     jarvis.main — Zoom deactivated
+2026-04-08 20:10:38,851  INFO     jarvis.main — Smooth zoom activated for track 6
+2026-04-08 20:10:40,643  INFO     jarvis.main — Zoom deactivated
+2026-04-08 20:10:40,736  INFO     jarvis.main — Smooth zoom activated for track 7
+2026-04-08 20:10:42,539  INFO     jarvis.main — Zoom deactivated
+2026-04-08 20:10:48,280  INFO     jarvis.main — Smooth zoom activated for track 8
+2026-04-08 20:11:57,579  INFO     jarvis.main — Object detection display: HIDDEN
+2026-04-08 20:12:01,555  INFO     jarvis.main — Object detection display: VISIBLE (ALL)
+2026-04-08 20:12:06,029  INFO     jarvis.main — Object detection display: HIDDEN
+2026-04-08 20:12:14,622  INFO     jarvis.main — Object detection display: VISIBLE (ALL)
+2026-04-08 20:13:26,804  INFO     jarvis.main — === JARVIS Face Recognition System starting ===
+2026-04-08 20:13:26,846  INFO     jarvis.db — [OK]  MongoDB connected → mongodb://localhost:27017 / jarvis_db
+2026-04-08 20:13:26,848  INFO     jarvis.main — Persons in database: 2
+2026-04-08 20:13:26,849  INFO     jarvis.face_engine — Loading InsightFace model 'buffalo_l'…
+2026-04-08 20:13:28,984  INFO     jarvis.face_engine — InsightFace initialized. Active Providers: {'CPUExecutionProvider'} ✓
+2026-04-08 20:13:29,114  INFO     jarvis.object_engine — YOLOv8 loaded on cpu ✓
+2026-04-08 20:13:54,335  INFO     jarvis.main — Advanced background threads started (Face + YOLO).
+2026-04-08 20:13:54,369  INFO     jarvis.main — Entering main loop. Press Q/ESC to quit.
+2026-04-08 20:13:55,269  INFO     jarvis.main — Smooth zoom activated for track 0
+2026-04-08 20:13:57,905  INFO     jarvis.main — Zoom deactivated
+2026-04-08 20:14:02,781  INFO     jarvis.main — Smooth zoom activated for track 1
+2026-04-08 20:14:05,441  INFO     jarvis.main — Zoom deactivated
+2026-04-08 20:14:06,915  INFO     jarvis.main — Smooth zoom activated for track 2
+2026-04-08 20:14:09,550  INFO     jarvis.main — Zoom deactivated
+2026-04-08 20:14:28,139  INFO     jarvis.main — Object detection display: HIDDEN
+2026-04-08 20:14:30,849  INFO     jarvis.main — Object detection display: VISIBLE (ALL)
+2026-04-08 20:14:57,793  INFO     jarvis.main — Smooth zoom activated for track 3
+2026-04-08 20:15:00,517  INFO     jarvis.main — Zoom deactivated
+2026-04-08 20:15:00,553  INFO     jarvis.main — Smooth zoom activated for track 4
+2026-04-08 20:18:48,899  INFO     jarvis.main — === JARVIS Face Recognition System starting ===
+2026-04-08 20:18:48,929  INFO     jarvis.db — [OK]  MongoDB connected → mongodb://localhost:27017 / jarvis_db
+2026-04-08 20:18:48,930  INFO     jarvis.main — Persons in database: 2
+2026-04-08 20:18:48,932  INFO     jarvis.face_engine — Loading InsightFace model 'buffalo_s'…
+2026-04-08 20:19:41,884  INFO     jarvis.face_engine — InsightFace initialized. Active Providers: {'CPUExecutionProvider'} ✓
+2026-04-08 20:19:49,664  INFO     jarvis.object_engine — YOLOv8 loaded on cpu ✓
+2026-04-08 20:20:25,038  INFO     jarvis.main — === JARVIS Face Recognition System starting ===
+2026-04-08 20:20:25,097  INFO     jarvis.db — [OK]  MongoDB connected → mongodb://localhost:27017 / jarvis_db
+2026-04-08 20:20:25,100  INFO     jarvis.main — Persons in database: 2
+2026-04-08 20:20:25,100  INFO     jarvis.face_engine — Loading InsightFace model 'buffalo_s'…
+2026-04-08 20:20:26,546  INFO     jarvis.face_engine — InsightFace initialized. Active Providers: {'CPUExecutionProvider'} ✓
+2026-04-08 20:20:26,690  INFO     jarvis.object_engine — YOLOv8 loaded on cpu ✓
+2026-04-08 20:20:53,107  INFO     jarvis.main — Advanced background threads started (Face + YOLO).
+2026-04-08 20:20:53,142  INFO     jarvis.main — Entering main loop. Press Q/ESC to quit.
+2026-04-08 20:20:55,182  INFO     jarvis.main — Smooth zoom activated for track 0
+2026-04-08 20:20:58,419  INFO     jarvis.main — Zoom deactivated
+2026-04-08 20:21:41,332  INFO     jarvis.main — Smooth zoom activated for track 1
+2026-04-08 20:21:44,491  INFO     jarvis.main — Zoom deactivated
+2026-04-08 20:22:20,473  INFO     jarvis.main — Smooth zoom activated for track 2
+2026-04-08 20:22:23,653  INFO     jarvis.main — Zoom deactivated
+2026-04-08 20:22:23,718  INFO     jarvis.main — Smooth zoom activated for track 4
+2026-04-08 20:22:26,864  INFO     jarvis.main — Zoom deactivated
+2026-04-08 20:22:32,272  INFO     jarvis.main — Smooth zoom activated for track 5
+2026-04-08 20:26:26,316  INFO     jarvis.main — === JARVIS Face Recognition System starting ===
+2026-04-08 20:26:26,335  INFO     jarvis.db — [OK]  MongoDB connected → mongodb://localhost:27017 / jarvis_db
+2026-04-08 20:26:26,338  INFO     jarvis.main — Persons in database: 2
+2026-04-08 20:26:26,338  INFO     jarvis.face_engine — Loading InsightFace model 'buffalo_s'…
+2026-04-08 20:26:27,663  INFO     jarvis.face_engine — InsightFace initialized. Active Providers: {'CPUExecutionProvider'} ✓
+2026-04-08 20:26:27,790  INFO     jarvis.object_engine — YOLOv8 loaded on cpu ✓
+2026-04-08 20:26:52,927  INFO     jarvis.main — Advanced background threads started (Face + YOLO).
+2026-04-08 20:26:52,994  INFO     jarvis.main — Entering main loop. Press Q/ESC to quit.
+2026-04-08 20:26:53,960  INFO     jarvis.main — Smooth zoom activated for track 0
+2026-04-08 20:26:56,728  INFO     jarvis.main — Zoom deactivated
+2026-04-08 20:27:14,598  INFO     jarvis.main — Smooth zoom activated for track 1
+2026-04-08 20:27:17,447  INFO     jarvis.main — Zoom deactivated
+2026-04-08 20:27:48,748  INFO     jarvis.main — Smooth zoom activated for track 2
+2026-04-08 20:27:50,723  INFO     jarvis.main — Zoom deactivated
+2026-04-08 20:27:50,785  INFO     jarvis.main — Smooth zoom activated for track 4
+2026-04-08 20:27:53,603  INFO     jarvis.main — Zoom deactivated
+2026-04-08 20:29:04,438  INFO     jarvis.main — Smooth zoom activated for track 5
+2026-04-08 20:29:07,376  INFO     jarvis.main — Zoom deactivated
+2026-04-08 20:29:14,044  INFO     jarvis.main — Smooth zoom activated for track 6
+2026-04-08 20:32:39,939  INFO     jarvis.main — === JARVIS Face Recognition System starting ===
+2026-04-08 20:32:39,956  INFO     jarvis.db — [OK]  MongoDB connected → mongodb://localhost:27017 / jarvis_db
+2026-04-08 20:32:39,959  INFO     jarvis.main — Persons in database: 2
+2026-04-08 20:32:39,959  INFO     jarvis.face_engine — Loading InsightFace model 'buffalo_s'…
+2026-04-08 20:32:41,291  INFO     jarvis.face_engine — InsightFace initialized. Active Providers: {'CPUExecutionProvider'} ✓
+2026-04-08 20:32:43,787  INFO     jarvis.object_engine — YOLOv8 loaded on cpu ✓
+2026-04-08 20:33:09,293  INFO     jarvis.main — Advanced background threads started (Face + YOLO).
+2026-04-08 20:33:09,333  INFO     jarvis.main — Entering main loop. Press Q/ESC to quit.
+2026-04-08 20:33:10,507  INFO     jarvis.main — Smooth zoom activated for track 0
+2026-04-08 20:33:13,449  INFO     jarvis.main — Zoom deactivated
+2026-04-08 20:33:19,063  INFO     jarvis.main — Smooth zoom activated for track 1
+2026-04-08 20:33:21,865  INFO     jarvis.main — Zoom deactivated

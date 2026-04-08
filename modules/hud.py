@@ -52,7 +52,8 @@ def _prune_anims(active_ids: set[int]):
 def draw_hud(
     frame: np.ndarray, 
     matches: list[FaceMatch], 
-    objects: list, 
+    drawn_objects: list,
+    all_objects: list,
     fps: float
 ) -> np.ndarray:
     """
@@ -67,7 +68,7 @@ def draw_hud(
     _draw_scanlines(frame, now, h, w)
 
     # ── Objects (YOLO) ──
-    _draw_objects(frame, objects)
+    _draw_objects(frame, drawn_objects)
 
     # ── Per-face elements ──
     for m in matches:
@@ -81,7 +82,7 @@ def draw_hud(
 
     # ── Status bars ──
     _draw_status_bar_top(frame, w, fps, len(matches))
-    _draw_status_bar_bottom(frame, h, w, matches)
+    _draw_status_bar_bottom(frame, h, w, matches, all_objects)
 
     # ── Corner decorations ──
     _draw_corner_brackets_frame(frame, h, w, now)
@@ -116,9 +117,10 @@ def _draw_objects(frame: np.ndarray, objects: list):
         cv2.line(frame, (x2, y2), (x2, y2 - length), color, 1, cv2.LINE_AA)
 
         # Label background
-        (tw, th), _ = cv2.getTextSize(label, font, 0.35, 1)
-        cv2.rectangle(frame, (x1, y1 - th - 4), (x1 + tw + 4, y1), (0, 0, 0), -1)
-        cv2.putText(frame, label, (x1 + 2, y1 - 3), font, 0.35, color, 1, cv2.LINE_AA)
+        (tw, th), _ = cv2.getTextSize(label, font, 0.45, 1)
+        # Gradient or solid background for high visibility
+        cv2.rectangle(frame, (x1, y1 - th - 10), (x1 + tw + 6, y1), (0, 0, 0), -1)
+        cv2.putText(frame, label, (x1 + 3, y1 - 6), font, 0.45, color, 1, cv2.LINE_AA)
 
 
 # ── Animation tick ─────────────────────────────────────────────
@@ -322,7 +324,7 @@ def _draw_status_bar_top(frame: np.ndarray, w: int, fps: float, face_count: int)
                 font, 0.45, config.HUD_COLOR_ACCENT, 1, cv2.LINE_AA)
 
 
-def _draw_status_bar_bottom(frame: np.ndarray, h: int, w: int, matches: list[FaceMatch]):
+def _draw_status_bar_bottom(frame: np.ndarray, h: int, w: int, matches: list[FaceMatch], all_objects: list):
     font  = cv2.FONT_HERSHEY_SIMPLEX
     color = config.HUD_COLOR_PRIMARY
     bar_h = 28
@@ -333,6 +335,7 @@ def _draw_status_bar_bottom(frame: np.ndarray, h: int, w: int, matches: list[Fac
 
     known   = [m.name for m in matches if m.is_known]
     unknown = sum(1 for m in matches if not m.is_known)
+
     parts   = []
     if known:
         parts.append("IDENTIFIED: " + " | ".join(known))

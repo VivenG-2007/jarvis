@@ -18,6 +18,7 @@ MONGO_URI             = os.getenv("MONGO_URI", "mongodb://localhost:27017")
 MONGO_DB_NAME         = os.getenv("MONGO_DB_NAME", "jarvis_db")
 MONGO_COLLECTION_PERSONS = os.getenv("MONGO_COLLECTION_PERSONS", "persons")
 MONGO_COLLECTION_LOGS = os.getenv("MONGO_COLLECTION_LOGS", "recognition_logs")
+MONGO_COLLECTION_OBJECTS = os.getenv("MONGO_COLLECTION_OBJECTS", "objects")
 
 # ── Camera ───────────────────────────────────────────────────
 CAMERA_INDEX  = int(os.getenv("CAMERA_INDEX", 0))

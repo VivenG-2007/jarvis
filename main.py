@@ -11,11 +11,19 @@ Controls:
 
 import logging
 import os
+
+# Suppress noisy DLL loading warnings from ONNX Runtime C++ backend
+os.environ["ORT_LOGGING_LEVEL"] = "4"
+os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
+
 import sys
 import threading
 import time
+import warnings
 from collections import deque
 from datetime import datetime
+
+warnings.filterwarnings("ignore")  # Suppress internal library deprecation warnings
 
 import cv2
 import numpy as np
@@ -47,6 +55,8 @@ class SharedState:
         self.frame:    np.ndarray | None = None
         self.matches:  list              = []
         self.objects:  list              = []
+        self.show_objects: bool          = True   # Display objects on screen by default
+        self.object_filter: set          = set()  # set() means show all if show_objects is True
         self.fps:      float             = 0.0
         self.lock      = threading.Lock()
         self.running   = True
@@ -83,7 +93,7 @@ def recognition_worker(state: SharedState, engine: FaceEngine):
 
 # ── Object Detection worker thread ─────────────────────────────
 
-def object_worker(state: SharedState, engine: ObjectEngine):
+def object_worker(state: SharedState, engine: ObjectEngine, db):
     """Runs in a background thread; processes every other frame for objects."""
     frame_count = 0
     while state.running:
@@ -95,18 +105,26 @@ def object_worker(state: SharedState, engine: ObjectEngine):
             continue
 
         frame_count += 1
-        # Run YOLO every 2 frames as requested
-        if frame_count % 2 == 0:
-            t0      = time.time()
-            objects = engine.detect(frame)
-            elapsed = time.time() - t0
-            
-            with state.lock:
-                state.objects = objects
-            
-            # Dynamic sleep based on performance
-            sleep_ms = max(0, 0.033 - elapsed)
-            time.sleep(sleep_ms)
+        # Run YOLO every 4 frames (highly async, offloads CPU)
+        if frame_count % 4 == 0:
+            try:
+                t0      = time.time()
+                objects = engine.detect(frame)
+                elapsed = time.time() - t0
+                
+                # Log objects to database natively
+                for obj in objects:
+                    db.log_object(obj.label, obj.confidence)
+                
+                with state.lock:
+                    state.objects = objects
+                
+                # Dynamic sleep based on performance
+                sleep_ms = max(0, 0.033 - elapsed)
+                time.sleep(sleep_ms)
+            except Exception as e:
+                logger.error("Object detection thread error: %s", e)
+                time.sleep(0.1)
         else:
             # Short sleep to yield when skipping frame
             time.sleep(0.005)
@@ -115,11 +133,11 @@ def object_worker(state: SharedState, engine: ObjectEngine):
 # ── Zoom management ───────────────────────────────────────────
 
 class ZoomManager:
-    """Handles smooth 2x face zoom for 1 second upon first detection."""
+    """Handles smooth 2x face zoom upon first detection."""
     def __init__(self):
         self.active             = False
         self.start_t            = 0.0
-        self.duration           = 1.0  # Total duration is now 1 second
+        self.duration           = 2.0  # Zoom animation lasts precisely 2 seconds
         self.target_track_id    = -1
         self.max_zoom           = 2.0
         self.triggered_tracks   = set()
@@ -312,7 +330,7 @@ def run():
     # Start object detection thread (YOLO)
     obj_worker_thread = threading.Thread(
         target=object_worker,
-        args=(state, obj_engine),
+        args=(state, obj_engine, db),
         daemon=True,
         name="ObjectWorker"
     )
@@ -342,17 +360,32 @@ def run():
         with state.lock:
             state.frame = raw_frame
             matches     = list(state.matches)
-            objects     = list(state.objects)
-            fps         = state.fps
+            all_objs    = list(state.objects)
+            
+            # Filter objects if display is enabled (Must meet >= 50% probability)
+            if state.show_objects:
+                if not state.object_filter:
+                    objects = [o for o in all_objs if o.confidence >= 0.50]
+                else:
+                    objects = [o for o in all_objs if o.confidence >= 0.50 and o.label.lower() in state.object_filter]
+            else:
+                objects = []
+                
+            fps = state.fps
 
         # Update zoom state
         zoom_mgr.update(matches)
         
-        # Apply zoom if active
-        display, display_matches = zoom_mgr.apply_zoom(raw_frame.copy(), matches)
+        # Optimization: Only copy and process zoom if actually needed
+        if zoom_mgr.active or zoom_mgr.current_zoom > 1.0:
+            display, display_matches, zoomed_objs = zoom_mgr.apply_zoom(raw_frame.copy(), matches, objects)
+        else:
+            display = raw_frame
+            display_matches = matches
+            zoomed_objs = objects
 
         # Draw HUD on display frame
-        draw_hud(display, display_matches, objects, fps)
+        draw_hud(display, display_matches, zoomed_objs, all_objs, fps)
 
         cv2.imshow(win, display)
 
@@ -376,6 +409,22 @@ def run():
         elif key == ord("r"):                 # R → reload persons
             engine._known_ts = 0.0            # force cache refresh
             logger.info("Person cache invalidated — will reload on next frame.")
+
+        elif key == ord("o"):                 # O → toggle objects (Show All)
+            with state.lock:
+                state.show_objects = not state.show_objects
+                state.object_filter = set() # Reset to show all on toggle
+                status = "VISIBLE (ALL)" if state.show_objects else "HIDDEN"
+                logger.info("Object detection display: %s", status)
+
+        elif key == ord("w"):                 # W → Filter: Window
+            with state.lock:
+                state.show_objects = True
+                if "window" in state.object_filter:
+                    state.object_filter.remove("window")
+                else:
+                    state.object_filter.add("window")
+                logger.info("Current object filter: %s", state.object_filter)
 
     # Shutdown
     state.running = False

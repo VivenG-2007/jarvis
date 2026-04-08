@@ -50,6 +50,7 @@ class PersonDB:
             self.db       = self.client[config.MONGO_DB_NAME]
             self.persons  = self.db[config.MONGO_COLLECTION_PERSONS]
             self.logs     = self.db[config.MONGO_COLLECTION_LOGS]
+            self.objects_col = self.db[config.MONGO_COLLECTION_OBJECTS]  # Tracking objects
             self._ensure_indexes()
             logger.info("[OK]  MongoDB connected → %s / %s", config.MONGO_URI, config.MONGO_DB_NAME)
         except (ConnectionFailure, ServerSelectionTimeoutError) as e:
@@ -64,6 +65,26 @@ class PersonDB:
         self.persons.create_index("name")
         self.logs.create_index("timestamp")
         self.logs.create_index("person_id")
+        self.objects_col.create_index("label", unique=True)
+
+    # ── Object Logging ──────────────────────────────────────────
+
+    def log_object(self, label: str, confidence: float):
+        """Update environmental object stats based on threshold rules."""
+        if not self.is_connected():
+            return
+            
+        now = datetime.now(timezone.utc)
+        
+        # Insert new object or increment count if probability >= 50%
+        if confidence >= 0.50:
+            self.objects_col.update_one(
+                {"label": label},
+                {"$setOnInsert": {"first_seen": now},
+                 "$inc": {"count": 1},
+                 "$set": {"last_seen": now, "last_confidence": round(confidence, 4)}},
+                upsert=True
+            )
 
     # ── Person CRUD ───────────────────────────────────────────
 

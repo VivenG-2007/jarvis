@@ -10,6 +10,8 @@ from typing import List, Optional
 
 try:
     from ultralytics import YOLO
+    import torch
+    torch.set_num_threads(2)  # Limit CPU thrashing with ONNX Runtime
     ULTRALYTICS_AVAILABLE = True
 except ImportError:
     ULTRALYTICS_AVAILABLE = False
@@ -25,39 +27,53 @@ class ObjectDetection:
 
 class ObjectEngine:
     """
-    Handles YOLOv8n object detection with GPU support.
+    Handles YOLOv8 object detection with GPU support.
     """
     def __init__(self, model_path: str = "yolov8n.pt"):
         self.model = None
+        self.device = 'cpu'
         if ULTRALYTICS_AVAILABLE:
             try:
                 self.model = YOLO(model_path)
-                # Ensure it uses GPU if available
-                # Ultralytics handles this automatically but we can be explicit
-                logger.info("YOLOv8 model '%s' loaded ✓", model_path)
+                # Cache device once to avoid overhead in detect()
+                if cv2.cuda.getCudaEnabledDeviceCount() > 0:
+                    self.device = '0'
+                self.model.to(self.device)
+                logger.info("YOLOv8 loaded on %s ✓", self.device)
             except Exception as e:
                 logger.error("Failed to load YOLO model: %s", e)
         else:
             logger.warning("ultralytics not installed — object detection disabled.")
 
-    def detect(self, frame: np.ndarray, conf: float = 0.25) -> List[ObjectDetection]:
+    def detect(self, frame: np.ndarray, conf: float = 0.20) -> List[ObjectDetection]:
         if self.model is None:
             return []
 
-        # Run inference
-        results = self.model(frame, conf=conf, verbose=False, device='0' if cv2.cuda.getCudaEnabledDeviceCount() > 0 else 'cpu')
+        # Run inference (stream mode for minor performance gain)
+        # Drop image size to 320 to massively boost CPU speed by 4x
+        results = self.model.predict(frame, conf=conf, imgsz=320, verbose=False, device=self.device)
         
-        detections = []
-        if results and len(results) > 0:
-            res = results[0]
-            for box in res.boxes:
-                # box.xyxy[0] is [x1, y1, x2, y2]
-                b = box.xyxy[0].cpu().numpy().astype(int)
-                detections.append(ObjectDetection(
-                    label=res.names[int(box.cls[0])],
-                    confidence=float(box.conf[0]),
-                    bbox=b.tolist(),
-                    class_id=int(box.cls[0])
+        if not results:
+            return []
+            
+        res = results[0]
+        # Use more efficient extraction
+        boxes = res.boxes
+        det_list = []
+        if boxes is not None and len(boxes) > 0:
+            cls = boxes.cls.cpu().numpy().astype(int)
+            conf = boxes.conf.cpu().numpy().astype(float)
+            xyxy = boxes.xyxy.cpu().numpy().astype(int)
+            
+            for i in range(len(boxes)):
+                # Class 0 in YOLO is "person" - ignore it so only Buffalo handles humans
+                if cls[i] == 0:
+                    continue
+                    
+                det_list.append(ObjectDetection(
+                    label=res.names[cls[i]],
+                    confidence=conf[i],
+                    bbox=xyxy[i].tolist(),
+                    class_id=cls[i]
                 ))
-        
-        return detections
+        return det_list

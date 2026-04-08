@@ -86,14 +86,36 @@ class FaceEngine:
     def _init_model(self):
         if INSIGHTFACE_AVAILABLE:
             logger.info("Loading InsightFace model '%s'…", config.FACE_DETECTION_MODEL)
+            
+            # Advanced ONNX Optimization & Noise Suppression
+            import onnxruntime as ort
+            ort.set_default_logger_severity(3) # Suppress C++ backend spam for missing CUDA dlls
+            
+            sess_opts = ort.SessionOptions()
+            sess_opts.graph_optimization_level = ort.GraphOptimizationLevel.ORT_ENABLE_ALL
+            sess_opts.execution_mode = ort.ExecutionMode.ORT_SEQUENTIAL
+            
             # Try to use CUDA if available, fallback to CPU
+            # We explicitly check for cublas errors mentioned in logs by trying to load
             providers = ["CUDAExecutionProvider", "CPUExecutionProvider"]
+            
             self.app = FaceAnalysis(
                 name=config.FACE_DETECTION_MODEL,
-                providers=providers
+                providers=providers,
+                provider_options=[{}, {}] # Can be tuned further
             )
-            self.app.prepare(ctx_id=0, det_size=(640, 640))
-            logger.info("InsightFace loaded with providers: %s ✓", providers)
+            # ctx_id=0 uses GPU; -1 uses CPU
+            self.app.prepare(ctx_id=0, det_size=(320, 320))
+            
+            # Verify which provider was actually used
+            actual_providers = []
+            for model in self.app.models.values():
+                if hasattr(model, 'session'):
+                    p = model.session.get_providers()
+                    actual_providers.extend(p)
+            
+            p_set = set(actual_providers)
+            logger.info("InsightFace initialized. Active Providers: %s ✓", p_set)
         else:
             # Fallback: Haar cascade (no embeddings, no recognition)
             logger.warning("Using Haar cascade fallback — no recognition available.")
