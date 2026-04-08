@@ -29,7 +29,7 @@ class ObjectEngine:
     """
     Handles YOLOv8 object detection with GPU support.
     """
-    def __init__(self, model_path: str = "yolov8n.pt"):
+    def __init__(self, model_path: str = "yolov8s.pt"):
         self.model = None
         self.device = 'cpu'
         if ULTRALYTICS_AVAILABLE:
@@ -49,9 +49,8 @@ class ObjectEngine:
         if self.model is None:
             return []
 
-        # Run inference (stream mode for minor performance gain)
-        # Drop image size to 320 to massively boost CPU speed by 4x
-        results = self.model.predict(frame, conf=conf, imgsz=320, verbose=False, device=self.device)
+        # Run inference using standard size to prevent detection butchering
+        results = self.model.predict(frame, conf=conf, verbose=False, device=self.device)
         
         if not results:
             return []

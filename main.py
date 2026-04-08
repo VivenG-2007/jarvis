@@ -16,6 +16,13 @@ import os
 os.environ["ORT_LOGGING_LEVEL"] = "4"
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
 
+# EXTREME CPU OPTIMIZATION: Stop ONNX and PyTorch from spawning 16+ threads and killing the CPU L3 Cache
+os.environ["OMP_NUM_THREADS"] = "2"
+os.environ["OPENBLAS_NUM_THREADS"] = "2"
+os.environ["MKL_NUM_THREADS"] = "2"
+os.environ["VECLIB_MAXIMUM_THREADS"] = "2"
+os.environ["NUMEXPR_NUM_THREADS"] = "2"
+
 import sys
 import threading
 import time
@@ -105,8 +112,8 @@ def object_worker(state: SharedState, engine: ObjectEngine, db):
             continue
 
         frame_count += 1
-        # Run YOLO every 4 frames (highly async, offloads CPU)
-        if frame_count % 4 == 0:
+        # Run YOLO every 12 frames (highly async, offloads heavy YOLOv8s CPU footprint)
+        if frame_count % 12 == 0:
             try:
                 t0      = time.time()
                 objects = engine.detect(frame)
