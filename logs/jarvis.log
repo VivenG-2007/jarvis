@@ -444,3 +444,1423 @@
 2026-04-08 21:21:40,486  INFO     jarvis.main — Smooth zoom activated for track 1
 2026-04-08 21:21:47,783  INFO     jarvis.main — Smooth zoom activated for track 2
 2026-04-08 21:22:00,697  INFO     jarvis.main — Smooth zoom activated for track 3
+2026-04-09 06:10:03,356 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-tiny.en/revision/main "HTTP/1.1 200 OK"
+2026-04-09 06:10:33,238 [INFO] faster_whisper: Processing audio with duration 00:02.299
+2026-04-09 06:10:33,314 [INFO] faster_whisper: VAD filter removed 00:02.299 of audio
+2026-04-09 06:10:39,274 [INFO] faster_whisper: Processing audio with duration 00:01.347
+2026-04-09 06:10:39,283 [INFO] faster_whisper: VAD filter removed 00:01.347 of audio
+2026-04-09 06:10:45,057 [INFO] faster_whisper: Processing audio with duration 00:03.483
+2026-04-09 06:10:45,074 [INFO] faster_whisper: VAD filter removed 00:03.483 of audio
+2026-04-09 06:10:48,152 [INFO] faster_whisper: Processing audio with duration 00:02.624
+2026-04-09 06:10:48,165 [INFO] faster_whisper: VAD filter removed 00:02.624 of audio
+2026-04-09 06:10:50,346 [INFO] faster_whisper: Processing audio with duration 00:01.765
+2026-04-09 06:10:50,356 [INFO] faster_whisper: VAD filter removed 00:01.765 of audio
+2026-04-09 06:10:53,030 [INFO] faster_whisper: Processing audio with duration 00:01.625
+2026-04-09 06:10:53,042 [INFO] faster_whisper: VAD filter removed 00:00.880 of audio
+2026-04-09 06:10:56,861 [INFO] faster_whisper: Processing audio with duration 00:01.068
+2026-04-09 06:10:56,867 [INFO] faster_whisper: VAD filter removed 00:01.068 of audio
+2026-04-09 06:11:00,338 [INFO] faster_whisper: Processing audio with duration 00:01.997
+2026-04-09 06:11:00,354 [INFO] faster_whisper: VAD filter removed 00:00.720 of audio
+2026-04-09 06:11:06,336 [INFO] faster_whisper: Processing audio with duration 00:02.485
+2026-04-09 06:11:06,350 [INFO] faster_whisper: VAD filter removed 00:02.485 of audio
+2026-04-09 06:11:09,616 [INFO] faster_whisper: Processing audio with duration 00:01.161
+2026-04-09 06:11:09,624 [INFO] faster_whisper: VAD filter removed 00:01.161 of audio
+2026-04-09 06:11:12,143 [INFO] faster_whisper: Processing audio with duration 00:01.997
+2026-04-09 06:11:12,156 [INFO] faster_whisper: VAD filter removed 00:00.496 of audio
+2026-04-09 06:11:16,004 [INFO] faster_whisper: Processing audio with duration 00:00.998
+2026-04-09 06:11:16,013 [INFO] faster_whisper: VAD filter removed 00:00.048 of audio
+2026-04-09 06:11:19,924 [INFO] faster_whisper: Processing audio with duration 00:01.393
+2026-04-09 06:11:19,932 [INFO] faster_whisper: VAD filter removed 00:01.393 of audio
+2026-04-09 06:11:23,545 [INFO] faster_whisper: Processing audio with duration 00:02.508
+2026-04-09 06:11:23,558 [INFO] faster_whisper: VAD filter removed 00:02.508 of audio
+2026-04-09 06:11:25,962 [INFO] faster_whisper: Processing audio with duration 00:01.834
+2026-04-09 06:11:26,055 [INFO] faster_whisper: VAD filter removed 00:01.834 of audio
+2026-04-09 06:11:28,405 [INFO] faster_whisper: Processing audio with duration 00:01.858
+2026-04-09 06:11:28,417 [INFO] faster_whisper: VAD filter removed 00:01.858 of audio
+2026-04-09 06:11:30,971 [INFO] faster_whisper: Processing audio with duration 00:02.113
+2026-04-09 06:11:30,985 [INFO] faster_whisper: VAD filter removed 00:02.113 of audio
+2026-04-09 06:11:33,937 [INFO] faster_whisper: Processing audio with duration 00:01.370
+2026-04-09 06:11:33,963 [INFO] faster_whisper: VAD filter removed 00:01.370 of audio
+2026-04-09 06:12:10,130 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-tiny.en/revision/main "HTTP/1.1 200 OK"
+2026-04-09 06:12:41,371 [INFO] faster_whisper: Processing audio with duration 00:01.556
+2026-04-09 06:12:41,396 [INFO] faster_whisper: VAD filter removed 00:01.556 of audio
+2026-04-09 06:12:44,071 [INFO] faster_whisper: Processing audio with duration 00:02.043
+2026-04-09 06:12:44,097 [INFO] faster_whisper: VAD filter removed 00:02.043 of audio
+2026-04-09 06:12:46,564 [INFO] faster_whisper: Processing audio with duration 00:00.998
+2026-04-09 06:12:46,571 [INFO] faster_whisper: VAD filter removed 00:00.998 of audio
+2026-04-09 06:12:49,013 [INFO] faster_whisper: Processing audio with duration 00:01.463
+2026-04-09 06:12:49,046 [INFO] faster_whisper: VAD filter removed 00:01.463 of audio
+2026-04-09 06:12:53,438 [INFO] faster_whisper: Processing audio with duration 00:01.022
+2026-04-09 06:12:53,448 [INFO] faster_whisper: VAD filter removed 00:01.022 of audio
+2026-04-09 06:12:59,317 [INFO] faster_whisper: Processing audio with duration 00:04.319
+2026-04-09 06:12:59,340 [INFO] faster_whisper: VAD filter removed 00:04.319 of audio
+2026-04-09 06:13:01,954 [INFO] faster_whisper: Processing audio with duration 00:02.113
+2026-04-09 06:13:01,967 [INFO] faster_whisper: VAD filter removed 00:02.113 of audio
+2026-04-09 06:13:06,560 [INFO] faster_whisper: Processing audio with duration 00:01.463
+2026-04-09 06:13:06,571 [INFO] faster_whisper: VAD filter removed 00:00.528 of audio
+2026-04-09 06:13:13,307 [INFO] faster_whisper: Processing audio with duration 00:03.924
+2026-04-09 06:13:13,325 [INFO] faster_whisper: VAD filter removed 00:02.448 of audio
+2026-04-09 06:13:17,793 [INFO] faster_whisper: Processing audio with duration 00:01.672
+2026-04-09 06:13:17,804 [INFO] faster_whisper: VAD filter removed 00:01.168 of audio
+2026-04-09 06:13:22,433 [INFO] faster_whisper: Processing audio with duration 00:01.393
+2026-04-09 06:13:22,442 [INFO] faster_whisper: VAD filter removed 00:01.393 of audio
+2026-04-09 06:13:27,581 [INFO] faster_whisper: Processing audio with duration 00:01.695
+2026-04-09 06:13:27,603 [INFO] faster_whisper: VAD filter removed 00:01.695 of audio
+2026-04-09 06:13:29,366 [INFO] faster_whisper: Processing audio with duration 00:01.254
+2026-04-09 06:13:29,375 [INFO] faster_whisper: VAD filter removed 00:01.254 of audio
+2026-04-09 06:13:31,835 [INFO] faster_whisper: Processing audio with duration 00:01.927
+2026-04-09 06:13:31,847 [INFO] faster_whisper: VAD filter removed 00:01.927 of audio
+2026-04-09 06:13:33,196 [INFO] faster_whisper: Processing audio with duration 00:00.790
+2026-04-09 06:13:33,201 [INFO] faster_whisper: VAD filter removed 00:00.790 of audio
+2026-04-09 06:13:34,861 [INFO] faster_whisper: Processing audio with duration 00:01.045
+2026-04-09 06:13:34,878 [INFO] faster_whisper: VAD filter removed 00:01.045 of audio
+2026-04-09 06:13:40,776 [INFO] faster_whisper: Processing audio with duration 00:04.969
+2026-04-09 06:13:40,824 [INFO] faster_whisper: VAD filter removed 00:04.969 of audio
+2026-04-09 06:13:47,059 [INFO] faster_whisper: Processing audio with duration 00:06.014
+2026-04-09 06:13:47,089 [INFO] faster_whisper: VAD filter removed 00:06.014 of audio
+2026-04-09 06:13:48,598 [INFO] faster_whisper: Processing audio with duration 00:00.929
+2026-04-09 06:13:48,606 [INFO] faster_whisper: VAD filter removed 00:00.929 of audio
+2026-04-09 06:13:54,523 [INFO] faster_whisper: Processing audio with duration 00:05.434
+2026-04-09 06:13:54,553 [INFO] faster_whisper: VAD filter removed 00:04.208 of audio
+2026-04-09 06:14:02,649 [INFO] faster_whisper: Processing audio with duration 00:02.206
+2026-04-09 06:14:02,684 [INFO] faster_whisper: VAD filter removed 00:02.206 of audio
+2026-04-09 06:14:06,611 [INFO] faster_whisper: Processing audio with duration 00:02.206
+2026-04-09 06:14:06,632 [INFO] faster_whisper: VAD filter removed 00:02.206 of audio
+2026-04-09 06:14:08,288 [INFO] faster_whisper: Processing audio with duration 00:01.068
+2026-04-09 06:14:08,298 [INFO] faster_whisper: VAD filter removed 00:01.068 of audio
+2026-04-09 06:14:12,642 [INFO] faster_whisper: Processing audio with duration 00:02.763
+2026-04-09 06:14:12,657 [INFO] faster_whisper: VAD filter removed 00:02.763 of audio
+2026-04-09 06:14:15,874 [INFO] faster_whisper: Processing audio with duration 00:01.742
+2026-04-09 06:14:15,886 [INFO] faster_whisper: VAD filter removed 00:01.742 of audio
+2026-04-09 06:14:18,096 [INFO] faster_whisper: Processing audio with duration 00:01.463
+2026-04-09 06:14:18,103 [INFO] faster_whisper: VAD filter removed 00:01.463 of audio
+2026-04-09 06:14:19,485 [INFO] faster_whisper: Processing audio with duration 00:00.929
+2026-04-09 06:14:19,492 [INFO] faster_whisper: VAD filter removed 00:00.929 of audio
+2026-04-09 06:14:22,594 [INFO] faster_whisper: Processing audio with duration 00:00.952
+2026-04-09 06:14:22,612 [INFO] faster_whisper: VAD filter removed 00:00.952 of audio
+2026-04-09 06:14:24,339 [INFO] faster_whisper: Processing audio with duration 00:01.277
+2026-04-09 06:14:24,348 [INFO] faster_whisper: VAD filter removed 00:01.277 of audio
+2026-04-09 06:14:27,318 [INFO] faster_whisper: Processing audio with duration 00:02.392
+2026-04-09 06:14:27,335 [INFO] faster_whisper: VAD filter removed 00:02.392 of audio
+2026-04-09 06:14:30,354 [INFO] faster_whisper: Processing audio with duration 00:01.324
+2026-04-09 06:14:30,363 [INFO] faster_whisper: VAD filter removed 00:01.324 of audio
+2026-04-09 06:14:32,975 [INFO] faster_whisper: Processing audio with duration 00:01.115
+2026-04-09 06:14:32,984 [INFO] faster_whisper: VAD filter removed 00:01.115 of audio
+2026-04-09 06:14:38,487 [INFO] faster_whisper: Processing audio with duration 00:04.783
+2026-04-09 06:14:38,511 [INFO] faster_whisper: VAD filter removed 00:04.783 of audio
+2026-04-09 06:14:41,231 [INFO] faster_whisper: Processing audio with duration 00:01.254
+2026-04-09 06:14:41,239 [INFO] faster_whisper: VAD filter removed 00:01.254 of audio
+2026-04-09 06:14:43,680 [INFO] faster_whisper: Processing audio with duration 00:01.950
+2026-04-09 06:14:43,691 [INFO] faster_whisper: VAD filter removed 00:01.950 of audio
+2026-04-09 06:14:46,045 [INFO] faster_whisper: Processing audio with duration 00:01.834
+2026-04-09 06:14:46,056 [INFO] faster_whisper: VAD filter removed 00:01.834 of audio
+2026-04-09 06:14:48,108 [INFO] faster_whisper: Processing audio with duration 00:00.859
+2026-04-09 06:14:48,115 [INFO] faster_whisper: VAD filter removed 00:00.859 of audio
+2026-04-09 06:14:49,853 [INFO] faster_whisper: Processing audio with duration 00:01.184
+2026-04-09 06:14:49,862 [INFO] faster_whisper: VAD filter removed 00:01.184 of audio
+2026-04-09 06:14:51,395 [INFO] faster_whisper: Processing audio with duration 00:01.091
+2026-04-09 06:14:51,403 [INFO] faster_whisper: VAD filter removed 00:01.091 of audio
+2026-04-09 06:14:52,781 [INFO] faster_whisper: Processing audio with duration 00:00.929
+2026-04-09 06:14:52,787 [INFO] faster_whisper: VAD filter removed 00:00.929 of audio
+2026-04-09 06:14:56,848 [INFO] faster_whisper: Processing audio with duration 00:02.276
+2026-04-09 06:14:56,863 [INFO] faster_whisper: VAD filter removed 00:01.424 of audio
+2026-04-09 06:15:03,708 [INFO] faster_whisper: Processing audio with duration 00:01.718
+2026-04-09 06:15:03,718 [INFO] faster_whisper: VAD filter removed 00:00.400 of audio
+2026-04-09 06:15:13,060 [INFO] faster_whisper: Processing audio with duration 00:06.293
+2026-04-09 06:15:13,104 [INFO] faster_whisper: VAD filter removed 00:06.293 of audio
+2026-04-09 06:15:16,738 [INFO] faster_whisper: Processing audio with duration 00:03.112
+2026-04-09 06:15:16,754 [INFO] faster_whisper: VAD filter removed 00:03.112 of audio
+2026-04-09 06:15:19,638 [INFO] faster_whisper: Processing audio with duration 00:02.345
+2026-04-09 06:15:19,652 [INFO] faster_whisper: VAD filter removed 00:02.345 of audio
+2026-04-09 06:15:23,496 [INFO] faster_whisper: Processing audio with duration 00:01.695
+2026-04-09 06:15:23,505 [INFO] faster_whisper: VAD filter removed 00:01.695 of audio
+2026-04-09 06:15:25,430 [INFO] faster_whisper: Processing audio with duration 00:01.463
+2026-04-09 06:15:25,438 [INFO] faster_whisper: VAD filter removed 00:01.463 of audio
+2026-04-09 06:15:32,561 [INFO] faster_whisper: Processing audio with duration 00:06.293
+2026-04-09 06:15:32,596 [INFO] faster_whisper: VAD filter removed 00:06.293 of audio
+2026-04-09 06:15:33,702 [INFO] faster_whisper: Processing audio with duration 00:00.697
+2026-04-09 06:15:33,709 [INFO] faster_whisper: VAD filter removed 00:00.697 of audio
+2026-04-09 06:15:35,208 [INFO] faster_whisper: Processing audio with duration 00:01.091
+2026-04-09 06:15:35,217 [INFO] faster_whisper: VAD filter removed 00:01.091 of audio
+2026-04-09 06:15:38,131 [INFO] faster_whisper: Processing audio with duration 00:01.184
+2026-04-09 06:15:38,139 [INFO] faster_whisper: VAD filter removed 00:01.184 of audio
+2026-04-09 06:15:41,401 [INFO] faster_whisper: Processing audio with duration 00:01.091
+2026-04-09 06:15:41,407 [INFO] faster_whisper: VAD filter removed 00:01.091 of audio
+2026-04-09 06:15:42,870 [INFO] faster_whisper: Processing audio with duration 00:00.906
+2026-04-09 06:15:42,879 [INFO] faster_whisper: VAD filter removed 00:00.906 of audio
+2026-04-09 06:15:49,389 [INFO] faster_whisper: Processing audio with duration 00:06.246
+2026-04-09 06:15:49,427 [INFO] faster_whisper: VAD filter removed 00:06.246 of audio
+2026-04-09 06:15:54,427 [INFO] faster_whisper: Processing audio with duration 00:02.043
+2026-04-09 06:15:54,438 [INFO] faster_whisper: VAD filter removed 00:02.043 of audio
+2026-04-09 06:15:56,566 [INFO] faster_whisper: Processing audio with duration 00:00.859
+2026-04-09 06:15:56,572 [INFO] faster_whisper: VAD filter removed 00:00.000 of audio
+2026-04-09 06:16:00,854 [WARNING] jarvis.reasoning: Falling back to rules-based reasoning: HTTPConnectionPool(host='127.0.0.1', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=11434): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+2026-04-09 06:16:02,308 [INFO] faster_whisper: Processing audio with duration 00:01.672
+2026-04-09 06:16:02,319 [INFO] faster_whisper: VAD filter removed 00:01.672 of audio
+2026-04-09 06:16:03,596 [INFO] faster_whisper: Processing audio with duration 00:00.790
+2026-04-09 06:16:03,602 [INFO] faster_whisper: VAD filter removed 00:00.790 of audio
+2026-04-09 06:16:05,681 [INFO] faster_whisper: Processing audio with duration 00:01.625
+2026-04-09 06:16:05,692 [INFO] faster_whisper: VAD filter removed 00:01.625 of audio
+2026-04-09 06:16:08,478 [INFO] faster_whisper: Processing audio with duration 00:01.486
+2026-04-09 06:16:08,488 [INFO] faster_whisper: VAD filter removed 00:01.486 of audio
+2026-04-09 06:16:12,107 [INFO] faster_whisper: Processing audio with duration 00:01.556
+2026-04-09 06:16:12,116 [INFO] faster_whisper: VAD filter removed 00:01.556 of audio
+2026-04-09 06:16:13,329 [INFO] faster_whisper: Processing audio with duration 00:00.673
+2026-04-09 06:16:13,338 [INFO] faster_whisper: VAD filter removed 00:00.673 of audio
+2026-04-09 06:16:15,128 [INFO] faster_whisper: Processing audio with duration 00:01.300
+2026-04-09 06:16:15,137 [INFO] faster_whisper: VAD filter removed 00:01.300 of audio
+2026-04-09 06:16:16,903 [INFO] faster_whisper: Processing audio with duration 00:01.300
+2026-04-09 06:16:16,912 [INFO] faster_whisper: VAD filter removed 00:01.300 of audio
+2026-04-09 06:16:18,229 [INFO] faster_whisper: Processing audio with duration 00:00.813
+2026-04-09 06:16:18,235 [INFO] faster_whisper: VAD filter removed 00:00.813 of audio
+2026-04-09 06:16:19,623 [INFO] faster_whisper: Processing audio with duration 00:00.952
+2026-04-09 06:16:19,630 [INFO] faster_whisper: VAD filter removed 00:00.952 of audio
+2026-04-09 06:16:21,506 [INFO] faster_whisper: Processing audio with duration 00:01.463
+2026-04-09 06:16:21,515 [INFO] faster_whisper: VAD filter removed 00:01.463 of audio
+2026-04-09 06:16:26,556 [INFO] faster_whisper: Processing audio with duration 00:04.528
+2026-04-09 06:16:26,582 [INFO] faster_whisper: VAD filter removed 00:02.208 of audio
+2026-04-09 06:16:30,440 [INFO] faster_whisper: Processing audio with duration 00:00.813
+2026-04-09 06:16:30,447 [INFO] faster_whisper: VAD filter removed 00:00.813 of audio
+2026-04-09 06:16:33,897 [INFO] faster_whisper: Processing audio with duration 00:02.136
+2026-04-09 06:16:33,910 [INFO] faster_whisper: VAD filter removed 00:02.136 of audio
+2026-04-09 06:16:36,921 [INFO] faster_whisper: Processing audio with duration 00:02.438
+2026-04-09 06:16:36,962 [INFO] faster_whisper: VAD filter removed 00:02.438 of audio
+2026-04-09 06:16:39,132 [INFO] faster_whisper: Processing audio with duration 00:01.649
+2026-04-09 06:16:39,157 [INFO] faster_whisper: VAD filter removed 00:01.649 of audio
+2026-04-09 06:16:42,435 [INFO] faster_whisper: Processing audio with duration 00:02.763
+2026-04-09 06:16:42,454 [INFO] faster_whisper: VAD filter removed 00:02.763 of audio
+2026-04-09 06:16:47,093 [INFO] faster_whisper: Processing audio with duration 00:04.087
+2026-04-09 06:16:47,115 [INFO] faster_whisper: VAD filter removed 00:04.087 of audio
+2026-04-09 06:16:50,586 [INFO] faster_whisper: Processing audio with duration 00:02.995
+2026-04-09 06:16:50,603 [INFO] faster_whisper: VAD filter removed 00:02.995 of audio
+2026-04-09 06:16:54,596 [INFO] faster_whisper: Processing audio with duration 00:02.461
+2026-04-09 06:16:54,610 [INFO] faster_whisper: VAD filter removed 00:02.461 of audio
+2026-04-09 06:16:56,853 [INFO] faster_whisper: Processing audio with duration 00:01.207
+2026-04-09 06:16:56,860 [INFO] faster_whisper: VAD filter removed 00:01.207 of audio
+2026-04-09 06:16:58,735 [INFO] faster_whisper: Processing audio with duration 00:01.161
+2026-04-09 06:16:58,744 [INFO] faster_whisper: VAD filter removed 00:01.161 of audio
+2026-04-09 06:17:01,318 [INFO] faster_whisper: Processing audio with duration 00:01.927
+2026-04-09 06:17:01,331 [INFO] faster_whisper: VAD filter removed 00:01.927 of audio
+2026-04-09 06:17:03,560 [INFO] faster_whisper: Processing audio with duration 00:01.718
+2026-04-09 06:17:03,571 [INFO] faster_whisper: VAD filter removed 00:01.718 of audio
+2026-04-09 06:17:05,638 [INFO] faster_whisper: Processing audio with duration 00:01.649
+2026-04-09 06:17:05,647 [INFO] faster_whisper: VAD filter removed 00:01.649 of audio
+2026-04-09 06:17:07,424 [INFO] faster_whisper: Processing audio with duration 00:01.370
+2026-04-09 06:17:07,433 [INFO] faster_whisper: VAD filter removed 00:01.370 of audio
+2026-04-09 06:17:09,309 [INFO] faster_whisper: Processing audio with duration 00:01.347
+2026-04-09 06:17:09,319 [INFO] faster_whisper: VAD filter removed 00:01.347 of audio
+2026-04-09 06:17:12,261 [INFO] faster_whisper: Processing audio with duration 00:01.672
+2026-04-09 06:17:12,270 [INFO] faster_whisper: VAD filter removed 00:01.672 of audio
+2026-04-09 06:17:14,290 [INFO] faster_whisper: Processing audio with duration 00:01.231
+2026-04-09 06:17:14,297 [INFO] faster_whisper: VAD filter removed 00:01.231 of audio
+2026-04-09 06:17:16,931 [INFO] faster_whisper: Processing audio with duration 00:02.113
+2026-04-09 06:17:16,944 [INFO] faster_whisper: VAD filter removed 00:02.113 of audio
+2026-04-09 06:20:37,426 [INFO] jarvis.db: [OK] MongoDB connected -> mongodb://localhost:27017 / jarvis_db
+2026-04-09 06:20:41,854 [INFO] jarvis.audio: Audio pipeline ready. model=tiny.en vad=False retry_without_vad=True mic_index=12
+2026-04-09 06:21:12,700 [INFO] jarvis.audio: Opening microphone: 12: Microphone (Realtek HD Audio Mic input)
+2026-04-09 06:21:12,822 [ERROR] jarvis.audio: Microphone startup failed: 'NoneType' object has no attribute 'close'
+Traceback (most recent call last):
+  File "C:\Users\viven\Desktop\coding\jarvis-face-id temp\modules\audio_engine.py", line 70, in _listening_worker
+    self.recognizer.adjust_for_ambient_noise(source, duration=0.4)
+  File "C:\Users\viven\AppData\Local\Programs\Python\Python311\Lib\site-packages\speech_recognition\__init__.py", line 377, in adjust_for_ambient_noise
+    assert source.stream is not None, "Audio source must be entered before adjusting, see documentation for ``AudioSource``; are you using ``source`` outside of a ``with`` statement?"  # type: ignore[attr-defined]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Audio source must be entered before adjusting, see documentation for ``AudioSource``; are you using ``source`` outside of a ``with`` statement?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\viven\Desktop\coding\jarvis-face-id temp\modules\audio_engine.py", line 69, in _listening_worker
+    with sr.Microphone(device_index=config.APP.microphone_device_index) as source:
+  File "C:\Users\viven\AppData\Local\Programs\Python\Python311\Lib\site-packages\speech_recognition\__init__.py", line 183, in __exit__
+    self.stream.close()
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'close'
+2026-04-09 06:21:45,351 [WARNING] jarvis.db: Failed to write event to MongoDB: E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }', 'keyPattern': {'label': 1}, 'keyValue': {'label': 'tv'}}
+2026-04-09 06:21:45,828 [WARNING] jarvis.db: Failed to write event to MongoDB: E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }', 'keyPattern': {'label': 1}, 'keyValue': {'label': 'tv'}}
+2026-04-09 06:21:47,572 [WARNING] jarvis.db: Failed to write event to MongoDB: E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }', 'keyPattern': {'label': 1}, 'keyValue': {'label': 'tv'}}
+2026-04-09 06:21:48,857 [WARNING] jarvis.db: Failed to write event to MongoDB: E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }', 'keyPattern': {'label': 1}, 'keyValue': {'label': 'tv'}}
+2026-04-09 06:21:50,578 [WARNING] jarvis.db: Failed to write event to MongoDB: E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }', 'keyPattern': {'label': 1}, 'keyValue': {'label': 'tv'}}
+2026-04-09 06:21:52,384 [WARNING] jarvis.db: Failed to write event to MongoDB: E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }', 'keyPattern': {'label': 1}, 'keyValue': {'label': 'tv'}}
+2026-04-09 06:21:53,723 [WARNING] jarvis.db: Failed to write event to MongoDB: E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }', 'keyPattern': {'label': 1}, 'keyValue': {'label': 'tv'}}
+2026-04-09 06:21:54,302 [WARNING] jarvis.db: Failed to write event to MongoDB: E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }', 'keyPattern': {'label': 1}, 'keyValue': {'label': 'tv'}}
+2026-04-09 06:21:54,824 [WARNING] jarvis.db: Failed to write event to MongoDB: E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }', 'keyPattern': {'label': 1}, 'keyValue': {'label': 'tv'}}
+2026-04-09 06:21:55,463 [WARNING] jarvis.db: Failed to write event to MongoDB: E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }', 'keyPattern': {'label': 1}, 'keyValue': {'label': 'tv'}}
+2026-04-09 06:21:56,699 [WARNING] jarvis.db: Failed to write event to MongoDB: E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }', 'keyPattern': {'label': 1}, 'keyValue': {'label': 'tv'}}
+2026-04-09 06:21:57,827 [WARNING] jarvis.db: Failed to write event to MongoDB: E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }', 'keyPattern': {'label': 1}, 'keyValue': {'label': 'tv'}}
+2026-04-09 06:21:59,080 [WARNING] jarvis.db: Failed to write event to MongoDB: E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }', 'keyPattern': {'label': 1}, 'keyValue': {'label': 'tv'}}
+2026-04-09 06:22:06,129 [WARNING] jarvis.db: Failed to write event to MongoDB: E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }', 'keyPattern': {'label': 1}, 'keyValue': {'label': 'tv'}}
+2026-04-09 06:22:09,143 [WARNING] jarvis.db: Failed to write event to MongoDB: E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }', 'keyPattern': {'label': 1}, 'keyValue': {'label': 'tv'}}
+2026-04-09 06:22:16,312 [WARNING] jarvis.db: Failed to write event to MongoDB: E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }', 'keyPattern': {'label': 1}, 'keyValue': {'label': 'tv'}}
+2026-04-09 06:22:17,199 [WARNING] jarvis.db: Failed to write event to MongoDB: E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }', 'keyPattern': {'label': 1}, 'keyValue': {'label': 'tv'}}
+2026-04-09 06:22:17,973 [WARNING] jarvis.db: Failed to write event to MongoDB: E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }', 'keyPattern': {'label': 1}, 'keyValue': {'label': 'tv'}}
+2026-04-09 06:22:19,140 [WARNING] jarvis.db: Failed to write event to MongoDB: E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }', 'keyPattern': {'label': 1}, 'keyValue': {'label': 'tv'}}
+2026-04-09 06:22:20,291 [WARNING] jarvis.db: Failed to write event to MongoDB: E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }', 'keyPattern': {'label': 1}, 'keyValue': {'label': 'tv'}}
+2026-04-09 06:22:20,661 [WARNING] jarvis.db: Failed to write event to MongoDB: E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }', 'keyPattern': {'label': 1}, 'keyValue': {'label': 'tv'}}
+2026-04-09 06:22:21,058 [WARNING] jarvis.db: Failed to write event to MongoDB: E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }', 'keyPattern': {'label': 1}, 'keyValue': {'label': 'tv'}}
+2026-04-09 06:22:22,265 [WARNING] jarvis.db: Failed to write event to MongoDB: E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }', 'keyPattern': {'label': 1}, 'keyValue': {'label': 'tv'}}
+2026-04-09 06:22:28,938 [WARNING] jarvis.db: Failed to write event to MongoDB: E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }', 'keyPattern': {'label': 1}, 'keyValue': {'label': 'tv'}}
+2026-04-09 06:22:29,604 [WARNING] jarvis.db: Failed to write event to MongoDB: E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }', 'keyPattern': {'label': 1}, 'keyValue': {'label': 'tv'}}
+2026-04-09 06:22:30,114 [WARNING] jarvis.db: Failed to write event to MongoDB: E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }', 'keyPattern': {'label': 1}, 'keyValue': {'label': 'tv'}}
+2026-04-09 06:22:32,949 [WARNING] jarvis.db: Failed to write event to MongoDB: E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }', 'keyPattern': {'label': 1}, 'keyValue': {'label': 'tv'}}
+2026-04-09 06:22:34,944 [WARNING] jarvis.db: Failed to write event to MongoDB: E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }', 'keyPattern': {'label': 1}, 'keyValue': {'label': 'tv'}}
+2026-04-09 06:22:37,675 [WARNING] jarvis.db: Failed to write event to MongoDB: E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }', 'keyPattern': {'label': 1}, 'keyValue': {'label': 'tv'}}
+2026-04-09 06:22:42,960 [WARNING] jarvis.db: Failed to write event to MongoDB: E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }', 'keyPattern': {'label': 1}, 'keyValue': {'label': 'tv'}}
+2026-04-09 06:22:46,092 [WARNING] jarvis.db: Failed to write event to MongoDB: E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }', 'keyPattern': {'label': 1}, 'keyValue': {'label': 'tv'}}
+2026-04-09 06:22:46,432 [WARNING] jarvis.db: Failed to write event to MongoDB: E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }', 'keyPattern': {'label': 1}, 'keyValue': {'label': 'tv'}}
+2026-04-09 06:22:46,847 [WARNING] jarvis.db: Failed to write event to MongoDB: E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }', 'keyPattern': {'label': 1}, 'keyValue': {'label': 'tv'}}
+2026-04-09 06:22:50,431 [WARNING] jarvis.db: Failed to write event to MongoDB: E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }', 'keyPattern': {'label': 1}, 'keyValue': {'label': 'tv'}}
+2026-04-09 06:22:52,399 [WARNING] jarvis.db: Failed to write event to MongoDB: E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }', 'keyPattern': {'label': 1}, 'keyValue': {'label': 'tv'}}
+2026-04-09 06:22:53,343 [WARNING] jarvis.db: Failed to write event to MongoDB: E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }', 'keyPattern': {'label': 1}, 'keyValue': {'label': 'tv'}}
+2026-04-09 06:22:56,680 [WARNING] jarvis.db: Failed to write event to MongoDB: E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }', 'keyPattern': {'label': 1}, 'keyValue': {'label': 'tv'}}
+2026-04-09 06:23:06,121 [WARNING] jarvis.db: Failed to write event to MongoDB: E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "bottle" }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "bottle" }', 'keyPattern': {'label': 1}, 'keyValue': {'label': 'bottle'}}
+2026-04-09 06:23:07,571 [WARNING] jarvis.db: Failed to write event to MongoDB: E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }', 'keyPattern': {'label': 1}, 'keyValue': {'label': 'tv'}}
+2026-04-09 06:23:11,218 [WARNING] jarvis.db: Failed to write event to MongoDB: E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }', 'keyPattern': {'label': 1}, 'keyValue': {'label': 'tv'}}
+2026-04-09 06:23:18,583 [WARNING] jarvis.db: Failed to write event to MongoDB: E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }', 'keyPattern': {'label': 1}, 'keyValue': {'label': 'tv'}}
+2026-04-09 06:23:20,419 [WARNING] jarvis.db: Failed to write event to MongoDB: E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }', 'keyPattern': {'label': 1}, 'keyValue': {'label': 'tv'}}
+2026-04-09 06:23:30,563 [WARNING] jarvis.db: Failed to write event to MongoDB: E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "tv" }', 'keyPattern': {'label': 1}, 'keyValue': {'label': 'tv'}}
+2026-04-09 06:23:49,092 [WARNING] jarvis.db: Failed to write event to MongoDB: E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "wine glass" }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "wine glass" }', 'keyPattern': {'label': 1}, 'keyValue': {'label': 'wine glass'}}
+2026-04-09 06:23:52,120 [WARNING] jarvis.db: Failed to write event to MongoDB: E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "wine glass" }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: jarvis_db.objects index: label_1 dup key: { label: "wine glass" }', 'keyPattern': {'label': 1}, 'keyValue': {'label': 'wine glass'}}
+2026-04-09 06:25:52,260 [INFO] jarvis.db: [OK] MongoDB connected -> mongodb://localhost:27017 / jarvis_db
+2026-04-09 06:25:57,481 [INFO] jarvis.audio: Audio pipeline ready. model=tiny.en vad=False retry_without_vad=True mic_index=12
+2026-04-09 06:26:29,131 [INFO] jarvis.audio: Opening microphone: 12: Microphone (Realtek HD Audio Mic input)
+2026-04-09 06:26:29,238 [WARNING] jarvis.audio: Unable to open microphone 12: Microphone (Realtek HD Audio Mic input): microphone stream was not opened
+2026-04-09 06:26:29,301 [INFO] jarvis.audio: Opening microphone: default microphone
+2026-04-09 06:26:30,106 [INFO] jarvis.audio: Microphone calibrated. energy_threshold=95.19612448423051
+2026-04-09 06:26:32,688 [INFO] jarvis.audio: Captured audio clip rms=189
+2026-04-09 06:26:33,220 [INFO] faster_whisper: Processing audio with duration 00:02.345
+2026-04-09 06:26:35,256 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 06:26:37,040 [INFO] jarvis.audio: Captured audio clip rms=252
+2026-04-09 06:26:37,344 [INFO] faster_whisper: Processing audio with duration 00:01.672
+2026-04-09 06:26:39,322 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 06:26:42,597 [INFO] jarvis.audio: Captured audio clip rms=230
+2026-04-09 06:26:43,086 [INFO] faster_whisper: Processing audio with duration 00:02.647
+2026-04-09 06:26:45,189 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 06:26:46,387 [INFO] jarvis.audio: Captured audio clip rms=224
+2026-04-09 06:26:46,727 [INFO] faster_whisper: Processing audio with duration 00:01.068
+2026-04-09 06:26:48,694 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 06:26:51,771 [INFO] jarvis.audio: Captured audio clip rms=249
+2026-04-09 06:26:52,061 [INFO] faster_whisper: Processing audio with duration 00:02.159
+2026-04-09 06:26:54,214 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 06:26:55,259 [INFO] jarvis.audio: Captured audio clip rms=222
+2026-04-09 06:26:55,540 [INFO] faster_whisper: Processing audio with duration 00:00.929
+2026-04-09 06:26:57,585 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 06:26:59,597 [INFO] jarvis.audio: Captured audio clip rms=240
+2026-04-09 06:26:59,895 [INFO] faster_whisper: Processing audio with duration 00:01.742
+2026-04-09 06:27:01,863 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 06:27:04,671 [INFO] jarvis.audio: Captured audio clip rms=219
+2026-04-09 06:27:04,975 [INFO] faster_whisper: Processing audio with duration 00:02.508
+2026-04-09 06:27:07,100 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 06:27:11,055 [INFO] jarvis.audio: Captured audio clip rms=215
+2026-04-09 06:27:11,443 [INFO] faster_whisper: Processing audio with duration 00:02.833
+2026-04-09 06:27:13,975 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 06:27:18,669 [INFO] jarvis.audio: Captured audio clip rms=246
+2026-04-09 06:27:19,040 [INFO] faster_whisper: Processing audio with duration 00:04.551
+2026-04-09 06:27:21,134 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 06:27:26,941 [INFO] jarvis.audio: Captured audio clip rms=218
+2026-04-09 06:27:27,258 [INFO] faster_whisper: Processing audio with duration 00:05.689
+2026-04-09 06:27:29,343 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 06:27:30,762 [INFO] jarvis.audio: Captured audio clip rms=142
+2026-04-09 06:27:30,762 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 180.0
+2026-04-09 06:27:31,731 [INFO] jarvis.audio: Captured audio clip rms=374
+2026-04-09 06:27:32,012 [INFO] faster_whisper: Processing audio with duration 00:00.743
+2026-04-09 06:27:34,104 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 06:27:37,238 [INFO] jarvis.audio: Captured audio clip rms=192
+2026-04-09 06:27:37,603 [INFO] faster_whisper: Processing audio with duration 00:02.577
+2026-04-09 06:27:39,606 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 06:27:41,790 [INFO] jarvis.audio: Captured audio clip rms=83
+2026-04-09 06:27:41,952 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 180.0
+2026-04-09 06:27:44,088 [INFO] jarvis.audio: Captured audio clip rms=163
+2026-04-09 06:27:44,088 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 180.0
+2026-04-09 06:27:46,459 [INFO] jarvis.audio: Captured audio clip rms=181
+2026-04-09 06:27:46,765 [INFO] faster_whisper: Processing audio with duration 00:01.393
+2026-04-09 06:27:49,085 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 06:27:51,110 [INFO] jarvis.audio: Captured audio clip rms=163
+2026-04-09 06:27:51,110 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 180.0
+2026-04-09 06:27:51,701 [INFO] jarvis.db: MongoDB connection closed.
+2026-04-09 06:54:38,782 [INFO] jarvis.db: [OK] MongoDB connected -> mongodb://localhost:27017 / jarvis_db
+2026-04-09 06:54:43,675 [INFO] jarvis.audio: Audio pipeline ready. model=tiny.en vad=False retry_without_vad=True mic_index=12
+2026-04-09 06:55:41,317 [INFO] jarvis.db: [OK] MongoDB connected -> mongodb://localhost:27017 / jarvis_db
+2026-04-09 06:55:46,274 [INFO] jarvis.audio: Audio pipeline ready. model=tiny.en vad=False retry_without_vad=True mic_index=12
+2026-04-09 06:56:17,083 [INFO] jarvis.audio: Opening microphone: 12: Microphone (Realtek HD Audio Mic input)
+2026-04-09 06:56:17,193 [WARNING] jarvis.audio: Unable to open microphone 12: Microphone (Realtek HD Audio Mic input): microphone stream was not opened
+2026-04-09 06:56:17,250 [INFO] jarvis.audio: Opening microphone: default microphone
+2026-04-09 06:56:18,077 [INFO] jarvis.audio: Microphone calibrated. energy_threshold=109.00247423065372
+2026-04-09 06:56:20,079 [INFO] jarvis.audio: Captured audio clip rms=359
+2026-04-09 06:56:20,516 [INFO] faster_whisper: Processing audio with duration 00:01.765
+2026-04-09 06:56:23,322 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 06:56:25,345 [INFO] jarvis.audio: Captured audio clip rms=338
+2026-04-09 06:56:25,674 [INFO] faster_whisper: Processing audio with duration 00:01.231
+2026-04-09 06:56:28,291 [INFO] jarvis.audio: Heard: Thank you.
+2026-04-09 06:56:31,199 [INFO] jarvis.audio: Captured audio clip rms=273
+2026-04-09 06:56:31,511 [INFO] faster_whisper: Processing audio with duration 00:02.276
+2026-04-09 06:56:33,785 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 06:56:35,783 [INFO] jarvis.audio: Captured audio clip rms=385
+2026-04-09 06:56:36,082 [INFO] faster_whisper: Processing audio with duration 00:01.765
+2026-04-09 06:56:38,321 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 06:56:39,858 [INFO] jarvis.audio: Captured audio clip rms=370
+2026-04-09 06:56:40,165 [INFO] faster_whisper: Processing audio with duration 00:01.416
+2026-04-09 06:56:42,233 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 06:56:45,032 [INFO] jarvis.audio: Captured audio clip rms=214
+2026-04-09 06:56:45,484 [INFO] faster_whisper: Processing audio with duration 00:01.556
+2026-04-09 06:56:47,561 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 06:56:49,607 [INFO] jarvis.audio: Captured audio clip rms=305
+2026-04-09 06:56:49,936 [INFO] faster_whisper: Processing audio with duration 00:01.927
+2026-04-09 06:56:52,167 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 06:56:54,374 [INFO] jarvis.audio: Captured audio clip rms=203
+2026-04-09 06:56:54,695 [INFO] faster_whisper: Processing audio with duration 00:01.091
+2026-04-09 06:56:56,811 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 06:56:59,508 [INFO] jarvis.audio: Captured audio clip rms=298
+2026-04-09 06:56:59,819 [INFO] faster_whisper: Processing audio with duration 00:02.577
+2026-04-09 06:57:02,085 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 06:57:04,698 [INFO] jarvis.audio: Captured audio clip rms=272
+2026-04-09 06:57:05,038 [INFO] faster_whisper: Processing audio with duration 00:01.486
+2026-04-09 06:57:07,013 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 06:57:09,219 [INFO] jarvis.audio: Captured audio clip rms=200
+2026-04-09 06:57:09,567 [INFO] faster_whisper: Processing audio with duration 00:01.927
+2026-04-09 06:57:11,804 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 06:57:13,219 [INFO] jarvis.audio: Captured audio clip rms=309
+2026-04-09 06:57:13,513 [INFO] faster_whisper: Processing audio with duration 00:01.300
+2026-04-09 06:57:15,603 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 06:57:17,876 [INFO] jarvis.audio: Captured audio clip rms=299
+2026-04-09 06:57:18,184 [INFO] faster_whisper: Processing audio with duration 00:01.161
+2026-04-09 06:57:20,269 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 06:57:22,193 [INFO] jarvis.audio: Captured audio clip rms=173
+2026-04-09 06:57:22,212 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 180.0
+2026-04-09 06:57:23,173 [INFO] jarvis.audio: Captured audio clip rms=133
+2026-04-09 06:57:23,174 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 180.0
+2026-04-09 06:57:24,703 [INFO] jarvis.audio: Captured audio clip rms=153
+2026-04-09 06:57:24,704 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 180.0
+2026-04-09 06:57:26,074 [INFO] jarvis.audio: Captured audio clip rms=170
+2026-04-09 06:57:26,075 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 180.0
+2026-04-09 06:57:27,185 [INFO] jarvis.audio: Captured audio clip rms=167
+2026-04-09 06:57:27,186 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 180.0
+2026-04-09 06:57:28,864 [INFO] jarvis.audio: Captured audio clip rms=250
+2026-04-09 06:57:29,161 [INFO] faster_whisper: Processing audio with duration 00:01.440
+2026-04-09 06:57:31,270 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 06:57:33,131 [INFO] jarvis.audio: Captured audio clip rms=333
+2026-04-09 06:57:33,458 [INFO] faster_whisper: Processing audio with duration 00:01.742
+2026-04-09 06:57:35,632 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 06:57:40,839 [INFO] jarvis.audio: Captured audio clip rms=228
+2026-04-09 06:57:41,177 [INFO] faster_whisper: Processing audio with duration 00:02.833
+2026-04-09 06:57:43,649 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 06:57:47,759 [INFO] jarvis.audio: Captured audio clip rms=232
+2026-04-09 06:57:48,288 [INFO] faster_whisper: Processing audio with duration 00:03.785
+2026-04-09 06:57:50,610 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 06:57:51,567 [INFO] jarvis.audio: Captured audio clip rms=205
+2026-04-09 06:57:51,994 [INFO] faster_whisper: Processing audio with duration 00:00.836
+2026-04-09 06:57:54,489 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 06:57:57,254 [INFO] jarvis.audio: Captured audio clip rms=195
+2026-04-09 06:57:57,660 [INFO] faster_whisper: Processing audio with duration 00:01.115
+2026-04-09 06:58:00,227 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 06:58:03,382 [INFO] jarvis.audio: Captured audio clip rms=259
+2026-04-09 06:58:03,717 [INFO] faster_whisper: Processing audio with duration 00:01.231
+2026-04-09 06:58:05,961 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 06:58:10,833 [INFO] jarvis.audio: Captured audio clip rms=246
+2026-04-09 06:58:11,211 [INFO] faster_whisper: Processing audio with duration 00:03.646
+2026-04-09 06:58:13,653 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 06:58:15,304 [INFO] jarvis.audio: Captured audio clip rms=162
+2026-04-09 06:58:15,305 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 180.0
+2026-04-09 06:58:19,395 [INFO] jarvis.audio: Captured audio clip rms=219
+2026-04-09 06:58:19,772 [INFO] faster_whisper: Processing audio with duration 00:03.854
+2026-04-09 06:58:21,882 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 06:58:24,760 [INFO] jarvis.audio: Captured audio clip rms=300
+2026-04-09 06:58:25,209 [INFO] faster_whisper: Processing audio with duration 00:02.763
+2026-04-09 06:58:27,856 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 06:58:29,161 [INFO] jarvis.audio: Captured audio clip rms=275
+2026-04-09 06:58:29,469 [INFO] faster_whisper: Processing audio with duration 00:01.184
+2026-04-09 06:58:31,754 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 06:58:34,432 [INFO] jarvis.audio: Captured audio clip rms=250
+2026-04-09 06:58:34,887 [INFO] faster_whisper: Processing audio with duration 00:02.554
+2026-04-09 06:58:37,331 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 06:58:40,332 [INFO] jarvis.audio: Captured audio clip rms=319
+2026-04-09 06:58:40,753 [INFO] faster_whisper: Processing audio with duration 00:02.740
+2026-04-09 06:58:43,124 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 06:58:47,561 [INFO] jarvis.audio: Captured audio clip rms=279
+2026-04-09 06:58:47,891 [INFO] faster_whisper: Processing audio with duration 00:03.646
+2026-04-09 06:58:50,513 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 06:58:53,489 [INFO] jarvis.audio: Captured audio clip rms=330
+2026-04-09 06:58:53,835 [INFO] faster_whisper: Processing audio with duration 00:02.206
+2026-04-09 06:58:56,303 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 06:58:59,650 [INFO] jarvis.audio: Captured audio clip rms=161
+2026-04-09 06:58:59,666 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 180.0
+2026-04-09 06:59:02,179 [INFO] jarvis.audio: Captured audio clip rms=190
+2026-04-09 06:59:02,536 [INFO] faster_whisper: Processing audio with duration 00:02.299
+2026-04-09 06:59:05,128 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 06:59:07,286 [INFO] jarvis.audio: Captured audio clip rms=239
+2026-04-09 06:59:07,656 [INFO] faster_whisper: Processing audio with duration 00:02.043
+2026-04-09 06:59:09,834 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 06:59:12,202 [INFO] jarvis.audio: Captured audio clip rms=260
+2026-04-09 06:59:12,554 [INFO] faster_whisper: Processing audio with duration 00:01.649
+2026-04-09 06:59:15,087 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 06:59:16,662 [INFO] jarvis.audio: Captured audio clip rms=306
+2026-04-09 06:59:16,993 [INFO] faster_whisper: Processing audio with duration 00:01.463
+2026-04-09 06:59:19,240 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 06:59:21,517 [INFO] jarvis.audio: Captured audio clip rms=288
+2026-04-09 06:59:21,902 [INFO] faster_whisper: Processing audio with duration 00:02.159
+2026-04-09 06:59:24,182 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 06:59:26,400 [INFO] jarvis.audio: Captured audio clip rms=326
+2026-04-09 06:59:26,727 [INFO] faster_whisper: Processing audio with duration 00:02.090
+2026-04-09 06:59:29,270 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 06:59:33,846 [INFO] jarvis.audio: Captured audio clip rms=253
+2026-04-09 06:59:34,304 [INFO] faster_whisper: Processing audio with duration 00:04.458
+2026-04-09 06:59:36,693 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 06:59:38,633 [INFO] jarvis.audio: Captured audio clip rms=210
+2026-04-09 06:59:38,932 [INFO] faster_whisper: Processing audio with duration 00:00.813
+2026-04-09 06:59:41,146 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 06:59:42,652 [INFO] jarvis.audio: Captured audio clip rms=318
+2026-04-09 06:59:42,955 [INFO] faster_whisper: Processing audio with duration 00:01.393
+2026-04-09 06:59:45,125 [INFO] jarvis.audio: Heard: Thank you.
+2026-04-09 06:59:46,095 [INFO] jarvis.audio: Captured audio clip rms=287
+2026-04-09 06:59:46,483 [INFO] faster_whisper: Processing audio with duration 00:00.836
+2026-04-09 06:59:48,677 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 06:59:51,113 [INFO] jarvis.audio: Captured audio clip rms=213
+2026-04-09 06:59:51,473 [INFO] faster_whisper: Processing audio with duration 00:01.718
+2026-04-09 06:59:53,710 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 06:59:56,356 [INFO] jarvis.audio: Captured audio clip rms=315
+2026-04-09 06:59:56,823 [INFO] faster_whisper: Processing audio with duration 00:02.485
+2026-04-09 06:59:59,091 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:00:00,805 [INFO] jarvis.audio: Captured audio clip rms=258
+2026-04-09 07:00:01,229 [INFO] faster_whisper: Processing audio with duration 00:00.952
+2026-04-09 07:00:03,339 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:00:04,783 [INFO] jarvis.audio: Captured audio clip rms=212
+2026-04-09 07:00:05,212 [INFO] faster_whisper: Processing audio with duration 00:01.324
+2026-04-09 07:00:07,712 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:00:10,015 [INFO] jarvis.audio: Captured audio clip rms=233
+2026-04-09 07:00:10,484 [INFO] faster_whisper: Processing audio with duration 00:02.183
+2026-04-09 07:00:12,875 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:00:15,271 [INFO] jarvis.audio: Captured audio clip rms=200
+2026-04-09 07:00:15,627 [INFO] faster_whisper: Processing audio with duration 00:01.277
+2026-04-09 07:00:18,091 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:00:20,744 [INFO] jarvis.audio: Captured audio clip rms=189
+2026-04-09 07:00:21,076 [INFO] faster_whisper: Processing audio with duration 00:02.392
+2026-04-09 07:00:23,473 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:00:25,839 [INFO] jarvis.audio: Captured audio clip rms=279
+2026-04-09 07:00:26,319 [INFO] faster_whisper: Processing audio with duration 00:02.252
+2026-04-09 07:00:29,304 [INFO] jarvis.audio: Heard: But I think this is a solid thing.
+2026-04-09 07:00:30,569 [INFO] jarvis.audio: Captured audio clip rms=334
+2026-04-09 07:00:31,150 [INFO] faster_whisper: Processing audio with duration 00:01.138
+2026-04-09 07:00:33,958 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:00:34,929 [INFO] jarvis.audio: Captured audio clip rms=358
+2026-04-09 07:00:35,509 [INFO] faster_whisper: Processing audio with duration 00:00.813
+2026-04-09 07:00:38,645 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:00:40,270 [INFO] jarvis.audio: Captured audio clip rms=286
+2026-04-09 07:00:40,665 [INFO] faster_whisper: Processing audio with duration 00:01.509
+2026-04-09 07:00:43,145 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:00:44,290 [INFO] jarvis.audio: Captured audio clip rms=310
+2026-04-09 07:00:44,802 [INFO] faster_whisper: Processing audio with duration 00:01.022
+2026-04-09 07:00:47,247 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:00:48,537 [INFO] jarvis.audio: Captured audio clip rms=233
+2026-04-09 07:00:48,849 [INFO] faster_whisper: Processing audio with duration 00:01.138
+2026-04-09 07:01:02,813 [INFO] jarvis.audio: Heard: Thank you.
+2026-04-09 07:01:03,789 [INFO] jarvis.audio: Captured audio clip rms=332
+2026-04-09 07:01:04,147 [INFO] faster_whisper: Processing audio with duration 00:00.859
+2026-04-09 07:01:06,729 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:01:11,753 [INFO] jarvis.audio: Captured audio clip rms=307
+2026-04-09 07:01:12,118 [INFO] faster_whisper: Processing audio with duration 00:04.876
+2026-04-09 07:01:31,448 [INFO] jarvis.db: [OK] MongoDB connected -> mongodb://localhost:27017 / jarvis_db
+2026-04-09 07:01:35,408 [INFO] jarvis.audio: Audio pipeline ready. model=tiny.en vad=False retry_without_vad=True mic_index=12
+2026-04-09 07:02:04,357 [INFO] jarvis.audio: Opening microphone: 12: Microphone (Realtek HD Audio Mic input)
+2026-04-09 07:02:04,527 [WARNING] jarvis.audio: Unable to open microphone 12: Microphone (Realtek HD Audio Mic input): microphone stream was not opened
+2026-04-09 07:02:04,596 [INFO] jarvis.audio: Opening microphone: default microphone
+2026-04-09 07:02:05,301 [INFO] jarvis.audio: Microphone calibrated. energy_threshold=100.74011141453978
+2026-04-09 07:02:11,344 [INFO] jarvis.audio: Captured audio clip rms=284
+2026-04-09 07:02:11,844 [INFO] faster_whisper: Processing audio with duration 00:05.851
+2026-04-09 07:02:14,235 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:02:17,686 [INFO] jarvis.audio: Captured audio clip rms=183
+2026-04-09 07:02:18,004 [INFO] faster_whisper: Processing audio with duration 00:02.717
+2026-04-09 07:02:20,273 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:02:25,570 [INFO] jarvis.audio: Captured audio clip rms=219
+2026-04-09 07:02:25,905 [INFO] faster_whisper: Processing audio with duration 00:02.485
+2026-04-09 07:02:28,157 [INFO] jarvis.audio: Heard: Can you hear me?
+2026-04-09 07:02:32,383 [INFO] jarvis.audio: Captured audio clip rms=289
+2026-04-09 07:02:32,720 [INFO] faster_whisper: Processing audio with duration 00:04.110
+2026-04-09 07:02:35,044 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:02:37,407 [INFO] jarvis.audio: Captured audio clip rms=283
+2026-04-09 07:02:37,740 [INFO] faster_whisper: Processing audio with duration 00:02.252
+2026-04-09 07:02:39,998 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:02:41,572 [INFO] jarvis.audio: Captured audio clip rms=265
+2026-04-09 07:02:41,869 [INFO] faster_whisper: Processing audio with duration 00:01.463
+2026-04-09 07:02:44,083 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:02:45,567 [INFO] jarvis.audio: Captured audio clip rms=313
+2026-04-09 07:02:45,864 [INFO] faster_whisper: Processing audio with duration 00:01.370
+2026-04-09 07:02:48,198 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:02:52,353 [INFO] jarvis.audio: Captured audio clip rms=313
+2026-04-09 07:02:52,809 [INFO] faster_whisper: Processing audio with duration 00:03.390
+2026-04-09 07:02:54,940 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:02:57,004 [INFO] jarvis.audio: Captured audio clip rms=319
+2026-04-09 07:02:57,327 [INFO] faster_whisper: Processing audio with duration 00:01.950
+2026-04-09 07:02:59,682 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:03:00,890 [INFO] jarvis.audio: Captured audio clip rms=302
+2026-04-09 07:03:01,202 [INFO] faster_whisper: Processing audio with duration 00:01.068
+2026-04-09 07:03:03,408 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:03:05,664 [INFO] jarvis.audio: Captured audio clip rms=388
+2026-04-09 07:03:05,994 [INFO] faster_whisper: Processing audio with duration 00:02.136
+2026-04-09 07:03:08,511 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:03:12,206 [INFO] jarvis.audio: Captured audio clip rms=405
+2026-04-09 07:03:12,519 [INFO] faster_whisper: Processing audio with duration 00:03.576
+2026-04-09 07:03:14,665 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:03:18,017 [INFO] jarvis.audio: Captured audio clip rms=407
+2026-04-09 07:03:18,387 [INFO] faster_whisper: Processing audio with duration 00:03.228
+2026-04-09 07:03:20,349 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:03:24,184 [INFO] jarvis.audio: Captured audio clip rms=397
+2026-04-09 07:03:24,537 [INFO] faster_whisper: Processing audio with duration 00:03.622
+2026-04-09 07:03:26,767 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:03:30,744 [INFO] jarvis.audio: Captured audio clip rms=270
+2026-04-09 07:03:31,086 [INFO] faster_whisper: Processing audio with duration 00:02.624
+2026-04-09 07:03:33,347 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:03:34,951 [INFO] jarvis.audio: Captured audio clip rms=258
+2026-04-09 07:03:35,304 [INFO] faster_whisper: Processing audio with duration 00:01.486
+2026-04-09 07:03:37,437 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:03:38,790 [INFO] jarvis.audio: Captured audio clip rms=317
+2026-04-09 07:03:39,148 [INFO] faster_whisper: Processing audio with duration 00:01.231
+2026-04-09 07:03:41,378 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:03:43,284 [INFO] jarvis.audio: Captured audio clip rms=191
+2026-04-09 07:03:43,586 [INFO] faster_whisper: Processing audio with duration 00:01.486
+2026-04-09 07:03:45,796 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:03:49,901 [INFO] jarvis.audio: Captured audio clip rms=207
+2026-04-09 07:03:50,253 [INFO] faster_whisper: Processing audio with duration 00:03.994
+2026-04-09 07:03:52,528 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:03:56,614 [INFO] jarvis.audio: Captured audio clip rms=366
+2026-04-09 07:03:56,937 [INFO] faster_whisper: Processing audio with duration 00:03.971
+2026-04-09 07:03:59,229 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:04:00,962 [INFO] jarvis.audio: Captured audio clip rms=285
+2026-04-09 07:04:01,254 [INFO] faster_whisper: Processing audio with duration 00:00.743
+2026-04-09 07:04:03,911 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:04:08,327 [INFO] jarvis.audio: Captured audio clip rms=261
+2026-04-09 07:04:08,635 [INFO] faster_whisper: Processing audio with duration 00:02.601
+2026-04-09 07:04:10,797 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:04:14,602 [INFO] jarvis.audio: Captured audio clip rms=304
+2026-04-09 07:04:15,011 [INFO] faster_whisper: Processing audio with duration 00:02.694
+2026-04-09 07:04:53,546 [INFO] jarvis.db: [OK] MongoDB connected -> mongodb://localhost:27017 / jarvis_db
+2026-04-09 07:04:57,711 [INFO] jarvis.audio: Audio pipeline ready. model=tiny.en vad=False retry_without_vad=True mic_index=12
+2026-04-09 07:05:27,006 [INFO] jarvis.audio: Opening microphone: 12: Microphone (Realtek HD Audio Mic input)
+2026-04-09 07:05:27,118 [WARNING] jarvis.audio: Unable to open microphone 12: Microphone (Realtek HD Audio Mic input): microphone stream was not opened
+2026-04-09 07:05:27,172 [INFO] jarvis.audio: Opening microphone: default microphone
+2026-04-09 07:05:27,876 [INFO] jarvis.audio: Microphone calibrated. energy_threshold=103.00769781980888
+2026-04-09 07:05:29,307 [INFO] jarvis.audio: Captured audio clip rms=247
+2026-04-09 07:05:29,795 [INFO] faster_whisper: Processing audio with duration 00:01.184
+2026-04-09 07:05:32,383 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:05:33,479 [INFO] jarvis.audio: Captured audio clip rms=244
+2026-04-09 07:05:33,782 [INFO] faster_whisper: Processing audio with duration 00:00.975
+2026-04-09 07:05:36,011 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:05:36,867 [INFO] jarvis.audio: Captured audio clip rms=264
+2026-04-09 07:05:37,154 [INFO] faster_whisper: Processing audio with duration 00:00.743
+2026-04-09 07:05:39,303 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:05:41,707 [INFO] jarvis.audio: Captured audio clip rms=308
+2026-04-09 07:05:42,028 [INFO] faster_whisper: Processing audio with duration 00:01.974
+2026-04-09 07:05:44,372 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:05:46,275 [INFO] jarvis.audio: Captured audio clip rms=329
+2026-04-09 07:05:46,577 [INFO] faster_whisper: Processing audio with duration 00:01.765
+2026-04-09 07:05:48,804 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:05:52,901 [INFO] jarvis.audio: Captured audio clip rms=338
+2026-04-09 07:05:53,328 [INFO] faster_whisper: Processing audio with duration 00:03.669
+2026-04-09 07:06:04,183 [INFO] jarvis.audio: Heard: I think this is Tim's own name. See ya, Jack.
+2026-04-09 07:06:05,929 [INFO] jarvis.audio: Captured audio clip rms=366
+2026-04-09 07:06:06,251 [INFO] faster_whisper: Processing audio with duration 00:01.625
+2026-04-09 07:06:08,279 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:06:11,924 [INFO] jarvis.audio: Captured audio clip rms=385
+2026-04-09 07:06:12,331 [INFO] faster_whisper: Processing audio with duration 00:03.529
+2026-04-09 07:06:15,089 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:06:16,717 [INFO] jarvis.audio: Captured audio clip rms=257
+2026-04-09 07:06:17,142 [INFO] faster_whisper: Processing audio with duration 00:01.509
+2026-04-09 07:06:19,521 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:06:21,475 [INFO] jarvis.audio: Captured audio clip rms=237
+2026-04-09 07:06:21,958 [INFO] faster_whisper: Processing audio with duration 00:01.834
+2026-04-09 07:06:24,312 [INFO] jarvis.audio: Heard: Hey, Jarvis.
+2026-04-09 07:06:24,565 [INFO] jarvis.core: Wake word detected in transcript: Hey, Jarvis.
+2026-04-09 07:06:24,566 [INFO] jarvis.core: Queueing grounded voice query: hey
+2026-04-09 07:06:26,410 [INFO] jarvis.audio: Captured audio clip rms=271
+2026-04-09 07:06:26,748 [WARNING] jarvis.reasoning: Falling back to rules-based reasoning: HTTPConnectionPool(host='127.0.0.1', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=11434): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+2026-04-09 07:06:26,750 [INFO] faster_whisper: Processing audio with duration 00:01.765
+2026-04-09 07:06:29,133 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:06:34,338 [INFO] jarvis.audio: Captured audio clip rms=337
+2026-04-09 07:06:34,770 [INFO] faster_whisper: Processing audio with duration 00:04.714
+2026-04-09 07:06:37,265 [INFO] jarvis.audio: Heard: we are okay give me the entire objects list.
+2026-04-09 07:06:41,750 [INFO] jarvis.audio: Captured audio clip rms=317
+2026-04-09 07:06:42,085 [INFO] faster_whisper: Processing audio with duration 00:04.365
+2026-04-09 07:06:44,448 [INFO] jarvis.audio: Heard: Hey, Javi.
+2026-04-09 07:06:48,884 [INFO] jarvis.audio: Captured audio clip rms=382
+2026-04-09 07:06:49,403 [INFO] faster_whisper: Processing audio with duration 00:04.203
+2026-04-09 07:06:58,688 [INFO] jarvis.audio: Heard: Overly, let's go.
+2026-04-09 07:07:02,567 [INFO] jarvis.audio: Captured audio clip rms=283
+2026-04-09 07:07:02,919 [INFO] faster_whisper: Processing audio with duration 00:03.019
+2026-04-09 07:07:05,264 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:07:09,950 [INFO] jarvis.audio: Captured audio clip rms=276
+2026-04-09 07:07:10,312 [INFO] faster_whisper: Processing audio with duration 00:04.389
+2026-04-09 07:07:12,859 [INFO] jarvis.audio: Heard: give the entire people list.
+2026-04-09 07:07:13,920 [INFO] jarvis.audio: Captured audio clip rms=269
+2026-04-09 07:07:14,259 [INFO] faster_whisper: Processing audio with duration 00:00.929
+2026-04-09 07:07:16,653 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:07:20,134 [INFO] jarvis.audio: Captured audio clip rms=291
+2026-04-09 07:07:20,590 [INFO] faster_whisper: Processing audio with duration 00:03.320
+2026-04-09 07:07:23,092 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:07:25,048 [INFO] jarvis.audio: Captured audio clip rms=256
+2026-04-09 07:07:25,374 [INFO] faster_whisper: Processing audio with duration 00:01.834
+2026-04-09 07:07:27,899 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:07:31,526 [INFO] jarvis.audio: Captured audio clip rms=382
+2026-04-09 07:07:31,850 [INFO] faster_whisper: Processing audio with duration 00:03.506
+2026-04-09 07:07:34,377 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:07:36,581 [INFO] jarvis.audio: Captured audio clip rms=370
+2026-04-09 07:07:37,037 [INFO] faster_whisper: Processing audio with duration 00:02.067
+2026-04-09 07:07:39,204 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:07:43,769 [INFO] jarvis.audio: Captured audio clip rms=335
+2026-04-09 07:07:44,170 [INFO] faster_whisper: Processing audio with duration 00:03.599
+2026-04-09 07:08:04,405 [INFO] jarvis.db: [OK] MongoDB connected -> mongodb://localhost:27017 / jarvis_db
+2026-04-09 07:09:08,117 [INFO] jarvis.db: [OK] MongoDB connected -> mongodb://localhost:27017 / jarvis_db
+2026-04-09 07:09:12,212 [INFO] jarvis.audio: Audio pipeline ready. model=tiny.en vad=False retry_without_vad=True mic_index=12
+2026-04-09 07:09:41,144 [INFO] jarvis.audio: Opening microphone: 12: Microphone (Realtek HD Audio Mic input)
+2026-04-09 07:09:41,267 [WARNING] jarvis.audio: Unable to open microphone 12: Microphone (Realtek HD Audio Mic input): microphone stream was not opened
+2026-04-09 07:09:41,330 [INFO] jarvis.audio: Opening microphone: default microphone
+2026-04-09 07:09:42,060 [INFO] jarvis.audio: Microphone calibrated. energy_threshold=105.7001229110051
+2026-04-09 07:09:44,356 [INFO] jarvis.audio: Captured audio clip rms=283
+2026-04-09 07:09:44,715 [INFO] faster_whisper: Processing audio with duration 00:02.090
+2026-04-09 07:09:47,205 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:09:50,712 [INFO] jarvis.audio: Captured audio clip rms=259
+2026-04-09 07:09:51,081 [INFO] faster_whisper: Processing audio with duration 00:02.740
+2026-04-09 07:09:53,538 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:09:54,378 [INFO] jarvis.audio: Captured audio clip rms=315
+2026-04-09 07:09:54,690 [INFO] faster_whisper: Processing audio with duration 00:00.720
+2026-04-09 07:09:57,069 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:10:02,774 [INFO] jarvis.audio: Captured audio clip rms=339
+2026-04-09 07:10:03,188 [INFO] faster_whisper: Processing audio with duration 00:05.410
+2026-04-09 07:10:05,483 [INFO] jarvis.audio: Heard: Jarvis. Jarvis.
+2026-04-09 07:10:05,491 [INFO] jarvis.core: Wake word detected in transcript: Jarvis. Jarvis.
+2026-04-09 07:10:07,833 [INFO] jarvis.audio: Captured audio clip rms=287
+2026-04-09 07:10:08,155 [INFO] faster_whisper: Processing audio with duration 00:02.229
+2026-04-09 07:10:10,403 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:10:12,027 [INFO] jarvis.audio: Captured audio clip rms=241
+2026-04-09 07:10:12,362 [INFO] faster_whisper: Processing audio with duration 00:01.138
+2026-04-09 07:10:17,315 [INFO] jarvis.audio: Heard: uh
+2026-04-09 07:10:18,595 [INFO] jarvis.audio: Captured audio clip rms=140
+2026-04-09 07:10:18,595 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 180.0
+2026-04-09 07:10:22,496 [INFO] jarvis.audio: Captured audio clip rms=204
+2026-04-09 07:10:22,950 [INFO] faster_whisper: Processing audio with duration 00:03.413
+2026-04-09 07:10:25,190 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:10:26,217 [INFO] jarvis.audio: Captured audio clip rms=273
+2026-04-09 07:10:26,516 [INFO] faster_whisper: Processing audio with duration 00:00.906
+2026-04-09 07:10:28,905 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:10:29,862 [INFO] jarvis.audio: Captured audio clip rms=240
+2026-04-09 07:10:30,253 [INFO] faster_whisper: Processing audio with duration 00:00.813
+2026-04-09 07:10:31,054 [INFO] jarvis.db: MongoDB connection closed.
+2026-04-09 07:13:00,065 [INFO] jarvis.db: [OK] MongoDB connected -> mongodb://localhost:27017 / jarvis_db
+2026-04-09 07:13:05,375 [INFO] jarvis.audio: Audio pipeline ready. model=tiny.en vad=False retry_without_vad=True mic_index=12
+2026-04-09 07:13:39,754 [INFO] jarvis.audio: Opening microphone: 12: Microphone (Realtek HD Audio Mic input)
+2026-04-09 07:13:39,886 [WARNING] jarvis.audio: Unable to open microphone 12: Microphone (Realtek HD Audio Mic input): microphone stream was not opened
+2026-04-09 07:13:39,950 [INFO] jarvis.audio: Opening microphone: default microphone
+2026-04-09 07:13:40,797 [INFO] jarvis.audio: Microphone calibrated. energy_threshold=97.06235514850677
+2026-04-09 07:13:42,660 [INFO] jarvis.audio: Captured audio clip rms=273
+2026-04-09 07:13:43,002 [INFO] faster_whisper: Processing audio with duration 00:01.532
+2026-04-09 07:13:45,726 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:13:47,442 [INFO] jarvis.audio: Captured audio clip rms=263
+2026-04-09 07:13:47,740 [INFO] faster_whisper: Processing audio with duration 00:00.720
+2026-04-09 07:13:50,207 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:13:52,847 [INFO] jarvis.audio: Captured audio clip rms=252
+2026-04-09 07:13:53,296 [INFO] faster_whisper: Processing audio with duration 00:02.438
+2026-04-09 07:13:55,867 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:13:58,824 [INFO] jarvis.audio: Captured audio clip rms=213
+2026-04-09 07:13:59,350 [INFO] faster_whisper: Processing audio with duration 00:02.159
+2026-04-09 07:16:15,927 [INFO] jarvis.db: [OK] MongoDB connected -> mongodb://localhost:27017 / jarvis_db
+2026-04-09 07:16:20,435 [INFO] jarvis.audio: Audio pipeline ready. model=tiny.en vad=False retry_without_vad=True mic_index=12
+2026-04-09 07:16:50,242 [INFO] jarvis.audio: Opening microphone: 12: Microphone (Realtek HD Audio Mic input)
+2026-04-09 07:16:50,377 [WARNING] jarvis.audio: Unable to open microphone 12: Microphone (Realtek HD Audio Mic input): microphone stream was not opened
+2026-04-09 07:16:50,443 [INFO] jarvis.audio: Opening microphone: default microphone
+2026-04-09 07:16:51,196 [INFO] jarvis.audio: Microphone calibrated. energy_threshold=117.83310503423475
+2026-04-09 07:16:54,360 [INFO] jarvis.audio: Captured audio clip rms=302
+2026-04-09 07:16:54,728 [INFO] faster_whisper: Processing audio with duration 00:02.926
+2026-04-09 07:16:57,303 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:16:59,197 [INFO] jarvis.audio: Captured audio clip rms=148
+2026-04-09 07:16:59,197 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 180.0
+2026-04-09 07:17:02,662 [INFO] jarvis.audio: Captured audio clip rms=277
+2026-04-09 07:17:03,039 [INFO] faster_whisper: Processing audio with duration 00:03.228
+2026-04-09 07:17:05,524 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:17:08,244 [INFO] jarvis.audio: Captured audio clip rms=545
+2026-04-09 07:17:08,722 [INFO] faster_whisper: Processing audio with duration 00:02.577
+2026-04-09 07:17:11,021 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:17:14,175 [INFO] jarvis.audio: Captured audio clip rms=442
+2026-04-09 07:17:14,510 [INFO] faster_whisper: Processing audio with duration 00:01.997
+2026-04-09 07:17:16,627 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:17:20,365 [INFO] jarvis.audio: Captured audio clip rms=259
+2026-04-09 07:17:20,690 [INFO] faster_whisper: Processing audio with duration 00:03.576
+2026-04-09 07:17:28,877 [INFO] jarvis.audio: Heard: this
+2026-04-09 07:17:30,015 [INFO] jarvis.audio: Captured audio clip rms=126
+2026-04-09 07:17:30,016 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 180.0
+2026-04-09 07:17:33,267 [INFO] jarvis.audio: Captured audio clip rms=239
+2026-04-09 07:17:33,623 [INFO] faster_whisper: Processing audio with duration 00:03.019
+2026-04-09 07:17:41,824 [INFO] jarvis.audio: Heard: Okay guys.
+2026-04-09 07:17:45,924 [INFO] jarvis.audio: Captured audio clip rms=346
+2026-04-09 07:17:46,365 [INFO] faster_whisper: Processing audio with duration 00:03.947
+2026-04-09 07:17:48,762 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:17:54,232 [INFO] jarvis.audio: Captured audio clip rms=253
+2026-04-09 07:17:54,642 [INFO] faster_whisper: Processing audio with duration 00:05.201
+2026-04-09 07:17:57,252 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:17:59,841 [INFO] jarvis.audio: Captured audio clip rms=245
+2026-04-09 07:18:00,221 [INFO] faster_whisper: Processing audio with duration 00:02.461
+2026-04-09 07:18:02,619 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:18:03,889 [INFO] jarvis.audio: Captured audio clip rms=303
+2026-04-09 07:18:04,183 [INFO] faster_whisper: Processing audio with duration 00:01.022
+2026-04-09 07:18:06,313 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:18:07,268 [INFO] jarvis.audio: Captured audio clip rms=312
+2026-04-09 07:18:07,604 [INFO] faster_whisper: Processing audio with duration 00:00.836
+2026-04-09 07:18:09,829 [INFO] jarvis.audio: Heard: Jarvis.
+2026-04-09 07:18:09,836 [INFO] jarvis.core: Wake word detected in transcript: Jarvis.
+2026-04-09 07:18:11,333 [INFO] jarvis.audio: Captured audio clip rms=258
+2026-04-09 07:18:11,639 [INFO] faster_whisper: Processing audio with duration 00:01.393
+2026-04-09 07:18:13,830 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:18:15,265 [INFO] jarvis.audio: Captured audio clip rms=278
+2026-04-09 07:18:15,713 [INFO] faster_whisper: Processing audio with duration 00:01.324
+2026-04-09 07:18:24,534 [INFO] jarvis.audio: Heard: Syvengy.
+2026-04-09 07:18:28,344 [INFO] jarvis.audio: Captured audio clip rms=372
+2026-04-09 07:18:28,721 [INFO] faster_whisper: Processing audio with duration 00:03.483
+2026-04-09 07:18:35,340 [INFO] jarvis.audio: Heard: it is it is is is is is is is is
+2026-04-09 07:18:37,053 [INFO] jarvis.audio: Captured audio clip rms=332
+2026-04-09 07:18:37,444 [INFO] faster_whisper: Processing audio with duration 00:01.602
+2026-04-09 07:18:39,782 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:18:43,217 [INFO] jarvis.audio: Captured audio clip rms=310
+2026-04-09 07:18:43,610 [INFO] faster_whisper: Processing audio with duration 00:02.647
+2026-04-09 07:18:46,002 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:18:47,781 [INFO] jarvis.audio: Captured audio clip rms=285
+2026-04-09 07:18:48,123 [INFO] faster_whisper: Processing audio with duration 00:01.649
+2026-04-09 07:18:50,230 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:18:54,178 [INFO] jarvis.audio: Captured audio clip rms=139
+2026-04-09 07:18:54,180 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 180.0
+2026-04-09 07:18:56,399 [INFO] jarvis.audio: Captured audio clip rms=203
+2026-04-09 07:18:56,906 [INFO] faster_whisper: Processing audio with duration 00:01.997
+2026-04-09 07:18:59,242 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:19:00,376 [INFO] jarvis.audio: Captured audio clip rms=191
+2026-04-09 07:19:00,751 [INFO] faster_whisper: Processing audio with duration 00:01.022
+2026-04-09 07:19:03,091 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:19:03,953 [INFO] jarvis.audio: Captured audio clip rms=219
+2026-04-09 07:19:04,241 [INFO] faster_whisper: Processing audio with duration 00:00.743
+2026-04-09 07:19:06,415 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:19:09,295 [INFO] jarvis.audio: Captured audio clip rms=415
+2026-04-09 07:19:09,660 [INFO] faster_whisper: Processing audio with duration 00:02.763
+2026-04-09 07:19:18,450 [INFO] jarvis.audio: Heard: target log v1g.
+2026-04-09 07:19:20,944 [INFO] jarvis.audio: Captured audio clip rms=421
+2026-04-09 07:19:21,260 [INFO] faster_whisper: Processing audio with duration 00:01.695
+2026-04-09 07:19:23,513 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:19:26,066 [INFO] jarvis.audio: Captured audio clip rms=227
+2026-04-09 07:19:26,400 [INFO] faster_whisper: Processing audio with duration 00:02.392
+2026-04-09 07:19:28,955 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:19:33,762 [INFO] jarvis.audio: Captured audio clip rms=408
+2026-04-09 07:19:34,114 [INFO] faster_whisper: Processing audio with duration 00:03.669
+2026-04-09 07:19:43,128 [INFO] jarvis.audio: Heard: target lock bewengy
+2026-04-09 07:19:44,196 [INFO] jarvis.audio: Captured audio clip rms=360
+2026-04-09 07:19:44,545 [INFO] faster_whisper: Processing audio with duration 00:00.952
+2026-04-09 07:19:47,265 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:19:48,810 [INFO] jarvis.audio: Captured audio clip rms=360
+2026-04-09 07:19:49,171 [INFO] faster_whisper: Processing audio with duration 00:01.416
+2026-04-09 07:19:51,379 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:19:53,318 [INFO] jarvis.audio: Captured audio clip rms=197
+2026-04-09 07:19:53,635 [INFO] faster_whisper: Processing audio with duration 00:01.138
+2026-04-09 07:19:55,824 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:19:59,741 [INFO] jarvis.audio: Captured audio clip rms=284
+2026-04-09 07:20:00,108 [INFO] faster_whisper: Processing audio with duration 00:03.785
+2026-04-09 07:20:07,276 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:20:10,292 [INFO] jarvis.audio: Captured audio clip rms=313
+2026-04-09 07:20:10,624 [INFO] faster_whisper: Processing audio with duration 00:02.902
+2026-04-09 07:20:12,906 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:20:14,012 [INFO] jarvis.audio: Captured audio clip rms=328
+2026-04-09 07:20:14,430 [INFO] faster_whisper: Processing audio with duration 00:00.975
+2026-04-09 07:20:16,918 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:20:22,282 [INFO] jarvis.audio: Captured audio clip rms=401
+2026-04-09 07:20:22,765 [INFO] faster_whisper: Processing audio with duration 00:05.248
+2026-04-09 07:20:25,546 [INFO] jarvis.audio: Heard: target log within G.
+2026-04-09 07:20:27,919 [INFO] jarvis.audio: Captured audio clip rms=416
+2026-04-09 07:20:28,296 [INFO] faster_whisper: Processing audio with duration 00:02.229
+2026-04-09 07:20:30,669 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:20:33,782 [INFO] jarvis.audio: Captured audio clip rms=320
+2026-04-09 07:20:34,254 [INFO] faster_whisper: Processing audio with duration 00:02.949
+2026-04-09 07:20:36,631 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:20:39,249 [INFO] jarvis.audio: Captured audio clip rms=318
+2026-04-09 07:20:39,677 [INFO] faster_whisper: Processing audio with duration 00:02.461
+2026-04-09 07:20:42,053 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:20:46,133 [INFO] jarvis.audio: Captured audio clip rms=291
+2026-04-09 07:20:46,492 [INFO] faster_whisper: Processing audio with duration 00:03.135
+2026-04-09 07:20:48,992 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:20:52,977 [INFO] jarvis.audio: Captured audio clip rms=253
+2026-04-09 07:20:53,327 [INFO] faster_whisper: Processing audio with duration 00:03.854
+2026-04-09 07:20:55,763 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:20:57,393 [INFO] jarvis.audio: Captured audio clip rms=236
+2026-04-09 07:20:57,826 [INFO] faster_whisper: Processing audio with duration 00:01.440
+2026-04-09 07:21:00,006 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:21:06,032 [INFO] jarvis.audio: Captured audio clip rms=307
+2026-04-09 07:21:06,428 [INFO] faster_whisper: Processing audio with duration 00:06.084
+2026-04-09 07:21:08,703 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:21:14,273 [INFO] jarvis.audio: Captured audio clip rms=361
+2026-04-09 07:21:14,635 [INFO] faster_whisper: Processing audio with duration 00:04.969
+2026-04-09 07:21:16,908 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:21:18,992 [INFO] jarvis.audio: Captured audio clip rms=399
+2026-04-09 07:21:19,332 [INFO] faster_whisper: Processing audio with duration 00:01.788
+2026-04-09 07:21:21,744 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:21:26,373 [INFO] jarvis.audio: Captured audio clip rms=301
+2026-04-09 07:21:26,972 [INFO] faster_whisper: Processing audio with duration 00:04.505
+2026-04-09 07:21:29,782 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:21:31,558 [INFO] jarvis.audio: Captured audio clip rms=433
+2026-04-09 07:21:31,927 [INFO] faster_whisper: Processing audio with duration 00:01.649
+2026-04-09 07:21:34,227 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:21:35,658 [INFO] jarvis.audio: Captured audio clip rms=197
+2026-04-09 07:21:36,009 [INFO] faster_whisper: Processing audio with duration 00:01.254
+2026-04-09 07:21:38,375 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:21:40,191 [INFO] jarvis.audio: Captured audio clip rms=146
+2026-04-09 07:21:40,205 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 180.0
+2026-04-09 07:21:41,283 [INFO] jarvis.audio: Captured audio clip rms=189
+2026-04-09 07:21:41,582 [INFO] faster_whisper: Processing audio with duration 00:00.859
+2026-04-09 07:21:43,876 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:21:49,919 [INFO] jarvis.audio: Captured audio clip rms=344
+2026-04-09 07:21:50,335 [INFO] faster_whisper: Processing audio with duration 00:06.153
+2026-04-09 07:21:58,772 [INFO] jarvis.audio: Heard: We went deep.
+2026-04-09 07:22:01,717 [INFO] jarvis.audio: Captured audio clip rms=350
+2026-04-09 07:22:02,143 [INFO] faster_whisper: Processing audio with duration 00:02.833
+2026-04-09 07:22:04,614 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:22:08,272 [INFO] jarvis.audio: Captured audio clip rms=303
+2026-04-09 07:22:08,760 [INFO] faster_whisper: Processing audio with duration 00:03.529
+2026-04-09 07:22:11,141 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:22:12,746 [INFO] jarvis.audio: Captured audio clip rms=295
+2026-04-09 07:22:13,046 [INFO] faster_whisper: Processing audio with duration 00:01.486
+2026-04-09 07:22:15,253 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:22:16,811 [INFO] jarvis.audio: Captured audio clip rms=445
+2026-04-09 07:22:17,190 [INFO] faster_whisper: Processing audio with duration 00:01.440
+2026-04-09 07:22:19,474 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:22:21,314 [INFO] jarvis.audio: Captured audio clip rms=400
+2026-04-09 07:22:21,704 [INFO] faster_whisper: Processing audio with duration 00:01.068
+2026-04-09 07:22:23,856 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:22:30,471 [INFO] jarvis.audio: Captured audio clip rms=320
+2026-04-09 07:22:30,826 [INFO] faster_whisper: Processing audio with duration 00:05.201
+2026-04-09 07:22:33,026 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:22:34,390 [INFO] jarvis.audio: Captured audio clip rms=381
+2026-04-09 07:22:34,719 [INFO] faster_whisper: Processing audio with duration 00:01.254
+2026-04-09 07:22:36,861 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:22:38,785 [INFO] jarvis.audio: Captured audio clip rms=400
+2026-04-09 07:22:39,103 [INFO] faster_whisper: Processing audio with duration 00:01.811
+2026-04-09 07:22:41,549 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:22:43,039 [INFO] jarvis.audio: Captured audio clip rms=260
+2026-04-09 07:22:43,468 [INFO] faster_whisper: Processing audio with duration 00:01.370
+2026-04-09 07:22:45,622 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:22:49,150 [INFO] jarvis.audio: Captured audio clip rms=301
+2026-04-09 07:22:49,500 [INFO] faster_whisper: Processing audio with duration 00:03.413
+2026-04-09 07:22:51,980 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:22:52,962 [INFO] jarvis.audio: Captured audio clip rms=304
+2026-04-09 07:22:53,270 [INFO] faster_whisper: Processing audio with duration 00:00.859
+2026-04-09 07:22:55,455 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:23:00,059 [INFO] jarvis.audio: Captured audio clip rms=405
+2026-04-09 07:23:00,416 [INFO] faster_whisper: Processing audio with duration 00:04.481
+2026-04-09 07:23:02,874 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:23:04,728 [INFO] jarvis.audio: Captured audio clip rms=352
+2026-04-09 07:23:05,119 [INFO] faster_whisper: Processing audio with duration 00:01.742
+2026-04-09 07:23:07,354 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:23:10,217 [INFO] jarvis.audio: Captured audio clip rms=309
+2026-04-09 07:23:10,567 [INFO] faster_whisper: Processing audio with duration 00:02.740
+2026-04-09 07:23:13,076 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:23:13,930 [INFO] jarvis.audio: Captured audio clip rms=367
+2026-04-09 07:23:14,211 [INFO] faster_whisper: Processing audio with duration 00:00.743
+2026-04-09 07:23:16,520 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:23:18,056 [INFO] jarvis.audio: Captured audio clip rms=455
+2026-04-09 07:23:18,418 [INFO] faster_whisper: Processing audio with duration 00:01.370
+2026-04-09 07:23:20,702 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:23:22,466 [INFO] jarvis.audio: Captured audio clip rms=417
+2026-04-09 07:23:22,933 [INFO] faster_whisper: Processing audio with duration 00:01.045
+2026-04-09 07:23:25,396 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:23:26,931 [INFO] jarvis.audio: Captured audio clip rms=348
+2026-04-09 07:23:27,236 [INFO] faster_whisper: Processing audio with duration 00:01.416
+2026-04-09 07:23:29,548 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:23:36,935 [INFO] jarvis.audio: Captured audio clip rms=409
+2026-04-09 07:23:37,293 [INFO] faster_whisper: Processing audio with duration 00:04.180
+2026-04-09 07:23:39,529 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:23:40,715 [INFO] jarvis.audio: Captured audio clip rms=315
+2026-04-09 07:23:41,104 [INFO] faster_whisper: Processing audio with duration 00:00.929
+2026-04-09 07:23:43,549 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:23:45,984 [INFO] jarvis.audio: Captured audio clip rms=245
+2026-04-09 07:23:46,303 [INFO] faster_whisper: Processing audio with duration 00:02.322
+2026-04-09 07:23:48,563 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:23:50,418 [INFO] jarvis.audio: Captured audio clip rms=151
+2026-04-09 07:23:50,418 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 180.0
+2026-04-09 07:23:52,609 [INFO] jarvis.audio: Captured audio clip rms=180
+2026-04-09 07:23:52,972 [INFO] faster_whisper: Processing audio with duration 00:01.950
+2026-04-09 07:23:55,343 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:23:57,828 [INFO] jarvis.audio: Captured audio clip rms=252
+2026-04-09 07:23:58,185 [INFO] faster_whisper: Processing audio with duration 00:02.368
+2026-04-09 07:24:00,451 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:24:00,532 [INFO] jarvis.db: MongoDB connection closed.
+2026-04-09 07:24:00,616 [WARNING] jarvis.db: Failed to fetch person EMP-001 from MongoDB: Cannot use MongoClient after close
+2026-04-09 07:24:00,618 [WARNING] jarvis.db: Failed to read recognition logs from MongoDB: Cannot use MongoClient after close
+2026-04-09 07:24:00,623 [WARNING] jarvis.db: Failed to read object logs from MongoDB: Cannot use MongoClient after close
+2026-04-09 07:24:00,677 [WARNING] jarvis.db: Failed to fetch person EMP-001 from MongoDB: Cannot use MongoClient after close
+2026-04-09 07:24:25,169 [INFO] jarvis.db: [OK] MongoDB connected -> mongodb://localhost:27017 / jarvis_db
+2026-04-09 07:24:29,234 [INFO] jarvis.audio: Audio pipeline ready. model=tiny.en vad=False retry_without_vad=True mic_index=12
+2026-04-09 07:24:56,064 [INFO] jarvis.audio: Opening microphone: 12: Microphone (Realtek HD Audio Mic input)
+2026-04-09 07:24:56,182 [WARNING] jarvis.audio: Unable to open microphone 12: Microphone (Realtek HD Audio Mic input): microphone stream was not opened
+2026-04-09 07:24:56,265 [INFO] jarvis.audio: Opening microphone: default microphone
+2026-04-09 07:24:56,974 [INFO] jarvis.audio: Microphone calibrated. energy_threshold=105.59824074675338
+2026-04-09 07:25:01,870 [INFO] jarvis.audio: Captured audio clip rms=345
+2026-04-09 07:25:02,260 [INFO] faster_whisper: Processing audio with duration 00:04.644
+2026-04-09 07:25:04,427 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:25:07,982 [INFO] jarvis.audio: Captured audio clip rms=173
+2026-04-09 07:25:07,983 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 180.0
+2026-04-09 07:25:09,005 [INFO] jarvis.audio: Captured audio clip rms=378
+2026-04-09 07:25:09,338 [INFO] faster_whisper: Processing audio with duration 00:00.790
+2026-04-09 07:25:11,474 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:25:18,159 [INFO] jarvis.audio: Captured audio clip rms=420
+2026-04-09 07:25:18,458 [INFO] faster_whisper: Processing audio with duration 00:00.906
+2026-04-09 07:25:21,351 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:25:22,204 [INFO] jarvis.audio: Captured audio clip rms=417
+2026-04-09 07:25:22,637 [INFO] faster_whisper: Processing audio with duration 00:00.743
+2026-04-09 07:25:25,103 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:25:26,026 [INFO] jarvis.audio: Captured audio clip rms=459
+2026-04-09 07:25:26,402 [INFO] faster_whisper: Processing audio with duration 00:00.813
+2026-04-09 07:25:28,522 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:25:29,427 [INFO] jarvis.audio: Captured audio clip rms=483
+2026-04-09 07:25:29,816 [INFO] faster_whisper: Processing audio with duration 00:00.790
+2026-04-09 07:25:32,160 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:25:36,133 [INFO] jarvis.audio: Captured audio clip rms=325
+2026-04-09 07:25:36,440 [INFO] faster_whisper: Processing audio with duration 00:00.859
+2026-04-09 07:27:25,337 [INFO] jarvis.db: [OK] MongoDB connected -> mongodb://localhost:27017 / jarvis_db
+2026-04-09 07:27:29,685 [INFO] jarvis.audio: Audio pipeline ready. model=base.en language=en beam=4 vad=True retry_without_vad=True mic_index=12
+2026-04-09 07:27:56,980 [INFO] jarvis.audio: Opening microphone: 12: Microphone (Realtek HD Audio Mic input)
+2026-04-09 07:27:57,106 [WARNING] jarvis.audio: Unable to open microphone 12: Microphone (Realtek HD Audio Mic input): microphone stream was not opened
+2026-04-09 07:27:57,167 [INFO] jarvis.audio: Opening microphone: default microphone
+2026-04-09 07:27:57,858 [INFO] jarvis.audio: Microphone calibrated. energy_threshold=92.1085075630765
+2026-04-09 07:27:59,720 [INFO] jarvis.audio: Captured audio clip rms=368
+2026-04-09 07:28:00,054 [INFO] faster_whisper: Processing audio with duration 00:01.486
+2026-04-09 07:28:00,131 [INFO] faster_whisper: VAD filter removed 00:01.486 of audio
+2026-04-09 07:28:00,164 [INFO] jarvis.audio: VAD removed the clip; retrying transcription without VAD.
+2026-04-09 07:28:00,486 [INFO] faster_whisper: Processing audio with duration 00:01.486
+2026-04-09 07:28:40,201 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:28:42,982 [INFO] jarvis.audio: Captured audio clip rms=143
+2026-04-09 07:28:43,365 [INFO] faster_whisper: Processing audio with duration 00:01.649
+2026-04-09 07:28:43,401 [INFO] faster_whisper: VAD filter removed 00:01.649 of audio
+2026-04-09 07:28:43,406 [INFO] jarvis.audio: VAD removed the clip; retrying transcription without VAD.
+2026-04-09 07:28:43,724 [INFO] faster_whisper: Processing audio with duration 00:01.649
+2026-04-09 07:29:11,555 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:29:15,151 [INFO] jarvis.audio: Captured audio clip rms=146
+2026-04-09 07:29:15,563 [INFO] faster_whisper: Processing audio with duration 00:03.344
+2026-04-09 07:29:15,610 [INFO] faster_whisper: VAD filter removed 00:03.344 of audio
+2026-04-09 07:29:15,641 [INFO] jarvis.audio: VAD removed the clip; retrying transcription without VAD.
+2026-04-09 07:29:15,932 [INFO] faster_whisper: Processing audio with duration 00:03.344
+2026-04-09 07:29:45,910 [INFO] jarvis.audio: Heard: You
+2026-04-09 07:29:47,446 [INFO] jarvis.audio: Captured audio clip rms=243
+2026-04-09 07:29:47,821 [INFO] faster_whisper: Processing audio with duration 00:01.277
+2026-04-09 07:29:47,831 [INFO] faster_whisper: VAD filter removed 00:01.277 of audio
+2026-04-09 07:29:47,836 [INFO] jarvis.audio: VAD removed the clip; retrying transcription without VAD.
+2026-04-09 07:29:48,196 [INFO] faster_whisper: Processing audio with duration 00:01.277
+2026-04-09 07:30:13,033 [INFO] jarvis.db: MongoDB connection closed.
+2026-04-09 07:32:11,832 [INFO] jarvis.db: [OK] MongoDB connected -> mongodb://localhost:27017 / jarvis_db
+2026-04-09 07:32:16,026 [INFO] jarvis.audio: Audio pipeline ready. model=base.en language=en beam=2 vad=False retry_without_vad=True mic_index=None
+2026-04-09 07:32:46,121 [INFO] jarvis.audio: Opening microphone: default microphone
+2026-04-09 07:32:46,910 [INFO] jarvis.audio: Microphone calibrated. energy_threshold=73.0049542496994
+2026-04-09 07:32:54,937 [INFO] jarvis.audio: Captured audio clip rms=211
+2026-04-09 07:32:55,419 [INFO] faster_whisper: Processing audio with duration 00:08.034
+2026-04-09 07:33:00,126 [INFO] jarvis.audio: Heard: I'm done with this.
+2026-04-09 07:33:05,848 [INFO] jarvis.audio: Captured audio clip rms=254
+2026-04-09 07:33:06,178 [INFO] faster_whisper: Processing audio with duration 00:05.410
+2026-04-09 07:33:11,189 [INFO] jarvis.audio: Heard: You
+2026-04-09 07:33:17,389 [INFO] jarvis.audio: Captured audio clip rms=238
+2026-04-09 07:33:17,720 [INFO] faster_whisper: Processing audio with duration 00:04.690
+2026-04-09 07:33:34,981 [INFO] jarvis.audio: Heard: Lock, target, V-N-G.
+2026-04-09 07:33:43,831 [INFO] jarvis.audio: Captured audio clip rms=225
+2026-04-09 07:33:44,196 [INFO] faster_whisper: Processing audio with duration 00:08.406
+2026-04-09 07:34:01,750 [INFO] jarvis.audio: Heard: Log target with NG
+2026-04-09 07:34:06,419 [INFO] jarvis.audio: Captured audio clip rms=109
+2026-04-09 07:34:06,420 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 07:34:09,256 [INFO] jarvis.audio: Captured audio clip rms=71
+2026-04-09 07:34:09,256 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 07:34:12,406 [INFO] jarvis.audio: Captured audio clip rms=90
+2026-04-09 07:34:12,407 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 07:34:16,285 [INFO] jarvis.audio: Captured audio clip rms=187
+2026-04-09 07:34:16,608 [INFO] faster_whisper: Processing audio with duration 00:01.974
+2026-04-09 07:34:21,076 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:34:24,209 [INFO] jarvis.audio: Captured audio clip rms=433
+2026-04-09 07:34:24,666 [INFO] faster_whisper: Processing audio with duration 00:02.833
+2026-04-09 07:34:34,657 [INFO] jarvis.audio: Heard: I know that I'm out.
+2026-04-09 07:34:38,718 [INFO] jarvis.audio: Captured audio clip rms=267
+2026-04-09 07:34:39,140 [INFO] faster_whisper: Processing audio with duration 00:03.251
+2026-04-09 07:34:43,751 [INFO] jarvis.audio: Heard: system
+2026-04-09 07:34:52,686 [INFO] jarvis.audio: Captured audio clip rms=238
+2026-04-09 07:34:53,067 [INFO] faster_whisper: Processing audio with duration 00:05.573
+2026-04-09 07:35:22,154 [INFO] jarvis.audio: Heard: Get ready then. Distro-wise. And hollering-wise.
+2026-04-09 07:35:26,101 [INFO] jarvis.audio: Captured audio clip rms=160
+2026-04-09 07:35:26,438 [INFO] faster_whisper: Processing audio with duration 00:03.646
+2026-04-09 07:36:00,099 [INFO] jarvis.audio: Heard: and
+2026-04-09 07:36:05,479 [INFO] jarvis.audio: Captured audio clip rms=282
+2026-04-09 07:36:05,893 [INFO] faster_whisper: Processing audio with duration 00:05.062
+2026-04-09 07:36:33,927 [INFO] jarvis.audio: Heard: I'm not sure if I can get you a shot. This is a good shot. I'm not sure if I can get you a shot.
+2026-04-09 07:36:37,111 [INFO] jarvis.audio: Captured audio clip rms=155
+2026-04-09 07:36:37,432 [INFO] faster_whisper: Processing audio with duration 00:02.461
+2026-04-09 07:36:42,144 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:36:45,771 [INFO] jarvis.audio: Captured audio clip rms=156
+2026-04-09 07:36:46,104 [INFO] faster_whisper: Processing audio with duration 00:03.320
+2026-04-09 07:37:18,787 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 07:37:26,356 [INFO] jarvis.audio: Captured audio clip rms=358
+2026-04-09 07:37:26,780 [INFO] faster_whisper: Processing audio with duration 00:07.268
+2026-04-09 07:37:37,002 [INFO] jarvis.audio: Heard: Face detection K. Entering. Inside case.
+2026-04-09 07:37:40,023 [INFO] jarvis.audio: Captured audio clip rms=275
+2026-04-09 07:37:40,369 [INFO] faster_whisper: Processing audio with duration 00:02.717
+2026-04-09 07:37:44,543 [INFO] jarvis.db: MongoDB connection closed.
+2026-04-09 11:57:59,635 [INFO] jarvis.db: [OK] MongoDB connected -> mongodb://localhost:27017 / jarvis_db
+2026-04-09 11:58:03,501 [INFO] jarvis.audio: Audio pipeline ready. model=base.en language=en beam=2 vad=False retry_without_vad=True mic_index=None
+2026-04-09 12:00:46,927 [INFO] jarvis.db: [OK] MongoDB connected -> mongodb://localhost:27017 / jarvis_db
+2026-04-09 12:00:50,536 [INFO] jarvis.audio: Audio pipeline ready. model=base.en language=en beam=2 vad=False retry_without_vad=True mic_index=None
+2026-04-09 12:01:17,517 [INFO] jarvis.audio: Opening microphone: default microphone
+2026-04-09 12:01:18,238 [INFO] jarvis.audio: Microphone calibrated. energy_threshold=111.04823880749463
+2026-04-09 12:01:20,240 [INFO] jarvis.audio: Captured audio clip rms=358
+2026-04-09 12:01:20,635 [INFO] faster_whisper: Processing audio with duration 00:01.579
+2026-04-09 12:02:09,122 [INFO] jarvis.audio: Heard: I think you could just go out there. We'll see you next time. Peace, man. Peace, man. Peace, man. Peace, man. Peace, man. Peace, man.
+2026-04-09 12:02:11,861 [INFO] jarvis.audio: Captured audio clip rms=727
+2026-04-09 12:02:12,184 [INFO] faster_whisper: Processing audio with duration 00:02.020
+2026-04-09 12:02:20,937 [INFO] jarvis.audio: Heard: I'm gonna go down a little bit. Jares. I'm gonna go down a little bit. Jares. Jares.
+2026-04-09 12:02:33,944 [INFO] jarvis.audio: Captured audio clip rms=717
+2026-04-09 12:02:34,364 [INFO] faster_whisper: Processing audio with duration 00:00.882
+2026-04-09 12:02:58,979 [INFO] jarvis.audio: Heard: Hey, Jarvis.
+2026-04-09 12:02:59,052 [INFO] jarvis.core: Wake word detected in transcript: Hey, Jarvis.
+2026-04-09 12:02:59,101 [INFO] jarvis.core: Queueing grounded voice query: hey
+2026-04-09 12:03:00,041 [INFO] jarvis.audio: Captured audio clip rms=775
+2026-04-09 12:03:00,515 [INFO] faster_whisper: Processing audio with duration 00:00.743
+2026-04-09 12:03:01,194 [WARNING] jarvis.reasoning: Falling back to rules-based reasoning: HTTPConnectionPool(host='127.0.0.1', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=11434): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+2026-04-09 12:03:05,250 [INFO] jarvis.audio: Heard: Island.
+2026-04-09 12:03:05,309 [INFO] jarvis.core: Queueing grounded voice query: island.
+2026-04-09 12:03:06,664 [INFO] jarvis.audio: Captured audio clip rms=570
+2026-04-09 12:03:06,981 [INFO] faster_whisper: Processing audio with duration 00:01.115
+2026-04-09 12:03:07,362 [WARNING] jarvis.reasoning: Falling back to rules-based reasoning: HTTPConnectionPool(host='127.0.0.1', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=11434): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+2026-04-09 12:03:11,974 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 12:03:14,908 [INFO] jarvis.audio: Captured audio clip rms=337
+2026-04-09 12:03:15,230 [INFO] faster_whisper: Processing audio with duration 00:01.138
+2026-04-09 12:03:20,468 [INFO] jarvis.audio: Heard: You
+2026-04-09 12:03:21,688 [INFO] jarvis.audio: Captured audio clip rms=538
+2026-04-09 12:03:22,011 [INFO] faster_whisper: Processing audio with duration 00:00.882
+2026-04-09 12:03:27,058 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 12:03:30,455 [INFO] jarvis.audio: Captured audio clip rms=815
+2026-04-09 12:03:30,733 [INFO] faster_whisper: Processing audio with duration 00:01.161
+2026-04-09 12:03:35,323 [INFO] jarvis.audio: Heard: Unknown people.
+2026-04-09 12:03:41,758 [INFO] jarvis.audio: Captured audio clip rms=632
+2026-04-09 12:03:42,184 [INFO] faster_whisper: Processing audio with duration 00:02.299
+2026-04-09 12:04:10,122 [INFO] jarvis.audio: Heard: The response has been...
+2026-04-09 12:04:14,605 [INFO] jarvis.audio: Captured audio clip rms=503
+2026-04-09 12:04:14,927 [INFO] faster_whisper: Processing audio with duration 00:01.207
+2026-04-09 12:04:49,076 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 12:04:50,411 [INFO] jarvis.audio: Captured audio clip rms=465
+2026-04-09 12:04:50,683 [INFO] faster_whisper: Processing audio with duration 00:01.022
+2026-04-09 12:04:55,810 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 12:04:57,048 [INFO] jarvis.audio: Captured audio clip rms=573
+2026-04-09 12:04:57,363 [INFO] faster_whisper: Processing audio with duration 00:00.929
+2026-04-09 12:05:24,286 [INFO] jarvis.audio: Heard: and he'll give me.
+2026-04-09 12:05:30,820 [INFO] jarvis.audio: Captured audio clip rms=633
+2026-04-09 12:05:31,186 [INFO] faster_whisper: Processing audio with duration 00:02.995
+2026-04-09 12:05:36,271 [INFO] jarvis.audio: Heard: I'm going to tell you about that.
+2026-04-09 12:05:38,676 [INFO] jarvis.audio: Captured audio clip rms=565
+2026-04-09 12:05:39,001 [INFO] faster_whisper: Processing audio with duration 00:02.090
+2026-04-09 12:05:59,233 [INFO] jarvis.audio: Heard: You are correct.
+2026-04-09 12:06:01,699 [INFO] jarvis.audio: Captured audio clip rms=492
+2026-04-09 12:06:02,116 [INFO] faster_whisper: Processing audio with duration 00:02.159
+2026-04-09 12:06:07,984 [INFO] jarvis.audio: Heard: Okay. Okay. One more. Okay. One more.
+2026-04-09 12:06:13,400 [INFO] jarvis.audio: Captured audio clip rms=860
+2026-04-09 12:06:13,810 [INFO] faster_whisper: Processing audio with duration 00:02.090
+2026-04-09 12:06:19,280 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 12:06:23,557 [INFO] jarvis.audio: Captured audio clip rms=823
+2026-04-09 12:06:23,957 [INFO] faster_whisper: Processing audio with duration 00:02.438
+2026-04-09 12:06:29,120 [INFO] jarvis.audio: Heard: I need water bottle
+2026-04-09 12:06:36,248 [INFO] jarvis.audio: Captured audio clip rms=1054
+2026-04-09 12:06:36,642 [INFO] faster_whisper: Processing audio with duration 00:02.368
+2026-04-09 12:06:41,647 [INFO] jarvis.audio: Heard: Lock within.
+2026-04-09 12:06:46,964 [INFO] jarvis.audio: Captured audio clip rms=462
+2026-04-09 12:06:47,398 [INFO] faster_whisper: Processing audio with duration 00:03.181
+2026-04-09 12:07:22,549 [INFO] jarvis.audio: Heard: Okay. Okay. Now the... Go ahead and start this. Okay. Next. Okay. Alright. Okay. So I'm going to go ahead and start this. Okay. And if I go ahead and start this. Okay. Okay. So... I'm gonna start with this. Okay. Okay. Okay. Okay. Okay. Okay. Okay.
+2026-04-09 12:07:25,006 [INFO] jarvis.audio: Captured audio clip rms=878
+2026-04-09 12:07:25,426 [INFO] faster_whisper: Processing audio with duration 00:02.090
+2026-04-09 12:07:44,663 [INFO] jarvis.audio: Heard: I was having a tannin' get up, sir.
+2026-04-09 12:07:46,238 [INFO] jarvis.audio: Captured audio clip rms=1019
+2026-04-09 12:07:46,526 [INFO] faster_whisper: Processing audio with duration 00:01.161
+2026-04-09 12:07:51,948 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 12:07:55,315 [INFO] jarvis.audio: Captured audio clip rms=859
+2026-04-09 12:07:55,681 [INFO] faster_whisper: Processing audio with duration 00:02.624
+2026-04-09 12:07:57,295 [INFO] jarvis.db: MongoDB connection closed.
+2026-04-09 12:07:57,301 [WARNING] jarvis.db: Failed to write event to MongoDB: Cannot use MongoClient after close
+2026-04-09 12:07:57,306 [WARNING] jarvis.db: Failed to write event to MongoDB: Cannot use MongoClient after close
+2026-04-09 12:07:57,462 [WARNING] jarvis.db: Failed to fetch person EMP-002 from MongoDB: Cannot use MongoClient after close
+2026-04-09 12:07:57,463 [WARNING] jarvis.db: Failed to read recognition history for EMP-002: Cannot use MongoClient after close
+2026-04-09 12:07:57,495 [WARNING] jarvis.db: Failed to fetch person EMP-101 from MongoDB: Cannot use MongoClient after close
+2026-04-09 12:07:57,495 [WARNING] jarvis.db: Failed to read recognition history for EMP-101: Cannot use MongoClient after close
+2026-04-09 12:07:57,501 [WARNING] jarvis.db: Failed to read recognition logs from MongoDB: Cannot use MongoClient after close
+2026-04-09 12:07:57,502 [WARNING] jarvis.db: Failed to read object logs from MongoDB: Cannot use MongoClient after close
+2026-04-09 12:07:57,544 [WARNING] jarvis.db: Failed to fetch person EMP-002 from MongoDB: Cannot use MongoClient after close
+2026-04-09 12:07:57,544 [WARNING] jarvis.db: Failed to read recognition history for EMP-002: Cannot use MongoClient after close
+2026-04-09 12:07:57,550 [WARNING] jarvis.db: Failed to read object memory from MongoDB: Cannot use MongoClient after close
+2026-04-09 19:28:11,736 [INFO] jarvis.db: [OK] MongoDB connected -> mongodb://localhost:27017 / jarvis_db
+2026-04-09 19:28:16,730 [INFO] jarvis.audio: Audio pipeline ready. model=base.en language=en beam=2 vad=False retry_without_vad=True mic_index=None
+2026-04-09 19:28:43,908 [INFO] jarvis.audio: Opening microphone: default microphone
+2026-04-09 19:28:44,664 [INFO] jarvis.audio: Microphone calibrated. energy_threshold=64.82067394206891
+2026-04-09 19:28:48,429 [INFO] jarvis.audio: Captured audio clip rms=94
+2026-04-09 19:28:48,505 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 19:28:52,889 [INFO] jarvis.audio: Captured audio clip rms=70
+2026-04-09 19:28:52,889 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 19:28:58,178 [INFO] jarvis.audio: Captured audio clip rms=58
+2026-04-09 19:28:58,179 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 19:29:04,778 [INFO] jarvis.audio: Captured audio clip rms=89
+2026-04-09 19:29:04,779 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 19:29:11,608 [INFO] jarvis.audio: Captured audio clip rms=94
+2026-04-09 19:29:11,609 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 19:29:15,648 [INFO] jarvis.audio: Captured audio clip rms=105
+2026-04-09 19:29:15,648 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 19:29:30,078 [INFO] jarvis.audio: Captured audio clip rms=63
+2026-04-09 19:29:30,079 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 19:29:40,114 [INFO] jarvis.audio: Captured audio clip rms=89
+2026-04-09 19:29:40,115 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 19:29:41,710 [INFO] jarvis.audio: Captured audio clip rms=105
+2026-04-09 19:29:41,710 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 19:29:43,839 [INFO] jarvis.audio: Captured audio clip rms=124
+2026-04-09 19:29:44,169 [INFO] faster_whisper: Processing audio with duration 00:01.625
+2026-04-09 19:30:11,770 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 19:30:22,147 [INFO] jarvis.audio: Captured audio clip rms=71
+2026-04-09 19:30:22,147 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 19:30:45,266 [INFO] jarvis.db: [OK] MongoDB connected -> mongodb://localhost:27017 / jarvis_db
+2026-04-09 19:30:50,298 [INFO] jarvis.audio: Audio pipeline ready. model=base.en language=en beam=2 vad=False retry_without_vad=True mic_index=None
+2026-04-09 19:31:18,790 [INFO] jarvis.audio: Opening microphone: default microphone
+2026-04-09 19:31:19,551 [INFO] jarvis.audio: Microphone calibrated. energy_threshold=63.77445613866242
+2026-04-09 19:31:30,725 [INFO] jarvis.audio: Captured audio clip rms=63
+2026-04-09 19:31:30,727 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 19:31:51,384 [INFO] jarvis.audio: Captured audio clip rms=50
+2026-04-09 19:31:51,384 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 19:32:18,715 [INFO] jarvis.audio: Captured audio clip rms=97
+2026-04-09 19:32:18,725 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 19:32:40,372 [INFO] jarvis.audio: Captured audio clip rms=62
+2026-04-09 19:32:40,384 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 19:32:44,753 [INFO] jarvis.audio: Captured audio clip rms=86
+2026-04-09 19:32:44,754 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 19:32:50,513 [INFO] jarvis.audio: Captured audio clip rms=85
+2026-04-09 19:32:50,709 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 19:32:53,824 [INFO] jarvis.audio: Captured audio clip rms=60
+2026-04-09 19:32:53,825 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 19:33:11,567 [INFO] jarvis.audio: Captured audio clip rms=56
+2026-04-09 19:33:11,568 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 19:33:13,538 [INFO] jarvis.audio: Captured audio clip rms=76
+2026-04-09 19:33:13,538 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 19:33:39,206 [INFO] jarvis.audio: Captured audio clip rms=60
+2026-04-09 19:33:39,206 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 19:33:47,568 [INFO] jarvis.audio: Captured audio clip rms=109
+2026-04-09 19:33:47,570 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 19:33:51,187 [INFO] jarvis.audio: Captured audio clip rms=153
+2026-04-09 19:33:51,515 [INFO] faster_whisper: Processing audio with duration 00:01.718
+2026-04-09 19:33:55,463 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 19:33:58,988 [INFO] jarvis.audio: Captured audio clip rms=184
+2026-04-09 19:33:59,295 [INFO] faster_whisper: Processing audio with duration 00:03.228
+2026-04-09 19:34:03,202 [INFO] jarvis.audio: Heard: Head out of this.
+2026-04-09 19:34:08,008 [INFO] jarvis.audio: Captured audio clip rms=164
+2026-04-09 19:34:08,303 [INFO] faster_whisper: Processing audio with duration 00:02.322
+2026-04-09 19:34:12,139 [INFO] jarvis.audio: Heard: System's online.
+2026-04-09 19:34:18,894 [INFO] jarvis.audio: Captured audio clip rms=181
+2026-04-09 19:34:19,185 [INFO] faster_whisper: Processing audio with duration 00:01.997
+2026-04-09 19:34:23,115 [INFO] jarvis.audio: Heard: Ask a grounded question.
+2026-04-09 19:34:28,409 [INFO] jarvis.audio: Captured audio clip rms=202
+2026-04-09 19:34:28,717 [INFO] faster_whisper: Processing audio with duration 00:01.718
+2026-04-09 19:34:32,496 [INFO] jarvis.audio: Heard: object zero
+2026-04-09 19:34:35,912 [INFO] jarvis.audio: Captured audio clip rms=167
+2026-04-09 19:34:36,196 [INFO] faster_whisper: Processing audio with duration 00:01.625
+2026-04-09 19:34:40,012 [INFO] jarvis.audio: Heard: Target within.
+2026-04-09 19:34:43,447 [INFO] jarvis.audio: Captured audio clip rms=205
+2026-04-09 19:34:43,801 [INFO] faster_whisper: Processing audio with duration 00:01.602
+2026-04-09 19:34:47,836 [INFO] jarvis.audio: Heard: Target, we win.
+2026-04-09 19:34:50,811 [INFO] jarvis.audio: Captured audio clip rms=121
+2026-04-09 19:34:51,125 [INFO] faster_whisper: Processing audio with duration 00:01.625
+2026-04-09 19:34:54,972 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 19:34:57,687 [INFO] jarvis.audio: Captured audio clip rms=215
+2026-04-09 19:34:57,993 [INFO] faster_whisper: Processing audio with duration 00:02.229
+2026-04-09 19:35:02,044 [INFO] jarvis.audio: Heard: Target, 3davy.
+2026-04-09 19:35:06,431 [INFO] jarvis.audio: Captured audio clip rms=139
+2026-04-09 19:35:06,797 [INFO] faster_whisper: Processing audio with duration 00:02.113
+2026-04-09 19:35:13,867 [INFO] jarvis.audio: Heard: 3-D, 3-D, we are still here.
+2026-04-09 19:35:17,094 [INFO] jarvis.audio: Captured audio clip rms=80
+2026-04-09 19:35:17,094 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 19:35:24,945 [INFO] jarvis.audio: Captured audio clip rms=111
+2026-04-09 19:35:24,953 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 19:35:31,519 [INFO] jarvis.audio: Captured audio clip rms=71
+2026-04-09 19:35:31,521 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 19:35:38,968 [INFO] jarvis.audio: Captured audio clip rms=220
+2026-04-09 19:35:39,274 [INFO] faster_whisper: Processing audio with duration 00:03.112
+2026-04-09 19:35:52,008 [INFO] jarvis.audio: Heard: We've been...
+2026-04-09 19:35:57,483 [INFO] jarvis.audio: Captured audio clip rms=301
+2026-04-09 19:35:57,825 [INFO] faster_whisper: Processing audio with duration 00:01.300
+2026-04-09 19:36:09,606 [INFO] jarvis.audio: Heard: be in.
+2026-04-09 19:36:17,483 [INFO] jarvis.audio: Captured audio clip rms=66
+2026-04-09 19:36:17,485 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 19:36:20,874 [INFO] jarvis.audio: Captured audio clip rms=93
+2026-04-09 19:36:20,875 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 19:36:27,556 [INFO] jarvis.audio: Captured audio clip rms=72
+2026-04-09 19:36:27,556 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 19:36:34,068 [INFO] jarvis.audio: Captured audio clip rms=62
+2026-04-09 19:36:34,068 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 19:38:52,361 [INFO] jarvis.db: [OK] MongoDB connected -> mongodb://localhost:27017 / jarvis_db
+2026-04-09 19:38:57,351 [INFO] jarvis.audio: Audio pipeline ready. model=base.en language=en beam=2 vad=False retry_without_vad=True mic_index=None
+2026-04-09 19:39:19,776 [INFO] jarvis.audio: Opening microphone: default microphone
+2026-04-09 19:39:20,530 [INFO] jarvis.audio: Microphone calibrated. energy_threshold=72.02679409852925
+2026-04-09 19:39:22,297 [INFO] jarvis.audio: Captured audio clip rms=108
+2026-04-09 19:39:22,297 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 19:39:23,756 [INFO] jarvis.audio: Captured audio clip rms=121
+2026-04-09 19:39:24,058 [INFO] faster_whisper: Processing audio with duration 00:01.045
+2026-04-09 19:39:58,530 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 19:40:02,736 [INFO] jarvis.audio: Captured audio clip rms=130
+2026-04-09 19:40:03,112 [INFO] faster_whisper: Processing audio with duration 00:03.901
+2026-04-09 19:40:47,631 [INFO] jarvis.audio: Heard: Okay. Okay. All right. I'm going to start it with my first shot.
+2026-04-09 19:40:55,511 [INFO] jarvis.audio: Captured audio clip rms=48
+2026-04-09 19:40:55,512 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 19:40:59,990 [INFO] jarvis.audio: Captured audio clip rms=60
+2026-04-09 19:40:59,990 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 19:41:11,744 [INFO] jarvis.audio: Captured audio clip rms=64
+2026-04-09 19:41:11,789 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 19:41:16,894 [INFO] jarvis.audio: Captured audio clip rms=151
+2026-04-09 19:41:17,203 [INFO] faster_whisper: Processing audio with duration 00:01.161
+2026-04-09 19:41:21,155 [INFO] jarvis.audio: Heard: We've been.
+2026-04-09 19:41:33,003 [INFO] jarvis.audio: Captured audio clip rms=161
+2026-04-09 19:41:33,377 [INFO] faster_whisper: Processing audio with duration 00:01.927
+2026-04-09 19:41:37,431 [INFO] jarvis.audio: Heard: All people with CSE.
+2026-04-09 19:41:47,118 [INFO] jarvis.audio: Captured audio clip rms=113
+2026-04-09 19:41:47,120 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 19:41:53,339 [INFO] jarvis.audio: Captured audio clip rms=102
+2026-04-09 19:41:53,341 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 19:41:57,429 [INFO] jarvis.audio: Captured audio clip rms=60
+2026-04-09 19:41:57,439 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 19:42:17,566 [INFO] jarvis.audio: Captured audio clip rms=147
+2026-04-09 19:42:17,861 [INFO] faster_whisper: Processing audio with duration 00:01.788
+2026-04-09 19:42:22,290 [INFO] jarvis.audio: Heard: All people with DS
+2026-04-09 19:42:24,545 [INFO] jarvis.audio: Captured audio clip rms=61
+2026-04-09 19:42:24,546 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 19:42:28,727 [INFO] jarvis.audio: Captured audio clip rms=225
+2026-04-09 19:42:29,013 [INFO] faster_whisper: Processing audio with duration 00:01.347
+2026-04-09 19:42:42,306 [INFO] jarvis.audio: Heard: We've been...
+2026-04-09 19:42:47,161 [INFO] jarvis.audio: Captured audio clip rms=151
+2026-04-09 19:42:47,450 [INFO] faster_whisper: Processing audio with duration 00:01.300
+2026-04-09 19:42:58,219 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 19:43:00,980 [INFO] jarvis.audio: Captured audio clip rms=74
+2026-04-09 19:43:00,980 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 19:43:06,201 [INFO] jarvis.audio: Captured audio clip rms=58
+2026-04-09 19:43:06,265 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 19:43:12,071 [INFO] jarvis.audio: Captured audio clip rms=68
+2026-04-09 19:43:12,072 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 19:43:20,944 [INFO] jarvis.audio: Captured audio clip rms=245
+2026-04-09 19:43:21,229 [INFO] faster_whisper: Processing audio with duration 00:00.975
+2026-04-09 19:43:25,275 [INFO] jarvis.audio: Heard: computer
+2026-04-09 19:43:29,499 [INFO] jarvis.audio: Captured audio clip rms=76
+2026-04-09 19:43:29,532 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 19:43:33,155 [INFO] jarvis.audio: Captured audio clip rms=93
+2026-04-09 19:43:33,296 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 19:43:36,851 [INFO] jarvis.audio: Captured audio clip rms=71
+2026-04-09 19:43:36,852 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 19:43:40,771 [INFO] jarvis.db: MongoDB connection closed.
+2026-04-09 19:48:24,827 [INFO] jarvis.db: [OK] MongoDB connected -> mongodb://localhost:27017 / jarvis_db
+2026-04-09 19:48:30,376 [INFO] jarvis.audio: Audio pipeline ready. model=base.en language=en beam=2 vad=False retry_without_vad=True mic_index=None
+2026-04-09 19:49:00,114 [INFO] jarvis.audio: Opening microphone: default microphone
+2026-04-09 19:49:00,880 [INFO] jarvis.audio: Microphone calibrated. energy_threshold=64.19475555389135
+2026-04-09 19:49:02,621 [INFO] jarvis.audio: Captured audio clip rms=93
+2026-04-09 19:49:02,622 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 19:49:05,572 [INFO] jarvis.audio: Captured audio clip rms=82
+2026-04-09 19:49:05,573 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 19:49:09,032 [INFO] jarvis.audio: Captured audio clip rms=71
+2026-04-09 19:49:09,033 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 19:49:12,773 [INFO] jarvis.audio: Captured audio clip rms=121
+2026-04-09 19:49:12,774 [INFO] faster_whisper: Processing audio with duration 00:05.056
+2026-04-09 19:49:19,827 [INFO] jarvis.audio: Heard: Okay.
+2026-04-09 19:49:21,927 [INFO] jarvis.audio: Captured audio clip rms=112
+2026-04-09 19:49:21,928 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 19:49:31,448 [INFO] jarvis.audio: Captured audio clip rms=111
+2026-04-09 19:49:31,475 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 19:49:33,809 [INFO] jarvis.audio: Captured audio clip rms=90
+2026-04-09 19:49:33,809 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 19:49:37,179 [INFO] jarvis.audio: Captured audio clip rms=118
+2026-04-09 19:49:37,179 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 19:49:39,199 [INFO] jarvis.audio: Captured audio clip rms=126
+2026-04-09 19:49:39,200 [INFO] faster_whisper: Processing audio with duration 00:03.264
+2026-04-09 19:49:43,191 [INFO] jarvis.audio: Heard: Okay.
+2026-04-09 19:49:44,793 [INFO] jarvis.audio: Captured audio clip rms=114
+2026-04-09 19:49:44,795 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 19:49:46,975 [INFO] jarvis.audio: Captured audio clip rms=400
+2026-04-09 19:49:46,987 [INFO] faster_whisper: Processing audio with duration 00:04.864
+2026-04-09 19:49:52,959 [INFO] jarvis.audio: Heard: Good bye.
+2026-04-09 19:49:54,603 [INFO] jarvis.audio: Captured audio clip rms=87
+2026-04-09 19:49:54,605 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 19:49:56,023 [INFO] jarvis.audio: Captured audio clip rms=74
+2026-04-09 19:49:56,023 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 19:49:57,764 [INFO] jarvis.audio: Captured audio clip rms=162
+2026-04-09 19:49:57,765 [INFO] faster_whisper: Processing audio with duration 00:03.648
+2026-04-09 19:50:03,949 [INFO] jarvis.audio: Heard: All right.
+2026-04-09 19:50:07,896 [INFO] jarvis.audio: Captured audio clip rms=85
+2026-04-09 19:50:08,052 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 19:50:16,016 [INFO] jarvis.audio: Captured audio clip rms=141
+2026-04-09 19:50:16,041 [INFO] faster_whisper: Processing audio with duration 00:07.744
+2026-04-09 19:50:20,434 [INFO] jarvis.audio: Heard: Uh-uh.
+2026-04-09 19:50:33,929 [INFO] jarvis.audio: Captured audio clip rms=145
+2026-04-09 19:50:33,930 [INFO] faster_whisper: Processing audio with duration 00:06.144
+2026-04-09 19:50:40,105 [INFO] jarvis.audio: Heard: Exhale.
+2026-04-09 19:50:43,290 [INFO] jarvis.audio: Captured audio clip rms=110
+2026-04-09 19:50:43,296 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 19:50:50,281 [INFO] jarvis.audio: Captured audio clip rms=234
+2026-04-09 19:50:50,283 [INFO] faster_whisper: Processing audio with duration 00:11.840
+2026-04-09 19:50:56,696 [INFO] jarvis.audio: Heard: Okay.
+2026-04-09 19:51:03,219 [INFO] jarvis.audio: Captured audio clip rms=279
+2026-04-09 19:51:03,220 [INFO] faster_whisper: Processing audio with duration 00:08.192
+2026-04-09 19:51:11,206 [INFO] jarvis.audio: Heard: I love it after all these men.
+2026-04-09 19:51:13,550 [INFO] jarvis.audio: Captured audio clip rms=174
+2026-04-09 19:51:13,551 [INFO] faster_whisper: Processing audio with duration 00:05.632
+2026-04-09 19:51:18,004 [INFO] jarvis.audio: Heard: Ah, ah, ah, ah.
+2026-04-09 19:51:19,236 [INFO] jarvis.audio: Captured audio clip rms=118
+2026-04-09 19:51:19,237 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 19:51:24,178 [INFO] jarvis.audio: Captured audio clip rms=191
+2026-04-09 19:51:24,243 [INFO] faster_whisper: Processing audio with duration 00:12.480
+2026-04-09 19:51:28,538 [INFO] jarvis.audio: Heard: Oh, Jesus.
+2026-04-09 19:51:32,322 [INFO] jarvis.audio: Captured audio clip rms=178
+2026-04-09 19:51:32,323 [INFO] faster_whisper: Processing audio with duration 00:06.656
+2026-04-09 19:51:36,442 [INFO] jarvis.audio: Heard: Oh, come on.
+2026-04-09 19:51:42,157 [INFO] jarvis.audio: Captured audio clip rms=162
+2026-04-09 19:51:42,158 [INFO] faster_whisper: Processing audio with duration 00:14.912
+2026-04-09 19:51:48,319 [INFO] jarvis.audio: Heard: Ah
+2026-04-09 19:51:50,316 [INFO] jarvis.audio: Captured audio clip rms=169
+2026-04-09 19:51:50,317 [INFO] faster_whisper: Processing audio with duration 00:04.672
+2026-04-09 19:51:52,989 [INFO] jarvis.db: MongoDB connection closed.
+2026-04-09 19:52:08,986 [INFO] jarvis.db: [OK] MongoDB connected -> mongodb://localhost:27017 / jarvis_db
+2026-04-09 19:52:13,501 [INFO] jarvis.audio: Audio pipeline ready. model=base.en language=en beam=2 vad=False retry_without_vad=True mic_index=None
+2026-04-09 19:52:42,742 [INFO] jarvis.audio: Opening microphone: default microphone
+2026-04-09 19:52:43,466 [INFO] jarvis.audio: Microphone calibrated. energy_threshold=74.81187556831144
+2026-04-09 19:52:51,589 [INFO] jarvis.audio: Captured audio clip rms=170
+2026-04-09 19:52:51,590 [INFO] faster_whisper: Processing audio with duration 00:10.112
+2026-04-09 19:52:59,260 [INFO] jarvis.audio: Heard: Okay.
+2026-04-09 19:53:01,746 [INFO] jarvis.audio: Captured audio clip rms=167
+2026-04-09 19:53:01,749 [INFO] faster_whisper: Processing audio with duration 00:06.016
+2026-04-09 19:53:08,944 [INFO] jarvis.audio: Heard: All right.
+2026-04-09 19:53:18,291 [INFO] jarvis.audio: Captured audio clip rms=129
+2026-04-09 19:53:18,295 [INFO] faster_whisper: Processing audio with duration 00:04.288
+2026-04-09 19:53:25,823 [INFO] jarvis.audio: Heard: Shh.
+2026-04-09 19:53:36,898 [INFO] jarvis.audio: Captured audio clip rms=148
+2026-04-09 19:53:36,899 [INFO] faster_whisper: Processing audio with duration 00:06.272
+2026-04-09 19:53:44,876 [INFO] jarvis.audio: Heard: Mm.
+2026-04-09 19:53:49,241 [INFO] jarvis.audio: Captured audio clip rms=305
+2026-04-09 19:53:49,242 [INFO] faster_whisper: Processing audio with duration 00:09.408
+2026-04-09 19:53:56,040 [INFO] jarvis.audio: Heard: Thank you.
+2026-04-09 19:54:09,974 [INFO] jarvis.audio: Captured audio clip rms=140
+2026-04-09 19:54:09,976 [INFO] faster_whisper: Processing audio with duration 00:03.136
+2026-04-09 19:54:14,512 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 19:54:16,597 [INFO] jarvis.audio: Captured audio clip rms=135
+2026-04-09 19:54:16,600 [INFO] faster_whisper: Processing audio with duration 00:03.328
+2026-04-09 19:54:21,220 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 19:54:22,945 [INFO] jarvis.audio: Captured audio clip rms=172
+2026-04-09 19:54:22,952 [INFO] faster_whisper: Processing audio with duration 00:03.136
+2026-04-09 19:54:29,680 [INFO] jarvis.audio: Heard: Okay.
+2026-04-09 19:54:36,511 [INFO] jarvis.audio: Captured audio clip rms=151
+2026-04-09 19:54:36,512 [INFO] faster_whisper: Processing audio with duration 00:05.696
+2026-04-09 19:54:43,145 [INFO] jarvis.audio: Heard: Okay.
+2026-04-09 19:54:46,398 [INFO] jarvis.audio: Captured audio clip rms=287
+2026-04-09 19:54:46,444 [INFO] faster_whisper: Processing audio with duration 00:06.272
+2026-04-09 19:54:51,168 [INFO] jarvis.audio: Heard: Good time.
+2026-04-09 19:54:52,957 [INFO] jarvis.db: MongoDB connection closed.
+2026-04-09 20:11:14,348 [INFO] jarvis.db: [OK] MongoDB connected -> mongodb://localhost:27017 / jarvis_db
+2026-04-09 20:11:19,042 [INFO] jarvis.audio: Audio pipeline ready. model=base.en language=en beam=2 vad=False retry_without_vad=True mic_index=None
+2026-04-09 20:11:48,756 [INFO] jarvis.audio: Opening microphone: default microphone
+2026-04-09 20:11:49,472 [INFO] jarvis.audio: Microphone calibrated. energy_threshold=67.94247553789226
+2026-04-09 20:11:53,014 [INFO] jarvis.audio: Captured audio clip rms=95
+2026-04-09 20:11:53,016 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 20:11:58,974 [INFO] jarvis.audio: Captured audio clip rms=78
+2026-04-09 20:11:58,976 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 20:12:04,734 [INFO] jarvis.audio: Captured audio clip rms=61
+2026-04-09 20:12:04,734 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 20:12:08,564 [INFO] jarvis.audio: Captured audio clip rms=126
+2026-04-09 20:12:08,565 [INFO] faster_whisper: Processing audio with duration 00:05.312
+2026-04-09 20:12:13,000 [INFO] jarvis.audio: Heard: Hello?
+2026-04-09 20:12:16,955 [INFO] jarvis.audio: Captured audio clip rms=136
+2026-04-09 20:12:16,956 [INFO] faster_whisper: Processing audio with duration 00:08.768
+2026-04-09 20:12:20,121 [INFO] jarvis.db: MongoDB connection closed.

@@ -1,178 +1,196 @@
-# JARVIS — Face Recognition & HUD Display System
+# JARVIS Local Assistant
 
-> Real-time face recognition with a Jarvis-style HUD overlay, MongoDB-backed person database, and spotlight target-lock effect.
+Local-first Jarvis-style assistant in Python with:
 
----
+- live webcam input
+- optional screen capture fusion
+- InsightFace recognition
+- YOLO object detection
+- Faster-Whisper speech-to-text
+- Ollama + Gemma 4 grounded reasoning
+- HUD overlays, target lock, and crowd focus mode
 
-## Features
+## Project structure
 
-| Feature | Details |
-|---|---|
-| Face Detection | InsightFace `buffalo_s` (falls back to Haar cascade) |
-| Face Recognition | 512-dim cosine similarity against MongoDB embeddings |
-| HUD Overlay | Animated brackets, data cards, scan lines, status bars |
-| Target Lock | Spotlight dim + zoom pulse when a known person is detected |
-| Database | MongoDB — person registry + recognition event log |
-| Multi-threaded | Camera capture and recognition run in parallel |
+```text
+.
+|-- config.py
+|-- main.py
+|-- enroll.py
+|-- requirements.txt
+|-- data/
+|   |-- known_faces/
+|   |-- memory/
+|   |   |-- persons.json
+|   |   `-- events.jsonl
+|   `-- sample/
+|-- logs/
+|-- screenshots/
+`-- modules/
+    |-- audio_engine.py
+    |-- context_builder.py
+    |-- db.py
+    |-- face_engine.py
+    |-- hud_overlay.py
+    |-- object_engine.py
+    |-- reasoning_engine.py
+    |-- rules_engine.py
+    |-- screen_capture.py
+    `-- tts_engine.py
+```
 
----
+## What it does
 
-## Quick Start
+- detects and tracks multiple people in real time
+- recognizes enrolled faces and pulls local profile data
+- detects objects and keeps object memory with last-seen timestamps
+- listens for the wake word `Jarvis`
+- answers grounded questions from live context plus local DB memory
+- can isolate one named person from a crowd with focus mode
+- sends a live scene snapshot to Gemma 4 for stronger local scene understanding
 
-### 1 · Prerequisites
+## Recommended local brain
 
-- Python 3.10+
-- MongoDB (local or Atlas)
-- Webcam
+This repo is now configured for Ollama with `gemma4:e4b` by default.
 
-### 2 · Clone / unzip and install dependencies
+- default local model: `gemma4:e4b`
+- larger workstation option: `gemma4:26b`
+- highest local quality if your machine can handle it: `gemma4:31b`
 
-```bash
-cd jarvis-face-id
+## Setup
+
+1. Create and activate a virtual environment.
+
+```powershell
+python -m venv .venv
+.venv\Scripts\Activate.ps1
+```
+
+2. Install Python dependencies.
+
+```powershell
 pip install -r requirements.txt
 ```
 
-> **GPU users:** replace `onnxruntime` with `onnxruntime-gpu` in requirements.txt
+3. Install and start Ollama, then pull Gemma 4.
 
-### 3 · Configure environment
-
-Edit `.env` — at minimum set your MongoDB URI:
-
-```
-MONGO_URI=mongodb://localhost:27017
-MONGO_DB_NAME=jarvis_db
+```powershell
+ollama pull gemma4:e4b
+ollama serve
 ```
 
-For MongoDB Atlas:
-```
-MONGO_URI=mongodb+srv://<user>:<password>@cluster0.xxxxx.mongodb.net/
-```
+4. Copy env settings if needed.
 
-### 4 · Seed sample data (optional)
-
-Inserts four placeholder persons so you can test DB connectivity and HUD labels immediately:
-
-```bash
-python seed_sample_data.py
+```powershell
+Copy-Item .env.example .env
 ```
 
-### 5 · Enroll real faces
+The repo already includes Gemma 4 defaults in `config.py` and `.env.example`.
 
-```bash
-# From an image file
-python enroll.py --image path/to/photo.jpg \
-                 --id EMP-001 --name "Alice Chen" \
-                 --department Engineering --role "Senior Engineer"
+5. Enroll known people.
 
-# From webcam (press SPACE to capture)
-python enroll.py --webcam \
-                 --id EMP-002 --name "Bob Singh" \
-                 --department Security
-
-# List enrolled persons
-python enroll.py --list
-
-# Remove a person
-python enroll.py --delete EMP-001
+```powershell
+python enroll.py --image path\to\person.jpg --id EMP-101 --name "Ava Rao" --department Research --role "Engineer"
 ```
 
-### 6 · Run JARVIS
+You can also enroll from the webcam:
 
-```bash
+```powershell
+python enroll.py --webcam --id EMP-102 --name "Viven" --department Engineering --role "Developer"
+```
+
+6. Run the assistant.
+
+```powershell
 python main.py
 ```
 
-**Runtime controls:**
+## Runtime usage
 
-| Key | Action |
-|-----|--------|
-| `Q` / `ESC` | Quit |
-| `F` | Toggle fullscreen |
-| `S` | Save screenshot |
-| `R` | Reload persons from DB |
+- `Jarvis who is that`
+- `Jarvis what is happening`
+- `Jarvis what should I do`
+- `Jarvis spot Viven`
+- `Jarvis focus on Ava`
+- `Jarvis clear focus`
+- `Jarvis how many tv are there`
+- `Jarvis list objects in the database`
 
----
+Keyboard shortcuts:
 
-## Project Structure
+- `Q` or `Esc`: quit
+- `F`: toggle fullscreen
+- `S`: save screenshot
 
-```
-jarvis-face-id/
-├── .env                  ← environment config (edit this)
-├── .env.example          ← reference template
-├── config.py             ← typed config loader
-├── main.py               ← application entry point
-├── enroll.py             ← CLI enrollment tool
-├── seed_sample_data.py   ← insert test records into MongoDB
-├── requirements.txt
-├── modules/
-│   ├── __init__.py
-│   ├── db.py             ← MongoDB interface (PersonDB)
-│   ├── face_engine.py    ← InsightFace detection + matching
-│   └── hud.py            ← Jarvis HUD renderer
-├── data/
-│   ├── known_faces/      ← place enrollment photos here
-│   └── sample/
-├── logs/
-└── screenshots/
+## Enrollment commands
+
+Enroll from an image:
+
+```powershell
+python enroll.py --image path\to\person.jpg --id EMP-101 --name "Ava Rao" --department Research --role "Engineer" --notes "Main profile"
 ```
 
----
+Enroll from the webcam:
 
-## MongoDB Schema
-
-### `persons` collection
-
-```json
-{
-  "person_id":   "EMP-001",
-  "name":        "Alice Chen",
-  "department":  "Engineering",
-  "role":        "Senior Engineer",
-  "embedding":   [0.012, -0.341, ...],   // 512 floats
-  "enrolled_at": "2024-01-01T10:00:00Z",
-  "photo_path":  "data/known_faces/alice.jpg"
-}
+```powershell
+python enroll.py --webcam --id EMP-102 --name "Viven" --department Engineering --role "Developer"
 ```
 
-### `recognition_logs` collection
+List enrolled people:
 
-```json
-{
-  "person_id":  "EMP-001",
-  "confidence": 94.2,
-  "bbox":       [120, 80, 280, 310],
-  "timestamp":  "2024-01-15T14:32:11Z"
-}
+```powershell
+python enroll.py --list
 ```
 
----
+Delete an enrolled person:
 
-## Configuration Reference (`.env`)
+```powershell
+python enroll.py --delete EMP-102
+```
 
-| Variable | Default | Description |
-|---|---|---|
-| `MONGO_URI` | `mongodb://localhost:27017` | MongoDB connection string |
-| `MONGO_DB_NAME` | `jarvis_db` | Database name |
-| `CAMERA_INDEX` | `0` | Webcam index |
-| `FACE_RECOGNITION_THRESHOLD` | `0.45` | Match distance (lower = stricter) |
-| `FACE_DETECTION_MODEL` | `buffalo_s` | InsightFace model name |
-| `TARGET_LOCK_DURATION` | `10` | Seconds to hold spotlight lock |
-| `SPOTLIGHT_DIM_ALPHA` | `0.75` | Background dim level (0–1) |
-| `HUD_COLOR_PRIMARY` | `0,255,70` | Main HUD colour (R,G,B) |
-| `FULLSCREEN` | `false` | Start in fullscreen mode |
+## Gemma 4 notes
 
----
+- reasoning uses Ollama chat API locally
+- visual reasoning can include the latest camera or fused frame snapshot
+- person identity and DB history come from structured JSON context
+- image input is used for scene layout, motion, and visual grounding
+- `OLLAMA_THINK=false` is the default for lower latency and cleaner HUD output
+- speech recognition now defaults to `base.en` with VAD enabled for better voice capture accuracy
 
-## Troubleshooting
+## Important env settings
 
-**InsightFace model download fails on first run**
-The model is downloaded automatically to `~/.insightface/`. Ensure internet access on first run, then it works offline.
+```env
+OLLAMA_MODEL=gemma4:e4b
+OLLAMA_HOST=http://127.0.0.1:11434
+OLLAMA_KEEP_ALIVE=15m
+OLLAMA_THINK=false
+OLLAMA_TEMPERATURE=0.4
+OLLAMA_TOP_P=0.95
+OLLAMA_TOP_K=64
+OLLAMA_NUM_CTX=8192
+OLLAMA_VISION_ENABLED=true
+OLLAMA_VISION_MAX_WIDTH=960
+OLLAMA_VISION_JPEG_QUALITY=80
+REASONING_TIMEOUT_SEC=20
+WHISPER_MODEL_SIZE=base.en
+WHISPER_LANGUAGE=en
+WHISPER_BEAM_SIZE=4
+WHISPER_USE_VAD=true
+WHISPER_RETRY_WITHOUT_VAD=true
+AUDIO_MIN_RMS=140
+```
 
-**MongoDB connection refused**
-Check that `mongod` is running: `sudo systemctl start mongod`
+## Performance tips
 
-**Low FPS**
-- Reduce `CAMERA_WIDTH`/`CAMERA_HEIGHT` in `.env`
-- Use `buffalo_sc` (small/fast) instead of `buffalo_s`
-- Install `onnxruntime-gpu` if you have a CUDA GPU
-"# jarvis" 
+- use `gemma4:e4b` for lower latency on consumer hardware
+- switch `OBJECT_FRAME_SKIP` above `1` if CPU usage is high
+- keep `OLLAMA_VISION_MAX_WIDTH` at `960` or lower if responses are slow
+- use `WHISPER_MODEL_SIZE=base.en` for better recognition accuracy
+- drop to `tiny.en` only if you need the absolute lowest latency
+- disable screen capture unless you need it
+
+## Notes
+
+- object memory is stored by label with count and last seen time
+- face memory is stored locally and can also sync to MongoDB
+- if Ollama is unavailable, the assistant falls back to rules-based reasoning

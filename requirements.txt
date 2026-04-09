@@ -1,24 +1,15 @@
-# Core vision
 opencv-python>=4.8.0
 numpy>=1.24.0
-
-# Face recognition (InsightFace)
-insightface>=0.7.3
-onnxruntime>=1.16.0          # CPU; use onnxruntime-gpu for CUDA
-ultralytics>=8.0.0           # YOLOv8 object detection
-
-# MongoDB
-pymongo>=4.6.0
-motor>=3.3.1                  # Async MongoDB (optional, for future)
-
-# Environment & config
 python-dotenv>=1.0.0
+requests>=2.31.0
+pymongo>=4.8.0
 
-# Utilities
+insightface>=0.7.3
+onnxruntime>=1.16.0
+ultralytics>=8.2.0
 
-Pillow>=10.0.0
-scipy>=1.11.0
-tqdm>=4.66.0
-
-# Optional: GPU acceleration
-# onnxruntime-gpu>=1.16.0     # Uncomment if CUDA is available
+SpeechRecognition>=3.10.0
+PyAudio>=0.2.14
+faster-whisper>=1.0.3
+pyttsx3>=2.90
+mss>=10.0.0
