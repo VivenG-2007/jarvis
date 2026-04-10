@@ -148,7 +148,7 @@ class HUDOverlay:
         center = ((x1 + x2) // 2, (y1 + y2) // 2)
         axes = (max(70, (x2 - x1) // 2), max(100, (y2 - y1) // 2))
         cv2.ellipse(mask, center, axes, 0, 0, 360, 255, -1)
-        mask = cv2.GaussianBlur(mask, (81, 81), 0)
+        mask = cv2.GaussianBlur(mask, (41, 41), 0)
         mask_float = (mask / 255.0)[..., None]
         mixed = (overlay.astype(np.float32) * (1.0 - mask_float) + frame.astype(np.float32) * mask_float).astype(np.uint8)
         return mixed
@@ -180,6 +180,8 @@ class HUDOverlay:
         for face in faces:
             face_id = face["id"]
             active_ids.add(face_id)
+            if face.get("suppressed_overlay"):
+                continue
             bbox = self._smooth_box(face_id, face["bbox"])
             x1, y1, x2, y2 = [int(v) for v in bbox]
             is_target = self.active_lock is not None and face_id == self.active_lock.track_id
@@ -272,8 +274,8 @@ class HUDOverlay:
         h, w = frame.shape[:2]
         self._draw_panel(frame, 12, 12, 260, 42, config.APP.hud_color_primary, alpha=0.36, accent=False)
         timestamp = time.strftime("%H:%M:%S")
-        cv2.putText(frame, "JARVIS VISION", (24, 31), cv2.FONT_HERSHEY_SIMPLEX, 0.56, config.APP.hud_color_primary, 1, cv2.LINE_AA)
-        cv2.putText(frame, timestamp, (24, 46), cv2.FONT_HERSHEY_SIMPLEX, 0.36, (130, 180, 170), 1, cv2.LINE_AA)
+        cv2.putText(frame, "J.A.R.V.I.S.", (24, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.58, config.APP.hud_color_primary, 1, cv2.LINE_AA)
+        cv2.putText(frame, f"TACTICAL OVERLAY  {timestamp}", (24, 46), cv2.FONT_HERSHEY_SIMPLEX, 0.34, (130, 180, 170), 1, cv2.LINE_AA)
         mic_state = "VOICE" if listening else "ARMED" if wake_active else "STBY"
         status = f"FACES {face_count:02d}  OBJECTS {object_count:02d}  MIC {mic_state}"
         self._draw_chip(frame, w - 250, 18, status, config.APP.hud_color_accent, width=238, align_top=True, compact=True)
@@ -300,7 +302,7 @@ class HUDOverlay:
         panel_color = config.APP.hud_color_primary if heard_text.strip() else (90, 120, 110)
         alpha = 0.38 if heard_text.strip() else 0.24
         self._draw_panel(frame, x1, y1, width, height, panel_color, alpha=alpha, accent=False)
-        cv2.putText(frame, "YOU SAID", (x1 + 12, y1 + 20), cv2.FONT_HERSHEY_SIMPLEX, 0.42, config.APP.hud_color_primary, 1, cv2.LINE_AA)
+        cv2.putText(frame, "VOICE LINK", (x1 + 12, y1 + 20), cv2.FONT_HERSHEY_SIMPLEX, 0.42, config.APP.hud_color_primary, 1, cv2.LINE_AA)
         state_text = "LISTENING..." if is_listening else "AWAITING COMMAND" if wake_active else "LAST TRANSCRIPT"
         cv2.putText(frame, state_text, (x1 + width - 150, y1 + 20), cv2.FONT_HERSHEY_SIMPLEX, 0.34, (135, 172, 165), 1, cv2.LINE_AA)
         wrapped = textwrap.wrap(heard_text.strip() or "No speech captured yet.", width=36)[:4]
@@ -318,7 +320,7 @@ class HUDOverlay:
         panel_color = config.APP.hud_color_alert if (is_listening or wake_active) else config.APP.hud_color_accent
         alpha = 0.42 if (is_listening or wake_active) else 0.34
         self._draw_panel(frame, x1, y1, width, height, panel_color, alpha=alpha, accent=False)
-        cv2.putText(frame, "OVERLAY RESPONSE", (x1 + 12, y1 + 20), cv2.FONT_HERSHEY_SIMPLEX, 0.42, config.APP.hud_color_accent, 1, cv2.LINE_AA)
+        cv2.putText(frame, "MISSION RESPONSE", (x1 + 12, y1 + 20), cv2.FONT_HERSHEY_SIMPLEX, 0.42, config.APP.hud_color_accent, 1, cv2.LINE_AA)
         status_text = "SPEECH DETECTED" if is_listening else "READY FOR COMMAND" if wake_active else "MIC ON STANDBY"
         status_color = config.APP.hud_color_alert if (is_listening or wake_active) else (135, 172, 165)
         cv2.putText(frame, status_text, (x1 + width - 176, y1 + 20), cv2.FONT_HERSHEY_SIMPLEX, 0.36, status_color, 1, cv2.LINE_AA)
@@ -337,7 +339,7 @@ class HUDOverlay:
         if reveal_ratio < 1.0:
             caret_x = x1 + 12 + min(width - 28, int((width - 24) * reveal_ratio))
             cv2.line(frame, (caret_x, y1 + 32), (caret_x, y1 + height - 18), status_color, 1, cv2.LINE_AA)
-        footer = f"TRACKS {len(self.smooth_boxes):02d}   LOCK {'ENGAGED' if self.active_lock else 'STANDBY'}"
+        footer = f"TRACKS {len(self.smooth_boxes):02d}   TARGET {'LOCKED' if self.active_lock else 'SEARCHING'}"
         cv2.putText(frame, footer, (x1 + 12, y1 + height - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.34, (135, 172, 165), 1, cv2.LINE_AA)
 
     def _draw_audio_meter(

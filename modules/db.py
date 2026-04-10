@@ -135,7 +135,7 @@ class PersonDB:
         self.registry_path.write_text(json.dumps(serialized, indent=2), encoding="utf-8")
 
     def _sync_file_records_to_mongo(self) -> None:
-        if not self._mongo_connected or not self.persons_collection:
+        if not self._mongo_connected or self.persons_collection is None:
             return
         for record in self._records:
             try:
@@ -228,11 +228,27 @@ class PersonDB:
             return None
 
         people = self.get_all_persons()
-        exact = next((person for person in people if str(person.get("name", "")).strip().lower() == needle), None)
+        exact = next((person for person in people if self._normalize_name(str(person.get("name", ""))) == self._normalize_name(needle)), None)
         if exact is not None:
             return exact
 
+        partial = next(
+            (
+                person
+                for person in people
+                if self._normalize_name(needle) in self._normalize_name(str(person.get("name", "")))
+            ),
+            None,
+        )
+        if partial is not None:
+            return partial
+
         return next((person for person in people if needle in str(person.get("name", "")).strip().lower()), None)
+
+    @staticmethod
+    def _normalize_name(value: str) -> str:
+        cleaned = value.lower().replace("_", " ").replace("-", " ").strip()
+        return "".join(ch for ch in cleaned if ch.isalnum())
 
     def list_persons(self) -> list[dict[str, Any]]:
         if self._mongo_connected and self.persons_collection is not None:
@@ -242,6 +258,76 @@ class PersonDB:
             except PyMongoError as exc:
                 logger.warning("Failed to list persons from MongoDB: %s", exc)
         return [{k: v for k, v in item.items() if k != "embedding"} for item in self._records]
+
+    def upsert_person_metadata(
+        self,
+        person_id: str,
+        name: str,
+        department: str = "",
+        role: str = "",
+        notes: str = "",
+        photo_path: Optional[str] = None,
+    ) -> dict[str, Any]:
+        clean_id = person_id.strip()
+        clean_name = name.strip()
+        if not clean_id or not clean_name:
+            raise ValueError("person_id and name are required")
+
+        existing = next((item for item in self._records if str(item.get("person_id", "")).strip() == clean_id), None)
+        embedding = existing.get("embedding", []) if existing else []
+        enrolled_at = existing.get("enrolled_at") if existing else datetime.now(timezone.utc).isoformat()
+        payload = {
+            "person_id": clean_id,
+            "name": clean_name,
+            "department": department.strip(),
+            "role": role.strip(),
+            "notes": notes.strip(),
+            "photo_path": photo_path or (existing.get("photo_path") if existing else None),
+            "embedding": embedding,
+            "enrolled_at": enrolled_at,
+        }
+
+        self._records = [item for item in self._records if str(item.get("person_id", "")).strip() != clean_id]
+        self._records.append(payload)
+        self._records.sort(key=lambda item: item["person_id"])
+        self._persist_file()
+
+        if self._mongo_connected and self.persons_collection is not None:
+            try:
+                self.persons_collection.replace_one({"person_id": clean_id}, payload, upsert=True)
+            except PyMongoError as exc:
+                logger.warning("Failed to upsert metadata-only person %s into MongoDB: %s", clean_id, exc)
+        return self._normalize_person(payload)
+
+    def update_person_metadata(self, person_id: str, fields: dict[str, Any]) -> Optional[dict[str, Any]]:
+        clean_id = person_id.strip()
+        if not clean_id:
+            return None
+
+        editable_fields = {"name", "department", "role", "notes", "photo_path"}
+        normalized_fields = {key: value for key, value in fields.items() if key in editable_fields and value is not None}
+        if not normalized_fields:
+            return self.get_person_by_id(clean_id)
+
+        existing = next((item for item in self._records if str(item.get("person_id", "")).strip() == clean_id), None)
+        if existing is None:
+            return None
+
+        updated = dict(existing)
+        for key, value in normalized_fields.items():
+            updated[key] = str(value).strip()
+
+        self._records = [item for item in self._records if str(item.get("person_id", "")).strip() != clean_id]
+        self._records.append(updated)
+        self._records.sort(key=lambda item: item["person_id"])
+        self._persist_file()
+
+        if self._mongo_connected and self.persons_collection is not None:
+            try:
+                self.persons_collection.replace_one({"person_id": clean_id}, updated, upsert=False)
+            except PyMongoError as exc:
+                logger.warning("Failed to update person %s in MongoDB: %s", clean_id, exc)
+        return self._normalize_person(updated)
 
     def delete_person(self, person_id: str) -> bool:
         deleted = False

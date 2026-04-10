@@ -1864,3 +1864,1836 @@ AttributeError: 'NoneType' object has no attribute 'close'
 2026-04-09 20:12:16,955 [INFO] jarvis.audio: Captured audio clip rms=136
 2026-04-09 20:12:16,956 [INFO] faster_whisper: Processing audio with duration 00:08.768
 2026-04-09 20:12:20,121 [INFO] jarvis.db: MongoDB connection closed.
+2026-04-09 21:02:02,796 [INFO] jarvis.db: [OK] MongoDB connected -> mongodb://localhost:27017 / jarvis_db
+2026-04-09 21:02:05,289 [INFO] jarvis.audio: Audio pipeline ready. model=base.en language=en beam=2 vad=False retry_without_vad=True mic_index=None
+2026-04-09 21:02:19,628 [INFO] jarvis.audio: Opening microphone: default microphone
+2026-04-09 21:02:20,375 [INFO] jarvis.audio: Microphone calibrated. energy_threshold=73.84316529693872
+2026-04-09 21:02:23,276 [INFO] jarvis.audio: Captured audio clip rms=113
+2026-04-09 21:02:23,317 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:02:26,857 [INFO] jarvis.audio: Captured audio clip rms=99
+2026-04-09 21:02:26,857 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:02:29,267 [INFO] jarvis.audio: Captured audio clip rms=111
+2026-04-09 21:02:29,268 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:02:30,969 [INFO] jarvis.audio: Captured audio clip rms=100
+2026-04-09 21:02:30,983 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:02:33,586 [INFO] jarvis.audio: Captured audio clip rms=101
+2026-04-09 21:02:33,586 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:02:41,488 [INFO] jarvis.audio: Captured audio clip rms=96
+2026-04-09 21:02:41,489 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:02:44,457 [INFO] jarvis.audio: Captured audio clip rms=92
+2026-04-09 21:02:44,458 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:02:46,897 [INFO] jarvis.audio: Captured audio clip rms=95
+2026-04-09 21:02:47,025 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:02:48,586 [INFO] jarvis.audio: Captured audio clip rms=95
+2026-04-09 21:02:48,587 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:02:51,207 [INFO] jarvis.audio: Captured audio clip rms=86
+2026-04-09 21:02:51,208 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:02:54,047 [INFO] jarvis.audio: Captured audio clip rms=109
+2026-04-09 21:02:54,048 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:02:56,227 [INFO] jarvis.audio: Captured audio clip rms=97
+2026-04-09 21:02:56,358 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:03:02,402 [INFO] jarvis.audio: Captured audio clip rms=95
+2026-04-09 21:03:02,402 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:03:04,582 [INFO] jarvis.audio: Captured audio clip rms=87
+2026-04-09 21:03:04,583 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:03:15,365 [INFO] jarvis.audio: Captured audio clip rms=94
+2026-04-09 21:03:15,365 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:03:22,373 [INFO] jarvis.audio: Captured audio clip rms=87
+2026-04-09 21:03:22,376 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:03:24,832 [INFO] jarvis.audio: Captured audio clip rms=128
+2026-04-09 21:03:24,833 [INFO] faster_whisper: Processing audio with duration 00:05.632
+2026-04-09 21:03:30,216 [INFO] jarvis.audio: Heard: You
+2026-04-09 21:03:34,737 [INFO] jarvis.audio: Captured audio clip rms=89
+2026-04-09 21:03:34,738 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:03:36,086 [INFO] jarvis.audio: Captured audio clip rms=208
+2026-04-09 21:03:36,087 [INFO] faster_whisper: Processing audio with duration 00:02.496
+2026-04-09 21:03:41,832 [INFO] jarvis.audio: Heard: Ah, ah, ah.
+2026-04-09 21:03:43,915 [INFO] jarvis.audio: Captured audio clip rms=192
+2026-04-09 21:03:43,918 [INFO] faster_whisper: Processing audio with duration 00:04.928
+2026-04-09 21:03:48,123 [INFO] jarvis.audio: Heard: Ah, ah, ah, ah, ah.
+2026-04-09 21:03:52,465 [INFO] jarvis.audio: Captured audio clip rms=174
+2026-04-09 21:03:52,466 [INFO] faster_whisper: Processing audio with duration 00:04.800
+2026-04-09 21:03:56,410 [INFO] jarvis.audio: Heard: Oh my gosh.
+2026-04-09 21:04:01,424 [INFO] jarvis.audio: Captured audio clip rms=106
+2026-04-09 21:04:01,424 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:04:03,003 [INFO] jarvis.audio: Captured audio clip rms=355
+2026-04-09 21:04:03,004 [INFO] faster_whisper: Processing audio with duration 00:03.200
+2026-04-09 21:04:06,918 [INFO] jarvis.audio: Heard: I don't know why.
+2026-04-09 21:04:11,582 [INFO] jarvis.audio: Captured audio clip rms=72
+2026-04-09 21:04:11,595 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:04:14,811 [INFO] jarvis.audio: Captured audio clip rms=184
+2026-04-09 21:04:14,812 [INFO] faster_whisper: Processing audio with duration 00:06.080
+2026-04-09 21:04:20,832 [INFO] jarvis.audio: Heard: I'm gonna shut my head off.
+2026-04-09 21:04:28,097 [INFO] jarvis.audio: Captured audio clip rms=184
+2026-04-09 21:04:28,150 [INFO] faster_whisper: Processing audio with duration 00:09.536
+2026-04-09 21:04:32,301 [INFO] jarvis.audio: Heard: Up, up, up, up.
+2026-04-09 21:04:36,573 [INFO] jarvis.audio: Captured audio clip rms=325
+2026-04-09 21:04:36,626 [INFO] faster_whisper: Processing audio with duration 00:04.288
+2026-04-09 21:04:41,641 [INFO] jarvis.audio: Heard: Tom. Tom. Tom. Tom. Tom. Tom.
+2026-04-09 21:04:45,844 [INFO] jarvis.audio: Captured audio clip rms=78
+2026-04-09 21:04:45,844 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:04:47,284 [INFO] jarvis.audio: Captured audio clip rms=85
+2026-04-09 21:04:47,285 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:04:48,764 [INFO] jarvis.audio: Captured audio clip rms=82
+2026-04-09 21:04:48,765 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:04:51,834 [INFO] jarvis.audio: Captured audio clip rms=86
+2026-04-09 21:04:51,836 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:04:54,826 [INFO] jarvis.audio: Captured audio clip rms=104
+2026-04-09 21:04:54,827 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:04:56,844 [INFO] jarvis.audio: Captured audio clip rms=122
+2026-04-09 21:04:56,873 [INFO] faster_whisper: Processing audio with duration 00:04.352
+2026-04-09 21:05:00,947 [INFO] jarvis.audio: Heard: All right.
+2026-04-09 21:05:02,130 [INFO] jarvis.audio: Captured audio clip rms=116
+2026-04-09 21:05:02,157 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:05:06,770 [INFO] jarvis.audio: Captured audio clip rms=84
+2026-04-09 21:05:06,781 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:05:10,651 [INFO] jarvis.audio: Captured audio clip rms=89
+2026-04-09 21:05:10,670 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:05:15,361 [INFO] jarvis.audio: Captured audio clip rms=97
+2026-04-09 21:05:15,362 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:05:18,481 [INFO] jarvis.audio: Captured audio clip rms=101
+2026-04-09 21:05:18,493 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:05:26,073 [INFO] jarvis.audio: Captured audio clip rms=108
+2026-04-09 21:05:26,074 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:05:27,860 [INFO] jarvis.audio: Captured audio clip rms=108
+2026-04-09 21:05:27,865 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:05:33,501 [INFO] jarvis.audio: Captured audio clip rms=79
+2026-04-09 21:05:33,605 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:05:36,471 [INFO] jarvis.audio: Captured audio clip rms=88
+2026-04-09 21:05:36,518 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:05:41,001 [INFO] jarvis.audio: Captured audio clip rms=85
+2026-04-09 21:05:41,001 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:05:43,651 [INFO] jarvis.audio: Captured audio clip rms=85
+2026-04-09 21:05:43,651 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:05:45,454 [INFO] jarvis.audio: Captured audio clip rms=117
+2026-04-09 21:05:45,529 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:05:51,052 [INFO] jarvis.audio: Captured audio clip rms=103
+2026-04-09 21:05:51,206 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:05:54,459 [INFO] jarvis.audio: Captured audio clip rms=71
+2026-04-09 21:05:54,459 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:06:00,770 [INFO] jarvis.audio: Captured audio clip rms=84
+2026-04-09 21:06:00,795 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:06:04,049 [INFO] jarvis.audio: Captured audio clip rms=99
+2026-04-09 21:06:04,049 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:06:05,898 [INFO] jarvis.audio: Captured audio clip rms=102
+2026-04-09 21:06:05,940 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:06:09,391 [INFO] jarvis.audio: Captured audio clip rms=97
+2026-04-09 21:06:09,400 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:11:54,617 [INFO] jarvis.db: [OK] MongoDB connected -> mongodb://localhost:27017 / jarvis_db
+2026-04-09 21:11:57,835 [WARNING] huggingface_hub.utils._http: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-04-09 21:12:40,076 [INFO] jarvis.audio: Audio pipeline ready. model=base.en language=en beam=2 vad=False retry_without_vad=True mic_index=None
+2026-04-09 21:13:03,010 [INFO] jarvis.audio: Opening microphone: default microphone
+2026-04-09 21:13:03,786 [INFO] jarvis.audio: Microphone calibrated. energy_threshold=67.36514327670461
+2026-04-09 21:13:07,637 [INFO] jarvis.audio: Captured audio clip rms=67
+2026-04-09 21:13:07,639 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:13:09,428 [INFO] jarvis.audio: Captured audio clip rms=67
+2026-04-09 21:13:09,450 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:13:11,707 [INFO] jarvis.audio: Captured audio clip rms=97
+2026-04-09 21:13:11,708 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:13:15,857 [INFO] jarvis.audio: Captured audio clip rms=115
+2026-04-09 21:13:15,858 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:13:17,257 [INFO] jarvis.audio: Captured audio clip rms=85
+2026-04-09 21:13:17,258 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:13:25,296 [INFO] jarvis.audio: Captured audio clip rms=145
+2026-04-09 21:13:25,302 [INFO] faster_whisper: Processing audio with duration 00:21.568
+2026-04-09 21:13:29,489 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 21:13:34,108 [INFO] jarvis.audio: Captured audio clip rms=109
+2026-04-09 21:13:34,243 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:13:39,047 [INFO] jarvis.audio: Captured audio clip rms=60
+2026-04-09 21:13:39,048 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:13:42,717 [INFO] jarvis.audio: Captured audio clip rms=70
+2026-04-09 21:13:42,718 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:13:54,259 [INFO] jarvis.audio: Captured audio clip rms=99
+2026-04-09 21:13:54,260 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:13:56,158 [INFO] jarvis.audio: Captured audio clip rms=79
+2026-04-09 21:13:56,159 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:14:01,529 [INFO] jarvis.audio: Captured audio clip rms=118
+2026-04-09 21:14:01,529 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:14:07,890 [INFO] jarvis.audio: Captured audio clip rms=94
+2026-04-09 21:14:07,891 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:14:10,609 [INFO] jarvis.audio: Captured audio clip rms=77
+2026-04-09 21:14:10,610 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:14:13,458 [INFO] jarvis.audio: Captured audio clip rms=115
+2026-04-09 21:14:13,459 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:14:21,361 [INFO] jarvis.audio: Captured audio clip rms=79
+2026-04-09 21:14:21,362 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:14:23,628 [INFO] jarvis.audio: Captured audio clip rms=90
+2026-04-09 21:14:23,671 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 120.0
+2026-04-09 21:15:05,605 [INFO] jarvis.db: [OK] MongoDB connected -> mongodb://localhost:27017 / jarvis_db
+2026-04-09 21:15:09,023 [WARNING] huggingface_hub.utils._http: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-04-09 21:17:30,448 [INFO] jarvis.audio: Audio pipeline ready. model=small.en language=en beam=4 vad=True retry_without_vad=True mic_index=None
+2026-04-09 21:17:59,226 [INFO] jarvis.audio: Opening microphone: default microphone
+2026-04-09 21:18:00,018 [INFO] jarvis.audio: Microphone calibrated. energy_threshold=46.775254613656415
+2026-04-09 21:18:04,125 [INFO] jarvis.audio: Captured audio clip rms=115
+2026-04-09 21:18:04,126 [INFO] faster_whisper: Processing audio with duration 00:09.664
+2026-04-09 21:18:04,185 [INFO] faster_whisper: VAD filter removed 00:09.664 of audio
+2026-04-09 21:18:04,193 [INFO] jarvis.audio: VAD removed the clip; retrying transcription without VAD.
+2026-04-09 21:18:04,195 [INFO] faster_whisper: Processing audio with duration 00:09.664
+2026-04-09 21:18:17,157 [INFO] jarvis.audio: Heard: Turn up the flash.
+2026-04-09 21:18:22,431 [INFO] jarvis.audio: Captured audio clip rms=209
+2026-04-09 21:18:22,431 [INFO] faster_whisper: Processing audio with duration 00:04.736
+2026-04-09 21:18:22,451 [INFO] faster_whisper: VAD filter removed 00:04.736 of audio
+2026-04-09 21:18:22,456 [INFO] jarvis.audio: VAD removed the clip; retrying transcription without VAD.
+2026-04-09 21:18:22,458 [INFO] faster_whisper: Processing audio with duration 00:04.736
+2026-04-09 21:18:37,952 [INFO] jarvis.audio: Heard: Come now, Alma.
+2026-04-09 21:18:56,855 [INFO] jarvis.audio: Captured audio clip rms=65
+2026-04-09 21:18:56,856 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 80.0
+2026-04-09 21:19:01,153 [INFO] jarvis.audio: Captured audio clip rms=85
+2026-04-09 21:19:01,154 [INFO] faster_whisper: Processing audio with duration 00:07.296
+2026-04-09 21:19:01,226 [INFO] faster_whisper: VAD filter removed 00:07.296 of audio
+2026-04-09 21:19:01,235 [INFO] jarvis.audio: VAD removed the clip; retrying transcription without VAD.
+2026-04-09 21:19:01,236 [INFO] faster_whisper: Processing audio with duration 00:07.296
+2026-04-09 21:19:14,384 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 21:19:16,797 [INFO] jarvis.audio: Captured audio clip rms=84
+2026-04-09 21:19:16,797 [INFO] faster_whisper: Processing audio with duration 00:04.288
+2026-04-09 21:19:16,817 [INFO] faster_whisper: VAD filter removed 00:04.288 of audio
+2026-04-09 21:19:16,822 [INFO] jarvis.audio: VAD removed the clip; retrying transcription without VAD.
+2026-04-09 21:19:16,823 [INFO] faster_whisper: Processing audio with duration 00:04.288
+2026-04-09 21:19:30,148 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 21:19:32,406 [INFO] jarvis.audio: Captured audio clip rms=73
+2026-04-09 21:19:32,416 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 80.0
+2026-04-09 21:19:35,867 [INFO] jarvis.audio: Captured audio clip rms=69
+2026-04-09 21:19:35,921 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 80.0
+2026-04-09 21:19:38,257 [INFO] jarvis.audio: Captured audio clip rms=76
+2026-04-09 21:19:38,260 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 80.0
+2026-04-09 21:19:44,968 [INFO] jarvis.audio: Captured audio clip rms=131
+2026-04-09 21:19:44,971 [INFO] faster_whisper: Processing audio with duration 00:16.768
+2026-04-09 21:19:45,051 [INFO] faster_whisper: VAD filter removed 00:16.768 of audio
+2026-04-09 21:19:45,055 [INFO] jarvis.audio: VAD removed the clip; retrying transcription without VAD.
+2026-04-09 21:19:45,055 [INFO] faster_whisper: Processing audio with duration 00:16.768
+2026-04-09 21:19:57,599 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 21:20:00,854 [INFO] jarvis.audio: Captured audio clip rms=78
+2026-04-09 21:20:00,855 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 80.0
+2026-04-09 21:20:03,475 [INFO] jarvis.audio: Captured audio clip rms=306
+2026-04-09 21:20:03,476 [INFO] faster_whisper: Processing audio with duration 00:03.328
+2026-04-09 21:20:03,490 [INFO] faster_whisper: VAD filter removed 00:01.808 of audio
+2026-04-09 21:20:24,004 [INFO] jarvis.audio: Heard: That's a dash.
+2026-04-09 21:20:29,339 [INFO] jarvis.audio: Captured audio clip rms=71
+2026-04-09 21:20:29,360 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 80.0
+2026-04-09 21:20:31,197 [INFO] jarvis.audio: Captured audio clip rms=68
+2026-04-09 21:20:31,197 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 80.0
+2026-04-09 21:20:34,868 [INFO] jarvis.audio: Captured audio clip rms=90
+2026-04-09 21:20:34,870 [INFO] faster_whisper: Processing audio with duration 00:08.384
+2026-04-09 21:20:34,909 [INFO] faster_whisper: VAD filter removed 00:08.384 of audio
+2026-04-09 21:20:34,913 [INFO] jarvis.audio: VAD removed the clip; retrying transcription without VAD.
+2026-04-09 21:20:34,914 [INFO] faster_whisper: Processing audio with duration 00:08.384
+2026-04-09 21:20:48,117 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 21:20:56,936 [INFO] jarvis.audio: Captured audio clip rms=282
+2026-04-09 21:20:57,095 [INFO] faster_whisper: Processing audio with duration 00:03.648
+2026-04-09 21:20:57,111 [INFO] faster_whisper: VAD filter removed 00:00.400 of audio
+2026-04-09 21:21:19,075 [INFO] jarvis.audio: Heard: Shastra.
+2026-04-09 21:21:25,248 [INFO] jarvis.audio: Captured audio clip rms=53
+2026-04-09 21:21:25,248 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 80.0
+2026-04-09 21:21:27,953 [INFO] jarvis.audio: Captured audio clip rms=51
+2026-04-09 21:21:27,958 [INFO] jarvis.audio: Skipping low-volume audio clip below rms threshold 80.0
+2026-04-09 21:21:32,218 [INFO] jarvis.audio: Captured audio clip rms=177
+2026-04-09 21:21:32,219 [INFO] faster_whisper: Processing audio with duration 00:05.440
+2026-04-09 21:21:32,280 [INFO] faster_whisper: VAD filter removed 00:03.664 of audio
+2026-04-09 21:21:44,815 [INFO] jarvis.audio: Heard: Oh.
+2026-04-09 21:23:18,519 [INFO] jarvis.db: [OK] MongoDB connected -> mongodb://localhost:27017 / jarvis_db
+2026-04-09 21:23:23,629 [INFO] jarvis.audio: Audio pipeline ready. model=small.en language=en beam=4 vad=True retry_without_vad=True mic_index=None
+2026-04-09 21:23:47,313 [INFO] jarvis.audio: Opening microphone: default microphone
+2026-04-09 21:23:48,069 [INFO] jarvis.audio: Microphone calibrated. energy_threshold=44.89868447777353
+2026-04-09 21:23:52,921 [INFO] jarvis.audio: Captured audio clip rms=114
+2026-04-09 21:23:52,956 [INFO] faster_whisper: Processing audio with duration 00:11.648
+2026-04-09 21:23:53,126 [INFO] faster_whisper: VAD filter removed 00:11.648 of audio
+2026-04-09 21:23:53,134 [INFO] jarvis.audio: VAD removed the clip; retrying transcription without VAD.
+2026-04-09 21:23:53,135 [INFO] faster_whisper: Processing audio with duration 00:11.648
+2026-04-09 21:24:06,341 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 21:24:13,515 [INFO] jarvis.audio: Captured audio clip rms=149
+2026-04-09 21:24:13,517 [INFO] faster_whisper: Processing audio with duration 00:10.816
+2026-04-09 21:24:13,568 [INFO] faster_whisper: VAD filter removed 00:09.888 of audio
+2026-04-09 21:24:26,496 [INFO] jarvis.db: MongoDB connection closed.
+2026-04-09 21:24:26,534 [INFO] jarvis.audio: Heard: Come.
+2026-04-09 21:26:57,721 [INFO] jarvis.db: [OK] MongoDB connected -> mongodb://localhost:27017 / jarvis_db
+2026-04-09 21:27:02,991 [INFO] jarvis.audio: Audio pipeline ready. model=small.en language=en beam=4 vad=True retry_without_vad=True mic_index=None
+2026-04-09 21:27:29,551 [INFO] jarvis.audio: Opening microphone: default microphone
+2026-04-09 21:27:30,299 [INFO] jarvis.audio: Microphone calibrated. energy_threshold=49.065279068260104
+2026-04-09 21:27:34,832 [INFO] jarvis.audio: Captured audio clip rms=77
+2026-04-09 21:27:34,834 [INFO] faster_whisper: Processing audio with duration 00:04.352
+2026-04-09 21:27:34,864 [INFO] faster_whisper: VAD filter removed 00:02.512 of audio
+2026-04-09 21:27:48,312 [INFO] jarvis.audio: VAD removed the clip; retrying transcription without VAD.
+2026-04-09 21:27:48,312 [INFO] faster_whisper: Processing audio with duration 00:04.352
+2026-04-09 21:28:01,359 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 21:28:05,301 [INFO] jarvis.audio: Captured audio clip rms=114
+2026-04-09 21:28:05,304 [INFO] faster_whisper: Processing audio with duration 00:04.928
+2026-04-09 21:28:05,364 [INFO] faster_whisper: VAD filter removed 00:04.928 of audio
+2026-04-09 21:28:05,402 [INFO] jarvis.audio: VAD removed the clip; retrying transcription without VAD.
+2026-04-09 21:28:05,407 [INFO] faster_whisper: Processing audio with duration 00:04.928
+2026-04-09 21:28:18,597 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 21:28:24,474 [INFO] jarvis.audio: Captured audio clip rms=786
+2026-04-09 21:28:24,578 [INFO] faster_whisper: Processing audio with duration 00:09.408
+2026-04-09 21:28:24,616 [INFO] faster_whisper: VAD filter removed 00:09.408 of audio
+2026-04-09 21:28:24,622 [INFO] jarvis.audio: VAD removed the clip; retrying transcription without VAD.
+2026-04-09 21:28:24,627 [INFO] faster_whisper: Processing audio with duration 00:09.408
+2026-04-09 21:28:45,691 [INFO] jarvis.audio: Heard: Oh, my.
+2026-04-09 21:28:53,674 [INFO] jarvis.audio: Captured audio clip rms=61
+2026-04-09 21:28:53,695 [INFO] faster_whisper: Processing audio with duration 00:06.720
+2026-04-09 21:28:53,754 [INFO] faster_whisper: VAD filter removed 00:06.720 of audio
+2026-04-09 21:28:53,798 [INFO] jarvis.audio: VAD removed the clip; retrying transcription without VAD.
+2026-04-09 21:28:53,831 [INFO] faster_whisper: Processing audio with duration 00:06.720
+2026-04-09 21:29:07,655 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 21:29:09,117 [INFO] jarvis.audio: Captured audio clip rms=67
+2026-04-09 21:29:09,121 [INFO] faster_whisper: Processing audio with duration 00:02.624
+2026-04-09 21:29:09,134 [INFO] faster_whisper: VAD filter removed 00:02.624 of audio
+2026-04-09 21:29:09,140 [INFO] jarvis.audio: VAD removed the clip; retrying transcription without VAD.
+2026-04-09 21:29:09,141 [INFO] faster_whisper: Processing audio with duration 00:02.624
+2026-04-09 21:29:22,092 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 21:29:24,115 [INFO] jarvis.audio: Captured audio clip rms=72
+2026-04-09 21:29:24,117 [INFO] faster_whisper: Processing audio with duration 00:04.160
+2026-04-09 21:29:24,139 [INFO] faster_whisper: VAD filter removed 00:04.160 of audio
+2026-04-09 21:29:24,144 [INFO] jarvis.audio: VAD removed the clip; retrying transcription without VAD.
+2026-04-09 21:29:24,145 [INFO] faster_whisper: Processing audio with duration 00:04.160
+2026-04-09 21:29:37,503 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 21:29:42,636 [INFO] jarvis.audio: Captured audio clip rms=74
+2026-04-09 21:29:42,657 [INFO] faster_whisper: Processing audio with duration 00:11.264
+2026-04-09 21:29:42,730 [INFO] faster_whisper: VAD filter removed 00:11.264 of audio
+2026-04-09 21:29:42,735 [INFO] jarvis.audio: VAD removed the clip; retrying transcription without VAD.
+2026-04-09 21:29:42,735 [INFO] faster_whisper: Processing audio with duration 00:11.264
+2026-04-09 21:30:41,477 [INFO] jarvis.db: [OK] MongoDB connected -> mongodb://localhost:27017 / jarvis_db
+2026-04-09 21:30:46,517 [INFO] jarvis.audio: Audio pipeline ready. model=small.en device=cpu compute=int8_float32 language=en beam=4 vad=True retry_without_vad=True mic_index=None
+2026-04-09 21:31:10,231 [INFO] jarvis.audio: Opening microphone: default microphone
+2026-04-09 21:31:11,186 [INFO] jarvis.audio: Microphone calibrated. energy_threshold=61.5450418354836
+2026-04-09 21:31:16,899 [INFO] jarvis.audio: Captured audio clip rms=301
+2026-04-09 21:31:17,143 [INFO] faster_whisper: Processing audio with duration 00:08.832
+2026-04-09 21:31:17,197 [INFO] faster_whisper: VAD filter removed 00:03.568 of audio
+2026-04-09 21:31:30,224 [INFO] jarvis.audio: Heard: no no
+2026-04-09 21:31:36,150 [INFO] jarvis.audio: Captured audio clip rms=159
+2026-04-09 21:31:36,323 [INFO] faster_whisper: Processing audio with duration 00:06.528
+2026-04-09 21:31:36,352 [INFO] faster_whisper: VAD filter removed 00:04.816 of audio
+2026-04-09 21:31:48,085 [INFO] jarvis.audio: Heard: stop
+2026-04-09 21:31:51,818 [INFO] jarvis.audio: Captured audio clip rms=193
+2026-04-09 21:31:52,099 [INFO] faster_whisper: Processing audio with duration 00:08.320
+2026-04-09 21:31:52,135 [INFO] faster_whisper: VAD filter removed 00:04.976 of audio
+2026-04-09 21:32:03,797 [INFO] jarvis.audio: Heard: all right
+2026-04-09 21:32:05,345 [INFO] jarvis.audio: Captured audio clip rms=391
+2026-04-09 21:32:05,563 [INFO] faster_whisper: Processing audio with duration 00:02.688
+2026-04-09 21:32:05,576 [INFO] faster_whisper: VAD filter removed 00:02.688 of audio
+2026-04-09 21:32:05,582 [INFO] jarvis.audio: VAD removed the clip; retrying transcription without VAD.
+2026-04-09 21:32:05,583 [INFO] faster_whisper: Processing audio with duration 00:02.688
+2026-04-09 21:32:17,103 [INFO] jarvis.audio: Heard: stop
+2026-04-09 21:32:22,625 [INFO] jarvis.audio: Captured audio clip rms=299
+2026-04-09 21:32:22,729 [INFO] faster_whisper: Processing audio with duration 00:03.712
+2026-04-09 21:32:22,748 [INFO] faster_whisper: VAD filter removed 00:01.648 of audio
+2026-04-09 21:32:34,492 [INFO] jarvis.audio: Heard: oh
+2026-04-09 21:32:38,229 [INFO] jarvis.audio: Captured audio clip rms=64
+2026-04-09 21:32:38,409 [INFO] faster_whisper: Processing audio with duration 00:07.680
+2026-04-09 21:32:38,445 [INFO] faster_whisper: VAD filter removed 00:07.680 of audio
+2026-04-09 21:32:38,476 [INFO] jarvis.audio: VAD removed the clip; retrying transcription without VAD.
+2026-04-09 21:32:38,503 [INFO] faster_whisper: Processing audio with duration 00:07.680
+2026-04-09 21:32:52,619 [INFO] jarvis.audio: Heard: stop
+2026-04-09 21:32:57,422 [INFO] jarvis.audio: Captured audio clip rms=114
+2026-04-09 21:32:57,696 [INFO] faster_whisper: Processing audio with duration 00:11.840
+2026-04-09 21:32:57,746 [INFO] faster_whisper: VAD filter removed 00:11.840 of audio
+2026-04-09 21:32:57,749 [INFO] jarvis.audio: VAD removed the clip; retrying transcription without VAD.
+2026-04-09 21:32:57,749 [INFO] faster_whisper: Processing audio with duration 00:11.840
+2026-04-09 21:33:09,841 [INFO] jarvis.audio: Heard: click click
+2026-04-09 21:33:18,402 [INFO] jarvis.audio: Captured audio clip rms=72
+2026-04-09 21:33:18,615 [INFO] faster_whisper: Processing audio with duration 00:07.744
+2026-04-09 21:33:18,655 [INFO] faster_whisper: VAD filter removed 00:07.744 of audio
+2026-04-09 21:33:18,661 [INFO] jarvis.audio: VAD removed the clip; retrying transcription without VAD.
+2026-04-09 21:33:18,661 [INFO] faster_whisper: Processing audio with duration 00:07.744
+2026-04-09 21:33:33,783 [INFO] jarvis.audio: Heard: no no
+2026-04-09 21:33:38,366 [INFO] jarvis.audio: Captured audio clip rms=67
+2026-04-09 21:33:38,557 [INFO] faster_whisper: Processing audio with duration 00:07.104
+2026-04-09 21:33:38,588 [INFO] faster_whisper: VAD filter removed 00:03.744 of audio
+2026-04-09 21:33:53,034 [INFO] jarvis.audio: Heard: stop
+2026-04-09 21:33:55,498 [INFO] jarvis.audio: Captured audio clip rms=95
+2026-04-09 21:33:55,655 [INFO] faster_whisper: Processing audio with duration 00:05.376
+2026-04-09 21:33:55,682 [INFO] faster_whisper: VAD filter removed 00:05.376 of audio
+2026-04-09 21:33:55,688 [INFO] jarvis.audio: VAD removed the clip; retrying transcription without VAD.
+2026-04-09 21:33:55,692 [INFO] faster_whisper: Processing audio with duration 00:05.376
+2026-04-09 21:34:08,180 [INFO] jarvis.audio: Heard: stop
+2026-04-09 21:34:11,593 [INFO] jarvis.audio: Captured audio clip rms=369
+2026-04-09 21:34:11,692 [INFO] faster_whisper: Processing audio with duration 00:03.648
+2026-04-09 21:34:11,854 [INFO] faster_whisper: VAD filter removed 00:01.616 of audio
+2026-04-09 21:34:25,606 [INFO] jarvis.audio: Heard: oh
+2026-04-09 21:34:29,580 [INFO] jarvis.audio: Captured audio clip rms=102
+2026-04-09 21:34:29,729 [INFO] faster_whisper: Processing audio with duration 00:05.440
+2026-04-09 21:34:29,753 [INFO] faster_whisper: VAD filter removed 00:04.432 of audio
+2026-04-09 21:34:42,173 [INFO] jarvis.audio: VAD removed the clip; retrying transcription without VAD.
+2026-04-09 21:34:42,175 [INFO] faster_whisper: Processing audio with duration 00:05.440
+2026-04-09 21:34:57,372 [INFO] jarvis.audio: Heard: no no
+2026-04-09 21:35:03,807 [INFO] jarvis.audio: Captured audio clip rms=130
+2026-04-09 21:35:04,175 [INFO] faster_whisper: Processing audio with duration 00:12.224
+2026-04-09 21:35:04,231 [INFO] faster_whisper: VAD filter removed 00:08.256 of audio
+2026-04-09 21:35:18,893 [INFO] jarvis.audio: Heard: stop
+2026-04-09 21:35:22,747 [INFO] jarvis.audio: Captured audio clip rms=133
+2026-04-09 21:35:22,882 [INFO] faster_whisper: Processing audio with duration 00:05.120
+2026-04-09 21:35:22,919 [INFO] faster_whisper: VAD filter removed 00:02.464 of audio
+2026-04-09 21:35:36,841 [INFO] jarvis.audio: Heard: stop
+2026-04-09 21:35:40,345 [INFO] jarvis.audio: Captured audio clip rms=105
+2026-04-09 21:35:40,495 [INFO] faster_whisper: Processing audio with duration 00:05.312
+2026-04-09 21:35:40,522 [INFO] faster_whisper: VAD filter removed 00:05.312 of audio
+2026-04-09 21:35:40,529 [INFO] jarvis.audio: VAD removed the clip; retrying transcription without VAD.
+2026-04-09 21:35:40,530 [INFO] faster_whisper: Processing audio with duration 00:05.312
+2026-04-09 21:35:54,580 [INFO] jarvis.audio: Heard: stop
+2026-04-09 21:36:00,265 [INFO] jarvis.audio: Captured audio clip rms=113
+2026-04-09 21:36:00,573 [INFO] faster_whisper: Processing audio with duration 00:10.176
+2026-04-09 21:36:00,623 [INFO] faster_whisper: VAD filter removed 00:09.280 of audio
+2026-04-09 21:36:14,391 [INFO] jarvis.audio: Heard: stop
+2026-04-09 21:36:17,433 [INFO] jarvis.audio: Captured audio clip rms=89
+2026-04-09 21:36:17,583 [INFO] faster_whisper: Processing audio with duration 00:05.184
+2026-04-09 21:36:17,607 [INFO] faster_whisper: VAD filter removed 00:05.184 of audio
+2026-04-09 21:36:17,612 [INFO] jarvis.audio: VAD removed the clip; retrying transcription without VAD.
+2026-04-09 21:36:17,612 [INFO] faster_whisper: Processing audio with duration 00:05.184
+2026-04-09 21:36:31,584 [INFO] jarvis.audio: Heard: and
+2026-04-09 21:36:38,830 [INFO] jarvis.audio: Captured audio clip rms=124
+2026-04-09 21:36:39,133 [INFO] faster_whisper: Processing audio with duration 00:12.352
+2026-04-09 21:36:39,185 [INFO] faster_whisper: VAD filter removed 00:11.488 of audio
+2026-04-09 21:36:53,089 [INFO] jarvis.audio: Heard: stop
+2026-04-09 21:37:01,072 [INFO] jarvis.audio: Captured audio clip rms=120
+2026-04-09 21:37:01,387 [INFO] faster_whisper: Processing audio with duration 00:14.208
+2026-04-09 21:37:01,477 [INFO] faster_whisper: VAD filter removed 00:14.208 of audio
+2026-04-09 21:37:01,495 [INFO] jarvis.audio: VAD removed the clip; retrying transcription without VAD.
+2026-04-09 21:37:01,498 [INFO] faster_whisper: Processing audio with duration 00:14.208
+2026-04-09 21:42:11,929 [INFO] jarvis.db: [OK] MongoDB connected -> mongodb://localhost:27017 / jarvis_db
+2026-04-09 21:42:13,999 [INFO] jarvis.audio: Audio pipeline ready. provider=groq model=whisper-large-v3-turbo language=en mic_index=None
+2026-04-09 21:42:14,119 [INFO] comtypes.client._code_cache: Could not import comtypes.gen, trying to create it.
+2026-04-09 21:42:14,120 [INFO] comtypes.client._code_cache: Created comtypes.gen directory: 'C:\Users\viven\AppData\Local\Programs\Python\Python311\Lib\site-packages\comtypes\gen'
+2026-04-09 21:42:14,121 [INFO] comtypes.client._code_cache: Writing __init__.py file: 'C:\Users\viven\AppData\Local\Programs\Python\Python311\Lib\site-packages\comtypes\gen\__init__.py'
+2026-04-09 21:42:14,141 [INFO] comtypes.client._code_cache: Using writeable comtypes cache directory: 'C:\Users\viven\AppData\Local\Programs\Python\Python311\Lib\site-packages\comtypes\gen'
+2026-04-09 21:42:14,167 [INFO] comtypes.client._generate: Could not import comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4: No module named 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4'
+2026-04-09 21:42:14,176 [INFO] comtypes.client._generate: # Generating comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4
+2026-04-09 21:42:14,321 [INFO] comtypes.client._generate: # Generating comtypes.gen.SpeechLib
+2026-04-09 21:42:14,334 [INFO] comtypes.client._generate: Could not import comtypes.gen._00020430_0000_0000_C000_000000000046_0_2_0: No module named 'comtypes.gen._00020430_0000_0000_C000_000000000046_0_2_0'
+2026-04-09 21:42:14,336 [INFO] comtypes.client._generate: # Generating comtypes.gen._00020430_0000_0000_C000_000000000046_0_2_0
+2026-04-09 21:42:14,347 [INFO] comtypes.client._generate: # Generating comtypes.gen.stdole
+2026-04-09 21:42:15,538 [INFO] jarvis.tts: TTS engine initialized successfully.
+2026-04-09 21:42:39,955 [INFO] jarvis.audio: Opening microphone: default microphone
+2026-04-09 21:42:40,910 [INFO] jarvis.audio: Microphone calibrated. energy_threshold=99.054968695199
+2026-04-09 21:42:42,691 [INFO] jarvis.audio: Captured audio clip rms=139
+2026-04-09 21:42:45,095 [INFO] jarvis.audio: Heard: no
+2026-04-09 21:42:47,385 [INFO] jarvis.audio: Captured audio clip rms=74
+2026-04-09 21:42:49,126 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 21:42:51,419 [INFO] jarvis.audio: Captured audio clip rms=290
+2026-04-09 21:42:53,194 [INFO] jarvis.audio: Heard: can you hear me now?
+2026-04-09 21:42:57,903 [INFO] jarvis.audio: Captured audio clip rms=90
+2026-04-09 21:43:00,256 [INFO] jarvis.audio: Heard: yes
+2026-04-09 21:43:04,949 [INFO] jarvis.audio: Captured audio clip rms=120
+2026-04-09 21:43:07,418 [INFO] jarvis.audio: Heard: research
+2026-04-09 21:43:09,160 [INFO] jarvis.audio: Captured audio clip rms=120
+2026-04-09 21:43:10,798 [INFO] jarvis.audio: Heard: I'm gonna give you my phone
+2026-04-09 21:43:12,733 [INFO] jarvis.audio: Captured audio clip rms=179
+2026-04-09 21:43:14,333 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 21:43:16,917 [INFO] jarvis.audio: Captured audio clip rms=397
+2026-04-09 21:43:18,604 [INFO] jarvis.audio: Heard: are all the systems online
+2026-04-09 21:43:23,481 [INFO] jarvis.audio: Captured audio clip rms=291
+2026-04-09 21:43:25,351 [INFO] jarvis.audio: Heard: are you sure?
+2026-04-09 21:43:31,293 [INFO] jarvis.audio: Captured audio clip rms=290
+2026-04-09 21:43:32,918 [INFO] jarvis.audio: Heard: yes I'm perfectly sure can you hear me now clearly
+2026-04-09 21:43:35,312 [INFO] jarvis.audio: Captured audio clip rms=88
+2026-04-09 21:43:37,321 [INFO] jarvis.audio: Heard: stop<|en|>
+2026-04-09 21:43:39,642 [INFO] jarvis.audio: Captured audio clip rms=91
+2026-04-09 21:43:42,120 [INFO] jarvis.audio: Heard: stop story
+2026-04-09 21:43:46,023 [INFO] jarvis.audio: Captured audio clip rms=463
+2026-04-09 21:43:47,559 [INFO] jarvis.audio: Heard: lock within
+2026-04-09 21:43:51,250 [INFO] jarvis.audio: Captured audio clip rms=381
+2026-04-09 21:43:52,844 [INFO] jarvis.audio: Heard: lock sanjay
+2026-04-09 21:43:56,469 [INFO] jarvis.audio: Captured audio clip rms=389
+2026-04-09 21:43:58,083 [INFO] jarvis.audio: Heard: lock given
+2026-04-09 21:44:01,606 [INFO] jarvis.audio: Captured audio clip rms=568
+2026-04-09 21:44:03,227 [INFO] jarvis.audio: Heard: lock beven
+2026-04-09 21:44:10,631 [INFO] jarvis.audio: Captured audio clip rms=313
+2026-04-09 21:44:12,239 [INFO] jarvis.audio: Heard: can you please mark the bottle
+2026-04-09 21:44:16,603 [INFO] jarvis.audio: Captured audio clip rms=278
+2026-04-09 21:44:18,383 [INFO] jarvis.audio: Heard: and forget today
+2026-04-09 21:44:22,257 [INFO] jarvis.audio: Captured audio clip rms=504
+2026-04-09 21:44:23,770 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-09 21:44:23,785 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-09 21:44:26,673 [INFO] jarvis.audio: Captured audio clip rms=632
+2026-04-09 21:44:28,213 [INFO] jarvis.audio: Heard: give me the list of bottles in this room
+2026-04-09 21:44:28,219 [INFO] jarvis.core: Queueing grounded voice query: give me the list of bottles in this room
+2026-04-09 21:44:30,316 [WARNING] jarvis.reasoning: Falling back to rules-based reasoning: HTTPConnectionPool(host='127.0.0.1', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=11434): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+2026-04-09 21:44:30,325 [INFO] jarvis.tts: Speaking response with TTS.
+2026-04-09 21:44:33,075 [INFO] jarvis.audio: Captured audio clip rms=1103
+2026-04-09 21:44:34,665 [INFO] jarvis.audio: Heard: there are seven bottle records
+2026-04-09 21:44:43,601 [INFO] jarvis.audio: Captured audio clip rms=1297
+2026-04-09 21:44:45,731 [INFO] jarvis.audio: Heard: a 6-0 4-0 9-214 plus 0 0 0 0 0 0 0
+2026-04-09 21:44:51,971 [INFO] jarvis.audio: Captured audio clip rms=218
+2026-04-09 21:44:53,598 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-09 21:44:53,606 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-09 21:44:55,551 [INFO] jarvis.audio: Captured audio clip rms=92
+2026-04-09 21:44:57,538 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 21:45:00,248 [INFO] jarvis.audio: Captured audio clip rms=459
+2026-04-09 21:45:02,112 [INFO] jarvis.audio: Heard: how many TV records are there?
+2026-04-09 21:45:07,386 [INFO] jarvis.audio: Captured audio clip rms=76
+2026-04-09 21:45:08,982 [INFO] jarvis.audio: Heard: explain
+2026-04-09 21:45:10,358 [INFO] jarvis.audio: Captured audio clip rms=87
+2026-04-09 21:45:12,861 [INFO] jarvis.audio: Heard: okay
+2026-04-09 21:45:20,875 [INFO] jarvis.audio: Captured audio clip rms=292
+2026-04-09 21:45:22,659 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-09 21:45:22,665 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-09 21:45:24,790 [INFO] jarvis.audio: Captured audio clip rms=680
+2026-04-09 21:45:27,914 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-09 21:45:27,919 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-09 21:45:32,126 [INFO] jarvis.audio: Captured audio clip rms=79
+2026-04-09 21:45:33,957 [INFO] jarvis.audio: Heard: click
+2026-04-09 21:45:36,599 [INFO] jarvis.audio: Captured audio clip rms=642
+2026-04-09 21:45:38,154 [INFO] jarvis.audio: Heard: give me all the TV records
+2026-04-09 21:45:44,048 [INFO] jarvis.audio: Captured audio clip rms=80
+2026-04-09 21:45:46,855 [INFO] jarvis.audio: Heard: Huh Are you
+2026-04-09 21:45:48,597 [INFO] jarvis.audio: Captured audio clip rms=401
+2026-04-09 21:45:50,375 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-09 21:45:50,383 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-09 21:45:53,997 [INFO] jarvis.audio: Captured audio clip rms=592
+2026-04-09 21:45:55,517 [INFO] jarvis.audio: Heard: give me all the TV records
+2026-04-09 21:45:59,349 [INFO] jarvis.audio: Captured audio clip rms=74
+2026-04-09 21:46:01,093 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 21:46:02,396 [INFO] jarvis.audio: Captured audio clip rms=74
+2026-04-09 21:46:03,988 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 21:46:09,051 [INFO] jarvis.audio: Captured audio clip rms=473
+2026-04-09 21:46:13,108 [INFO] jarvis.audio: Heard: Jarvis give me all the TV records
+2026-04-09 21:46:13,118 [INFO] jarvis.core: Wake word detected in transcript: Jarvis give me all the TV records
+2026-04-09 21:46:13,119 [INFO] jarvis.core: Queueing grounded voice query: give me all the tv records
+2026-04-09 21:46:15,175 [WARNING] jarvis.reasoning: Falling back to rules-based reasoning: HTTPConnectionPool(host='127.0.0.1', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=11434): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+2026-04-09 21:46:15,176 [INFO] jarvis.tts: Speaking response with TTS.
+2026-04-09 21:46:21,430 [INFO] jarvis.audio: Captured audio clip rms=323
+2026-04-09 21:46:22,929 [INFO] jarvis.audio: Heard: Javis?
+2026-04-09 21:46:22,938 [INFO] jarvis.core: Wake word detected in transcript: Javis?
+2026-04-09 21:46:27,171 [INFO] jarvis.audio: Captured audio clip rms=678
+2026-04-09 21:46:28,743 [INFO] jarvis.audio: Heard: remove the overlay of Vivian
+2026-04-09 21:46:31,621 [INFO] jarvis.audio: Captured audio clip rms=81
+2026-04-09 21:46:33,250 [INFO] jarvis.audio: Heard: Okay
+2026-04-09 21:46:41,743 [INFO] jarvis.audio: Captured audio clip rms=415
+2026-04-09 21:46:43,385 [INFO] jarvis.audio: Heard: Jarvis give me all the portal records
+2026-04-09 21:46:43,391 [INFO] jarvis.core: Wake word detected in transcript: Jarvis give me all the portal records
+2026-04-09 21:46:43,391 [INFO] jarvis.core: Queueing grounded voice query: give me all the portal records
+2026-04-09 21:46:45,431 [WARNING] jarvis.reasoning: Falling back to rules-based reasoning: HTTPConnectionPool(host='127.0.0.1', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=11434): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+2026-04-09 21:46:45,432 [INFO] jarvis.tts: Speaking response with TTS.
+2026-04-09 21:46:49,239 [INFO] jarvis.audio: Captured audio clip rms=316
+2026-04-09 21:46:50,760 [INFO] jarvis.audio: Heard: all the bottle records
+2026-04-09 21:46:54,733 [INFO] jarvis.audio: Captured audio clip rms=81
+2026-04-09 21:46:57,289 [INFO] jarvis.audio: Heard: okay
+2026-04-09 21:47:04,622 [INFO] jarvis.audio: Captured audio clip rms=483
+2026-04-09 21:47:07,633 [INFO] jarvis.audio: Heard: okay give me all the bottle records
+2026-04-09 21:47:14,667 [INFO] jarvis.audio: Captured audio clip rms=149
+2026-04-09 21:47:17,587 [INFO] jarvis.audio: Heard: if your record use spontaneously so you can save 립 space Pam your bracing you can save you
+2026-04-09 21:47:21,950 [INFO] jarvis.audio: Captured audio clip rms=91
+2026-04-09 21:47:23,633 [INFO] jarvis.audio: Heard: Mac last
+2026-04-09 21:47:27,416 [INFO] jarvis.audio: Captured audio clip rms=367
+2026-04-09 21:47:29,570 [INFO] jarvis.audio: Heard: Javis
+2026-04-09 21:47:29,579 [INFO] jarvis.core: Wake word detected in transcript: Javis
+2026-04-09 21:47:34,561 [INFO] jarvis.audio: Captured audio clip rms=369
+2026-04-09 21:47:36,023 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-09 21:47:36,033 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-09 21:47:41,615 [INFO] jarvis.audio: Captured audio clip rms=331
+2026-04-09 21:47:43,192 [INFO] jarvis.audio: Heard: can you hear me?
+2026-04-09 21:47:49,665 [INFO] jarvis.audio: Captured audio clip rms=73
+2026-04-09 21:47:52,082 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 21:47:54,585 [INFO] jarvis.audio: Captured audio clip rms=102
+2026-04-09 21:47:56,402 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 21:48:07,668 [INFO] jarvis.audio: Captured audio clip rms=111
+2026-04-09 21:48:10,897 [INFO] jarvis.audio: Heard: go back you the good discount wait down Stop
+2026-04-09 21:48:13,398 [INFO] jarvis.audio: Captured audio clip rms=91
+2026-04-09 21:48:15,039 [INFO] jarvis.audio: Heard: hard left smart FINISH
+2026-04-09 21:48:25,074 [INFO] jarvis.audio: Captured audio clip rms=94
+2026-04-09 21:48:28,338 [INFO] jarvis.audio: Heard: okay ok brilliant
+2026-04-09 21:48:36,284 [INFO] jarvis.audio: Captured audio clip rms=127
+2026-04-09 21:48:39,149 [INFO] jarvis.audio: Heard: hey ... do you remember number two guys we really did probably try to dry the 치료
+2026-04-09 21:48:45,623 [INFO] jarvis.audio: Captured audio clip rms=110
+2026-04-09 21:48:48,011 [INFO] jarvis.audio: Heard: habe Mic
+2026-04-09 21:48:50,495 [INFO] jarvis.audio: Captured audio clip rms=120
+2026-04-09 21:48:52,006 [INFO] jarvis.audio: Heard: okay
+2026-04-09 21:48:56,992 [INFO] jarvis.audio: Captured audio clip rms=113
+2026-04-09 21:48:59,366 [INFO] jarvis.audio: Heard: the
+2026-04-09 21:49:02,008 [INFO] jarvis.audio: Captured audio clip rms=106
+2026-04-09 21:49:03,644 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 21:49:09,117 [INFO] jarvis.audio: Captured audio clip rms=427
+2026-04-09 21:49:10,848 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-09 21:49:10,858 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-09 21:49:16,880 [INFO] jarvis.audio: Captured audio clip rms=447
+2026-04-09 21:49:19,142 [INFO] jarvis.audio: Heard: activate voice mode
+2026-04-09 21:49:22,365 [INFO] jarvis.audio: Captured audio clip rms=80
+2026-04-09 21:49:23,955 [INFO] jarvis.audio: Heard: at the end of the day
+2026-04-09 21:49:27,928 [INFO] jarvis.audio: Captured audio clip rms=90
+2026-04-09 21:49:29,713 [INFO] jarvis.audio: Heard: take photo reference
+2026-04-09 21:49:39,417 [INFO] jarvis.audio: Captured audio clip rms=77
+2026-04-09 21:49:42,184 [INFO] jarvis.audio: Heard: video
+2026-04-09 21:49:45,088 [INFO] jarvis.audio: Captured audio clip rms=366
+2026-04-09 21:49:46,688 [INFO] jarvis.audio: Heard: can you hear me
+2026-04-09 21:49:55,492 [INFO] jarvis.audio: Captured audio clip rms=78
+2026-04-09 21:49:57,977 [INFO] jarvis.audio: Heard: significant
+2026-04-09 21:50:02,782 [INFO] jarvis.audio: Captured audio clip rms=78
+2026-04-09 22:09:54,108 [INFO] jarvis.db: [OK] MongoDB connected -> mongodb://localhost:27017 / jarvis_db
+2026-04-09 22:09:56,254 [INFO] jarvis.audio: Audio pipeline ready. provider=groq model=whisper-large-v3-turbo language=en mic_index=None
+2026-04-09 22:09:56,357 [INFO] comtypes.client._code_cache: Imported existing <module 'comtypes.gen' from 'C:\\Users\\viven\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-04-09 22:09:56,358 [INFO] comtypes.client._code_cache: Using writeable comtypes cache directory: 'C:\Users\viven\AppData\Local\Programs\Python\Python311\Lib\site-packages\comtypes\gen'
+2026-04-09 22:09:56,811 [INFO] jarvis.tts: TTS engine initialized successfully.
+2026-04-09 22:10:21,241 [INFO] jarvis.audio: Opening microphone: default microphone
+2026-04-09 22:10:22,209 [INFO] jarvis.audio: Microphone calibrated. energy_threshold=59.92889603643064
+2026-04-09 22:10:24,319 [INFO] jarvis.audio: Captured audio clip rms=73
+2026-04-09 22:10:25,281 [INFO] jarvis.audio: Heard: stop quit exit
+2026-04-09 22:10:28,972 [INFO] jarvis.audio: Captured audio clip rms=85
+2026-04-09 22:10:29,271 [INFO] jarvis.audio: Heard: okay
+2026-04-09 22:10:36,834 [INFO] jarvis.audio: Captured audio clip rms=69
+2026-04-09 22:10:37,851 [INFO] jarvis.audio: Heard: keep it free to refreshascology face to dot com
+2026-04-09 22:10:39,381 [INFO] jarvis.audio: Captured audio clip rms=65
+2026-04-09 22:10:39,713 [INFO] jarvis.audio: Heard: Here you go
+2026-04-09 22:10:43,725 [INFO] jarvis.audio: Captured audio clip rms=80
+2026-04-09 22:10:46,767 [INFO] jarvis.audio: Heard: They've read history is a forgot
+2026-04-09 22:10:49,968 [INFO] jarvis.audio: Captured audio clip rms=83
+2026-04-09 22:10:50,856 [INFO] jarvis.audio: Heard: turn
+2026-04-09 22:10:53,988 [INFO] jarvis.audio: Captured audio clip rms=140
+2026-04-09 22:10:54,952 [INFO] jarvis.audio: Heard: ה пров ends
+2026-04-09 22:11:00,988 [INFO] jarvis.audio: Captured audio clip rms=94
+2026-04-09 22:11:02,429 [INFO] jarvis.audio: Heard: no can't wait hmm hmm we will see that before
+2026-04-09 22:11:09,022 [INFO] jarvis.audio: Captured audio clip rms=115
+2026-04-09 22:11:10,416 [INFO] jarvis.audio: Heard: if you stuck in aja
+2026-04-09 22:11:13,248 [INFO] jarvis.audio: Captured audio clip rms=132
+2026-04-09 22:11:13,635 [INFO] jarvis.audio: Heard: está
+2026-04-09 22:11:17,396 [INFO] jarvis.audio: Captured audio clip rms=58
+2026-04-09 22:11:17,602 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 22:11:20,015 [INFO] jarvis.audio: Captured audio clip rms=206
+2026-04-09 22:11:20,305 [INFO] jarvis.audio: Heard: hey Jarvis
+2026-04-09 22:11:22,187 [INFO] jarvis.audio: Captured audio clip rms=231
+2026-04-09 22:11:22,499 [INFO] jarvis.audio: Heard: can you hear me?
+2026-04-09 22:11:26,720 [INFO] jarvis.audio: Captured audio clip rms=275
+2026-04-09 22:11:27,004 [INFO] jarvis.audio: Heard: Jarvis mark we win
+2026-04-09 22:11:31,106 [INFO] jarvis.audio: Captured audio clip rms=331
+2026-04-09 22:11:31,661 [INFO] jarvis.audio: Heard: mark we win
+2026-04-09 22:11:36,303 [INFO] jarvis.audio: Captured audio clip rms=212
+2026-04-09 22:11:36,558 [INFO] jarvis.audio: Heard: Jarvis Mark Sanjay
+2026-04-09 22:11:40,989 [INFO] jarvis.audio: Captured audio clip rms=59
+2026-04-09 22:11:41,864 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 22:11:43,225 [INFO] jarvis.audio: Captured audio clip rms=66
+2026-04-09 22:11:44,381 [INFO] jarvis.audio: Heard: вар
+2026-04-09 22:11:51,815 [INFO] jarvis.audio: Captured audio clip rms=72
+2026-04-09 22:11:52,186 [INFO] jarvis.audio: Heard: nope
+2026-04-09 22:11:57,757 [INFO] jarvis.audio: Captured audio clip rms=108
+2026-04-09 22:11:58,955 [INFO] jarvis.audio: Heard: the
+2026-04-09 22:13:23,733 [INFO] jarvis.db: [OK] MongoDB connected -> mongodb://localhost:27017 / jarvis_db
+2026-04-09 22:13:25,750 [INFO] jarvis.audio: Audio pipeline ready. provider=groq model=whisper-large-v3-turbo language=en mic_index=None
+2026-04-09 22:13:25,842 [INFO] comtypes.client._code_cache: Imported existing <module 'comtypes.gen' from 'C:\\Users\\viven\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-04-09 22:13:25,842 [INFO] comtypes.client._code_cache: Using writeable comtypes cache directory: 'C:\Users\viven\AppData\Local\Programs\Python\Python311\Lib\site-packages\comtypes\gen'
+2026-04-09 22:13:26,255 [INFO] jarvis.tts: TTS engine initialized successfully.
+2026-04-09 22:13:49,074 [INFO] jarvis.audio: Opening microphone: default microphone
+2026-04-09 22:13:50,030 [INFO] jarvis.audio: Microphone calibrated. energy_threshold=62.01438692055356
+2026-04-09 22:13:56,922 [INFO] jarvis.audio: Captured audio clip rms=222
+2026-04-09 22:13:58,566 [INFO] jarvis.audio: Heard: Jarvis hide we win
+2026-04-09 22:13:58,592 [INFO] jarvis.core: Wake word detected in transcript: Jarvis hide we win
+2026-04-09 22:13:59,967 [WARNING] jarvis.reasoning: AI name matching failed, falling back to local similarity: HTTPConnectionPool(host='127.0.0.1', port=11434): Max retries exceeded with url: /api/chat (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=11434) at 0x24284de83d0>, 'Connection to 127.0.0.1 timed out. (connect timeout=1.2)'))
+2026-04-09 22:13:59,969 [INFO] jarvis.tts: Speaking response with TTS.
+2026-04-09 22:14:03,391 [INFO] jarvis.audio: Captured audio clip rms=1032
+2026-04-09 22:14:03,664 [INFO] jarvis.audio: Heard: I could not find we went in the enrolled records
+2026-04-09 22:14:08,487 [INFO] jarvis.audio: Captured audio clip rms=234
+2026-04-09 22:14:08,802 [INFO] jarvis.audio: Heard: Jarvis hide within
+2026-04-09 22:14:08,806 [INFO] jarvis.core: Wake word detected in transcript: Jarvis hide within
+2026-04-09 22:14:10,024 [WARNING] jarvis.reasoning: AI name matching failed, falling back to local similarity: HTTPConnectionPool(host='127.0.0.1', port=11434): Max retries exceeded with url: /api/chat (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=11434) at 0x24284dccf90>, 'Connection to 127.0.0.1 timed out. (connect timeout=1.2)'))
+2026-04-09 22:14:10,025 [INFO] jarvis.tts: Speaking response with TTS.
+2026-04-09 22:14:14,596 [INFO] jarvis.audio: Captured audio clip rms=92
+2026-04-09 22:14:14,949 [INFO] jarvis.audio: Heard: public school
+2026-04-09 22:14:22,453 [INFO] jarvis.audio: Captured audio clip rms=257
+2026-04-09 22:14:22,728 [INFO] jarvis.audio: Heard: find the past water bottle records
+2026-04-09 22:14:29,761 [INFO] jarvis.audio: Captured audio clip rms=280
+2026-04-09 22:14:30,263 [INFO] jarvis.audio: Heard: Jarvis finally passed waterbot records
+2026-04-09 22:14:30,269 [INFO] jarvis.core: Wake word detected in transcript: Jarvis finally passed waterbot records
+2026-04-09 22:14:31,553 [INFO] jarvis.tts: Speaking response with TTS.
+2026-04-09 22:14:33,365 [INFO] jarvis.audio: Captured audio clip rms=65
+2026-04-09 22:14:33,590 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 22:14:38,210 [INFO] jarvis.audio: Captured audio clip rms=198
+2026-04-09 22:14:38,444 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-09 22:14:38,449 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-09 22:14:41,246 [INFO] jarvis.audio: Captured audio clip rms=312
+2026-04-09 22:14:41,488 [INFO] jarvis.audio: Heard: find shri devy records
+2026-04-09 22:14:42,763 [WARNING] jarvis.reasoning: AI name matching failed, falling back to local similarity: HTTPConnectionPool(host='127.0.0.1', port=11434): Max retries exceeded with url: /api/chat (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=11434) at 0x24284e0fbd0>, 'Connection to 127.0.0.1 timed out. (connect timeout=1.2)'))
+2026-04-09 22:14:42,763 [INFO] jarvis.core: Focus command resolved target=shri devy records matched=none
+2026-04-09 22:14:42,765 [INFO] jarvis.tts: Speaking response with TTS.
+2026-04-09 22:14:49,163 [INFO] jarvis.audio: Captured audio clip rms=205
+2026-04-09 22:14:49,456 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-09 22:14:49,604 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-09 22:14:51,470 [INFO] jarvis.audio: Captured audio clip rms=566
+2026-04-09 22:14:51,707 [INFO] jarvis.audio: Heard: three day we records
+2026-04-09 22:14:51,976 [INFO] jarvis.tts: Speaking response with TTS.
+2026-04-09 22:14:59,572 [INFO] jarvis.audio: Captured audio clip rms=478
+2026-04-09 22:14:59,903 [INFO] jarvis.audio: Heard: Jarvis finds Sanjay's record
+2026-04-09 22:14:59,911 [INFO] jarvis.core: Wake word detected in transcript: Jarvis finds Sanjay's record
+2026-04-09 22:15:00,321 [INFO] jarvis.core: Focus command resolved target=Viven_G matched=EMP-101
+2026-04-09 22:15:00,321 [INFO] jarvis.tts: Speaking response with TTS.
+2026-04-09 22:15:06,806 [INFO] jarvis.audio: Captured audio clip rms=81
+2026-04-09 22:15:07,086 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 22:15:12,730 [INFO] jarvis.audio: Captured audio clip rms=467
+2026-04-09 22:15:13,113 [INFO] jarvis.audio: Heard: Jarvis remove target on Vivendi
+2026-04-09 22:15:13,225 [INFO] jarvis.core: Wake word detected in transcript: Jarvis remove target on Vivendi
+2026-04-09 22:15:14,444 [WARNING] jarvis.reasoning: AI name matching failed, falling back to local similarity: HTTPConnectionPool(host='127.0.0.1', port=11434): Max retries exceeded with url: /api/chat (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=11434) at 0x24284e0fb90>, 'Connection to 127.0.0.1 timed out. (connect timeout=1.2)'))
+2026-04-09 22:15:14,445 [INFO] jarvis.tts: Speaking response with TTS.
+2026-04-09 22:15:21,516 [INFO] jarvis.audio: Captured audio clip rms=341
+2026-04-09 22:15:21,917 [INFO] jarvis.audio: Heard: remove target on Vivengi
+2026-04-09 22:15:29,393 [INFO] jarvis.audio: Captured audio clip rms=322
+2026-04-09 22:15:29,700 [INFO] jarvis.audio: Heard: remove target on bvng
+2026-04-09 22:15:35,702 [INFO] jarvis.db: MongoDB connection closed.
+2026-04-09 22:15:35,966 [INFO] jarvis.audio: Captured audio clip rms=65
+2026-04-09 22:18:55,119 [INFO] jarvis.db: [OK] MongoDB connected -> mongodb://localhost:27017 / jarvis_db
+2026-04-09 22:18:57,085 [INFO] jarvis.audio: Audio pipeline ready. provider=groq model=whisper-large-v3-turbo language=en mic_index=None
+2026-04-09 22:18:57,170 [INFO] comtypes.client._code_cache: Imported existing <module 'comtypes.gen' from 'C:\\Users\\viven\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-04-09 22:18:57,171 [INFO] comtypes.client._code_cache: Using writeable comtypes cache directory: 'C:\Users\viven\AppData\Local\Programs\Python\Python311\Lib\site-packages\comtypes\gen'
+2026-04-09 22:18:57,580 [INFO] jarvis.tts: TTS engine initialized successfully.
+2026-04-09 22:19:18,863 [INFO] jarvis.audio: Opening microphone: default microphone
+2026-04-09 22:19:19,816 [INFO] jarvis.audio: Microphone calibrated. energy_threshold=52.11211308050024
+2026-04-09 22:19:21,736 [INFO] jarvis.audio: Captured audio clip rms=60
+2026-04-09 22:19:23,388 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 22:19:28,191 [INFO] jarvis.audio: Captured audio clip rms=192
+2026-04-09 22:19:28,814 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-09 22:19:28,822 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-09 22:19:30,276 [INFO] jarvis.audio: Captured audio clip rms=263
+2026-04-09 22:19:30,640 [INFO] jarvis.audio: Heard: hide Vivian
+2026-04-09 22:19:31,867 [WARNING] jarvis.reasoning: AI name matching failed, falling back to local similarity: HTTPConnectionPool(host='127.0.0.1', port=11434): Max retries exceeded with url: /api/chat (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=11434) at 0x1f147b51710>, 'Connection to 127.0.0.1 timed out. (connect timeout=1.2)'))
+2026-04-09 22:19:31,895 [INFO] jarvis.core: Suppressed overlay marking for target=EMP-101
+2026-04-09 22:19:31,895 [INFO] jarvis.tts: Speaking response with TTS.
+2026-04-09 22:19:37,344 [INFO] jarvis.audio: Captured audio clip rms=711
+2026-04-09 22:19:37,849 [INFO] jarvis.audio: Heard: okay I will stop marking Vivan underscore G until you ask for them again
+2026-04-09 22:19:41,901 [INFO] jarvis.audio: Captured audio clip rms=291
+2026-04-09 22:19:42,472 [INFO] jarvis.audio: Heard: give me all the bottle records
+2026-04-09 22:19:47,189 [INFO] jarvis.audio: Captured audio clip rms=236
+2026-04-09 22:19:47,655 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-09 22:19:47,838 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-09 22:19:50,078 [INFO] jarvis.audio: Captured audio clip rms=545
+2026-04-09 22:19:50,523 [INFO] jarvis.audio: Heard: give me all the bottle records
+2026-04-09 22:19:51,951 [INFO] jarvis.tts: Speaking response with TTS.
+2026-04-09 22:19:55,536 [INFO] jarvis.audio: Captured audio clip rms=79
+2026-04-09 22:19:55,928 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 22:19:58,952 [INFO] jarvis.audio: Captured audio clip rms=206
+2026-04-09 22:19:59,195 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-09 22:19:59,198 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-09 22:20:01,767 [INFO] jarvis.audio: Captured audio clip rms=329
+2026-04-09 22:20:02,132 [INFO] jarvis.audio: Heard: Mark Vivian
+2026-04-09 22:20:02,360 [INFO] jarvis.core: Focus command resolved target=Viven_G matched=EMP-101
+2026-04-09 22:20:02,360 [INFO] jarvis.tts: Speaking response with TTS.
+2026-04-09 22:20:09,107 [INFO] jarvis.audio: Captured audio clip rms=239
+2026-04-09 22:20:09,363 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-09 22:20:09,368 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-09 22:20:12,075 [INFO] jarvis.audio: Captured audio clip rms=415
+2026-04-09 22:20:12,359 [INFO] jarvis.audio: Heard: how many people are there on screen
+2026-04-09 22:20:12,624 [INFO] jarvis.tts: Speaking response with TTS.
+2026-04-09 22:20:18,592 [INFO] jarvis.audio: Captured audio clip rms=64
+2026-04-09 22:20:18,916 [INFO] jarvis.audio: Heard: skin okay
+2026-04-09 22:20:22,177 [INFO] jarvis.audio: Captured audio clip rms=303
+2026-04-09 22:20:22,408 [INFO] jarvis.audio: Heard: delete record we went
+2026-04-09 22:20:27,441 [INFO] jarvis.audio: Captured audio clip rms=142
+2026-04-09 22:20:27,797 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-09 22:20:27,800 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-09 22:20:30,421 [INFO] jarvis.audio: Captured audio clip rms=349
+2026-04-09 22:20:30,768 [INFO] jarvis.audio: Heard: delete vven record
+2026-04-09 22:20:31,038 [INFO] jarvis.tts: Speaking response with TTS.
+2026-04-09 22:20:34,246 [INFO] jarvis.audio: Captured audio clip rms=65
+2026-04-09 22:20:35,116 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 22:20:38,538 [INFO] jarvis.audio: Captured audio clip rms=317
+2026-04-09 22:20:38,813 [INFO] jarvis.audio: Heard: Jarvis who is on screen
+2026-04-09 22:20:38,820 [INFO] jarvis.core: Wake word detected in transcript: Jarvis who is on screen
+2026-04-09 22:20:39,266 [INFO] jarvis.core: Cleared requested focus target.
+2026-04-09 22:20:39,267 [INFO] jarvis.tts: Speaking response with TTS.
+2026-04-09 22:20:45,096 [INFO] jarvis.audio: Captured audio clip rms=80
+2026-04-09 22:20:45,411 [INFO] jarvis.audio: Heard: right in
+2026-04-09 22:20:48,013 [INFO] jarvis.audio: Captured audio clip rms=272
+2026-04-09 22:20:48,401 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-09 22:20:48,402 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-09 22:20:50,322 [INFO] jarvis.audio: Captured audio clip rms=454
+2026-04-09 22:20:50,741 [INFO] jarvis.audio: Heard: who's on screen
+2026-04-09 22:20:51,160 [INFO] jarvis.core: Cleared requested focus target.
+2026-04-09 22:20:51,160 [INFO] jarvis.tts: Speaking response with TTS.
+2026-04-09 22:20:57,284 [INFO] jarvis.audio: Captured audio clip rms=593
+2026-04-09 22:20:57,700 [INFO] jarvis.audio: Heard: Jarvis add record we win
+2026-04-09 22:20:57,706 [INFO] jarvis.core: Wake word detected in transcript: Jarvis add record we win
+2026-04-09 22:20:58,011 [INFO] jarvis.tts: Speaking response with TTS.
+2026-04-09 22:21:03,843 [INFO] jarvis.audio: Captured audio clip rms=451
+2026-04-09 22:21:04,253 [INFO] jarvis.audio: Heard: who is on screen?
+2026-04-09 22:21:08,896 [INFO] jarvis.audio: Captured audio clip rms=72
+2026-04-09 22:21:09,113 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 22:21:13,338 [INFO] jarvis.audio: Captured audio clip rms=302
+2026-04-09 22:21:13,980 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-09 22:21:13,982 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-09 22:21:20,084 [INFO] jarvis.audio: Captured audio clip rms=389
+2026-04-09 22:21:20,397 [INFO] jarvis.audio: Heard: add this person's name as Vivian department as CSC role as engineer
+2026-04-09 22:21:27,479 [INFO] jarvis.audio: Captured audio clip rms=81
+2026-04-09 22:21:27,713 [INFO] jarvis.audio: Heard: okay
+2026-04-09 22:21:30,896 [INFO] jarvis.audio: Captured audio clip rms=375
+2026-04-09 22:21:31,186 [INFO] jarvis.audio: Heard: Jarvis who is on screen?
+2026-04-09 22:21:31,214 [INFO] jarvis.core: Wake word detected in transcript: Jarvis who is on screen?
+2026-04-09 22:21:31,889 [INFO] jarvis.core: Cleared requested focus target.
+2026-04-09 22:21:31,889 [INFO] jarvis.tts: Speaking response with TTS.
+2026-04-09 22:21:36,671 [INFO] jarvis.audio: Captured audio clip rms=69
+2026-04-09 22:21:36,878 [INFO] jarvis.audio: Heard: take photo shoot
+2026-04-09 22:21:37,824 [INFO] jarvis.db: MongoDB connection closed.
+2026-04-09 22:23:44,077 [INFO] jarvis.db: [OK] MongoDB connected -> mongodb://localhost:27017 / jarvis_db
+2026-04-09 22:23:46,120 [INFO] jarvis.audio: Audio pipeline ready. provider=groq model=whisper-large-v3-turbo language=en mic_index=None
+2026-04-09 22:23:46,122 [INFO] jarvis.tts: TTS backend selected: powershell_sapi
+2026-04-09 22:24:08,640 [INFO] jarvis.audio: Opening microphone: default microphone
+2026-04-09 22:24:09,580 [INFO] jarvis.audio: Microphone calibrated. energy_threshold=58.66585059047326
+2026-04-09 22:24:13,271 [INFO] jarvis.audio: Captured audio clip rms=75
+2026-04-09 22:24:14,748 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 22:24:17,480 [INFO] jarvis.audio: Captured audio clip rms=237
+2026-04-09 22:24:17,797 [INFO] jarvis.audio: Heard: who is on screen
+2026-04-09 22:24:21,280 [INFO] jarvis.audio: Captured audio clip rms=363
+2026-04-09 22:24:21,525 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-09 22:24:21,532 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-09 22:24:23,680 [INFO] jarvis.audio: Captured audio clip rms=344
+2026-04-09 22:24:24,043 [INFO] jarvis.audio: Heard: who is on screen
+2026-04-09 22:24:25,382 [INFO] jarvis.core: Focus command resolved target=Viven_G matched=EMP-101
+2026-04-09 22:24:25,382 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:24:26,229 [INFO] jarvis.audio: Captured audio clip rms=93
+2026-04-09 22:24:26,929 [INFO] jarvis.audio: Heard: I love that the theater in Georgia
+2026-04-09 22:24:32,755 [INFO] jarvis.audio: Captured audio clip rms=1040
+2026-04-09 22:24:33,158 [INFO] jarvis.audio: Heard: tracking beaven underscore g i will isolate them from the crowd when they appear
+2026-04-09 22:24:36,571 [INFO] jarvis.audio: Captured audio clip rms=391
+2026-04-09 22:24:37,149 [INFO] jarvis.audio: Heard: okay please remove event from screen
+2026-04-09 22:24:40,792 [INFO] jarvis.audio: Captured audio clip rms=324
+2026-04-09 22:24:41,015 [INFO] jarvis.audio: Heard: Jarvis?
+2026-04-09 22:24:41,021 [INFO] jarvis.core: Wake word detected in transcript: Jarvis?
+2026-04-09 22:24:43,848 [INFO] jarvis.audio: Captured audio clip rms=303
+2026-04-09 22:24:44,216 [INFO] jarvis.audio: Heard: remove event from screen
+2026-04-09 22:24:45,439 [WARNING] jarvis.reasoning: AI name matching failed, falling back to local similarity: HTTPConnectionPool(host='127.0.0.1', port=11434): Max retries exceeded with url: /api/chat (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=11434) at 0x25803c5e790>, 'Connection to 127.0.0.1 timed out. (connect timeout=1.2)'))
+2026-04-09 22:24:45,440 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:24:50,898 [INFO] jarvis.audio: Captured audio clip rms=995
+2026-04-09 22:24:51,212 [INFO] jarvis.audio: Heard: I could not find event from screen in the enrolled records
+2026-04-09 22:24:53,925 [INFO] jarvis.audio: Captured audio clip rms=378
+2026-04-09 22:24:54,226 [INFO] jarvis.audio: Heard: remove event g from screen
+2026-04-09 22:25:03,189 [INFO] jarvis.audio: Captured audio clip rms=356
+2026-04-09 22:25:03,703 [INFO] jarvis.audio: Heard: remove vivend g from screen
+2026-04-09 22:25:09,696 [INFO] jarvis.audio: Captured audio clip rms=295
+2026-04-09 22:25:10,020 [INFO] jarvis.audio: Heard: okay give me the
+2026-04-09 22:25:13,273 [INFO] jarvis.audio: Captured audio clip rms=440
+2026-04-09 22:25:13,533 [INFO] jarvis.audio: Heard: camera of occurrence of object called bottle
+2026-04-09 22:25:16,508 [INFO] jarvis.audio: Captured audio clip rms=359
+2026-04-09 22:25:16,742 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-09 22:25:16,757 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-09 22:25:21,845 [INFO] jarvis.audio: Captured audio clip rms=481
+2026-04-09 22:25:22,124 [INFO] jarvis.audio: Heard: how many accounts of bottle are there
+2026-04-09 22:25:26,958 [INFO] jarvis.audio: Captured audio clip rms=73
+2026-04-09 22:25:28,044 [INFO] jarvis.audio: Heard: hit
+2026-04-09 22:25:31,877 [INFO] jarvis.audio: Captured audio clip rms=347
+2026-04-09 22:25:32,142 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-09 22:25:32,164 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-09 22:25:34,328 [INFO] jarvis.audio: Captured audio clip rms=508
+2026-04-09 22:25:34,598 [INFO] jarvis.audio: Heard: remove even
+2026-04-09 22:25:35,903 [WARNING] jarvis.reasoning: AI name matching failed, falling back to local similarity: HTTPConnectionPool(host='127.0.0.1', port=11434): Max retries exceeded with url: /api/chat (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=11434) at 0x25803c76790>, 'Connection to 127.0.0.1 timed out. (connect timeout=1.2)'))
+2026-04-09 22:25:35,904 [INFO] jarvis.core: Suppressed overlay marking for target=EMP-101
+2026-04-09 22:25:35,904 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:25:42,903 [INFO] jarvis.audio: Captured audio clip rms=837
+2026-04-09 22:25:43,231 [INFO] jarvis.audio: Heard: okay I will stop marking beaven underscore g until you ask for them again
+2026-04-09 22:25:45,083 [INFO] jarvis.audio: Captured audio clip rms=334
+2026-04-09 22:25:45,324 [INFO] jarvis.audio: Heard: where is Vivendi?
+2026-04-09 22:25:50,285 [INFO] jarvis.audio: Captured audio clip rms=336
+2026-04-09 22:25:50,551 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-09 22:25:50,557 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-09 22:25:52,913 [INFO] jarvis.audio: Captured audio clip rms=578
+2026-04-09 22:25:53,174 [INFO] jarvis.audio: Heard: where is the event?
+2026-04-09 22:25:53,465 [INFO] jarvis.core: Queueing grounded voice query: where is the event
+2026-04-09 22:25:55,514 [WARNING] jarvis.reasoning: Falling back to rules-based reasoning: HTTPConnectionPool(host='127.0.0.1', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=11434): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+2026-04-09 22:25:55,515 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:26:00,361 [INFO] jarvis.audio: Captured audio clip rms=565
+2026-04-09 22:26:00,631 [INFO] jarvis.audio: Heard: known people known people known people
+2026-04-09 22:26:05,196 [INFO] jarvis.audio: Captured audio clip rms=919
+2026-04-09 22:26:05,714 [INFO] jarvis.audio: Heard: bones one unknown objects one chair
+2026-04-09 22:26:10,867 [INFO] jarvis.audio: Captured audio clip rms=412
+2026-04-09 22:26:11,259 [INFO] jarvis.audio: Heard: who is the unknown person
+2026-04-09 22:26:21,243 [INFO] jarvis.audio: Captured audio clip rms=438
+2026-04-09 22:26:21,601 [INFO] jarvis.audio: Heard: Jarvis show me we win
+2026-04-09 22:26:21,624 [INFO] jarvis.core: Wake word detected in transcript: Jarvis show me we win
+2026-04-09 22:26:22,892 [WARNING] jarvis.reasoning: AI name matching failed, falling back to local similarity: HTTPConnectionPool(host='127.0.0.1', port=11434): Max retries exceeded with url: /api/chat (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=11434) at 0x25803c94190>, 'Connection to 127.0.0.1 timed out. (connect timeout=1.2)'))
+2026-04-09 22:26:22,893 [INFO] jarvis.core: Focus command resolved target=we win matched=none
+2026-04-09 22:26:22,893 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:26:29,664 [INFO] jarvis.audio: Captured audio clip rms=903
+2026-04-09 22:26:29,944 [INFO] jarvis.audio: Heard: I could not find we win in the enrolled records show me Vivenji
+2026-04-09 22:26:32,337 [INFO] jarvis.audio: Captured audio clip rms=68
+2026-04-09 22:26:32,660 [INFO] jarvis.audio: Heard: This is a test to Explorer first
+2026-04-09 22:26:35,664 [INFO] jarvis.audio: Captured audio clip rms=236
+2026-04-09 22:26:36,092 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-09 22:26:36,099 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-09 22:26:38,505 [INFO] jarvis.audio: Captured audio clip rms=473
+2026-04-09 22:26:38,842 [INFO] jarvis.audio: Heard: show me vivenji
+2026-04-09 22:26:40,065 [WARNING] jarvis.reasoning: AI name matching failed, falling back to local similarity: HTTPConnectionPool(host='127.0.0.1', port=11434): Max retries exceeded with url: /api/chat (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=11434) at 0x25803c9f690>, 'Connection to 127.0.0.1 timed out. (connect timeout=1.2)'))
+2026-04-09 22:26:40,066 [INFO] jarvis.core: Focus command resolved target=vivenji matched=EMP-101
+2026-04-09 22:26:40,066 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:26:48,015 [INFO] jarvis.audio: Captured audio clip rms=1159
+2026-04-09 22:26:48,533 [INFO] jarvis.audio: Heard: tracking even underscore g i matched that from your spoken request and will isolate them in the crowd
+2026-04-09 22:27:00,276 [INFO] jarvis.audio: Captured audio clip rms=137
+2026-04-09 22:27:00,718 [INFO] jarvis.audio: Heard: So today we路
+2026-04-09 22:27:03,250 [INFO] jarvis.audio: Captured audio clip rms=320
+2026-04-09 22:27:03,586 [INFO] jarvis.audio: Heard: Jarvis?
+2026-04-09 22:27:03,590 [INFO] jarvis.core: Wake word detected in transcript: Jarvis?
+2026-04-09 22:27:06,089 [INFO] jarvis.audio: Captured audio clip rms=372
+2026-04-09 22:27:06,335 [INFO] jarvis.audio: Heard: how many people are there on my screen
+2026-04-09 22:27:06,581 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:27:14,790 [INFO] jarvis.audio: Captured audio clip rms=1149
+2026-04-09 22:27:16,718 [INFO] jarvis.audio: Heard: database records shrie debbie emp 002 even underscore g emp 10
+2026-04-09 22:27:19,150 [INFO] jarvis.audio: Captured audio clip rms=621
+2026-04-09 22:27:19,562 [INFO] jarvis.audio: Heard: who is the other person on my screen
+2026-04-09 22:27:30,565 [INFO] jarvis.audio: Captured audio clip rms=366
+2026-04-09 22:27:30,928 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-09 22:27:30,931 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-09 22:27:35,341 [INFO] jarvis.audio: Captured audio clip rms=505
+2026-04-09 22:27:35,596 [INFO] jarvis.audio: Heard: remove Vivian from my screen
+2026-04-09 22:27:36,824 [WARNING] jarvis.reasoning: AI name matching failed, falling back to local similarity: HTTPConnectionPool(host='127.0.0.1', port=11434): Max retries exceeded with url: /api/chat (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=11434) at 0x25803c5d150>, 'Connection to 127.0.0.1 timed out. (connect timeout=1.2)'))
+2026-04-09 22:27:36,859 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:27:43,980 [INFO] jarvis.audio: Captured audio clip rms=870
+2026-04-09 22:27:44,447 [INFO] jarvis.audio: Heard: remove event g from the screen
+2026-04-09 22:27:50,109 [INFO] jarvis.audio: Captured audio clip rms=318
+2026-04-09 22:27:50,487 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-09 22:27:50,496 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-09 22:27:53,500 [INFO] jarvis.audio: Captured audio clip rms=363
+2026-04-09 22:27:53,866 [INFO] jarvis.audio: Heard: remove vng from the screen
+2026-04-09 22:27:55,104 [WARNING] jarvis.reasoning: AI name matching failed, falling back to local similarity: HTTPConnectionPool(host='127.0.0.1', port=11434): Max retries exceeded with url: /api/chat (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=11434) at 0x25803c95f10>, 'Connection to 127.0.0.1 timed out. (connect timeout=1.2)'))
+2026-04-09 22:27:55,106 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:28:02,096 [INFO] jarvis.audio: Captured audio clip rms=881
+2026-04-09 22:28:02,470 [INFO] jarvis.audio: Heard: I could not find VNG from the screen in the enrolled records VNG
+2026-04-09 22:28:13,437 [INFO] jarvis.audio: Captured audio clip rms=132
+2026-04-09 22:28:14,962 [INFO] jarvis.audio: Heard: what was the meaning to my finger coming down here it website
+2026-04-09 22:28:24,030 [INFO] jarvis.audio: Captured audio clip rms=324
+2026-04-09 22:28:25,522 [INFO] jarvis.audio: Heard: stopctar votingعienna is dead car check him out
+2026-04-09 22:28:31,816 [INFO] jarvis.audio: Captured audio clip rms=160
+2026-04-09 22:28:32,372 [INFO] jarvis.audio: Heard: I will
+2026-04-09 22:28:33,995 [INFO] jarvis.audio: Captured audio clip rms=119
+2026-04-09 22:28:34,206 [INFO] jarvis.audio: Heard: take a picture
+2026-04-09 22:28:39,730 [INFO] jarvis.audio: Captured audio clip rms=240
+2026-04-09 22:28:40,155 [INFO] jarvis.audio: Heard: laughing
+2026-04-09 22:28:46,353 [INFO] jarvis.audio: Captured audio clip rms=138
+2026-04-09 22:28:47,124 [INFO] jarvis.audio: Heard: you have to stop in front and you have to close to the camera
+2026-04-09 22:28:51,856 [INFO] jarvis.audio: Captured audio clip rms=360
+2026-04-09 22:28:52,135 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-09 22:28:52,141 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-09 22:28:55,177 [INFO] jarvis.audio: Captured audio clip rms=627
+2026-04-09 22:28:55,411 [INFO] jarvis.audio: Heard: who is on my screen
+2026-04-09 22:28:55,961 [INFO] jarvis.core: Focus command resolved target=Viven_G matched=EMP-101
+2026-04-09 22:28:55,962 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:29:02,704 [INFO] jarvis.audio: Captured audio clip rms=606
+2026-04-09 22:29:03,016 [INFO] jarvis.audio: Heard: tracking Vivan underscore G I will isolate them from the crowd when they appear
+2026-04-09 22:29:06,268 [INFO] jarvis.audio: Captured audio clip rms=379
+2026-04-09 22:29:06,488 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-09 22:29:06,490 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-09 22:29:10,411 [INFO] jarvis.audio: Captured audio clip rms=521
+2026-04-09 22:29:10,866 [INFO] jarvis.audio: Heard: give me all the data of objects in my database
+2026-04-09 22:29:12,214 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:29:19,940 [INFO] jarvis.audio: Captured audio clip rms=671
+2026-04-09 22:29:20,295 [INFO] jarvis.audio: Heard: database records shrie deby emp002 vivan underscore g emp1
+2026-04-09 22:29:23,658 [INFO] jarvis.audio: Captured audio clip rms=772
+2026-04-09 22:29:23,883 [INFO] jarvis.audio: Heard: who is EMP 101
+2026-04-09 22:29:31,648 [INFO] jarvis.audio: Captured audio clip rms=70
+2026-04-09 22:29:32,335 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 22:29:35,188 [INFO] jarvis.audio: Captured audio clip rms=359
+2026-04-09 22:29:35,462 [INFO] jarvis.audio: Heard: you see?
+2026-04-09 22:29:38,525 [INFO] jarvis.audio: Captured audio clip rms=513
+2026-04-09 22:29:38,870 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-09 22:29:38,877 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-09 22:29:41,671 [INFO] jarvis.audio: Captured audio clip rms=699
+2026-04-09 22:29:41,909 [INFO] jarvis.audio: Heard: who is EMP 101
+2026-04-09 22:29:42,847 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:29:50,872 [INFO] jarvis.audio: Captured audio clip rms=557
+2026-04-09 22:29:51,223 [INFO] jarvis.audio: Heard: Veevan underscore GSI DEM P101 role engineer department CSE notes
+2026-04-09 22:29:54,075 [INFO] jarvis.audio: Captured audio clip rms=113
+2026-04-09 22:29:54,396 [INFO] jarvis.audio: Heard: uh
+2026-04-09 22:29:58,880 [INFO] jarvis.audio: Captured audio clip rms=519
+2026-04-09 22:29:59,209 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-09 22:29:59,214 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-09 22:30:02,280 [INFO] jarvis.audio: Captured audio clip rms=566
+2026-04-09 22:30:02,692 [INFO] jarvis.audio: Heard: who is EMP 002
+2026-04-09 22:30:03,008 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:30:10,306 [INFO] jarvis.audio: Captured audio clip rms=602
+2026-04-09 22:30:10,786 [INFO] jarvis.audio: Heard: Sreevee has ID EMP 002 roll department notes
+2026-04-09 22:30:12,918 [INFO] jarvis.audio: Captured audio clip rms=401
+2026-04-09 22:30:13,170 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-09 22:30:13,176 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-09 22:30:15,972 [INFO] jarvis.audio: Captured audio clip rms=487
+2026-04-09 22:30:16,212 [INFO] jarvis.audio: Heard: hide within
+2026-04-09 22:30:17,437 [WARNING] jarvis.reasoning: AI name matching failed, falling back to local similarity: HTTPConnectionPool(host='127.0.0.1', port=11434): Max retries exceeded with url: /api/chat (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=11434) at 0x25803c9fcd0>, 'Connection to 127.0.0.1 timed out. (connect timeout=1.2)'))
+2026-04-09 22:30:17,438 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:30:22,455 [INFO] jarvis.audio: Captured audio clip rms=556
+2026-04-09 22:30:22,762 [INFO] jarvis.audio: Heard: I could not find within in the enrolled records
+2026-04-09 22:30:25,522 [INFO] jarvis.audio: Captured audio clip rms=383
+2026-04-09 22:30:25,864 [INFO] jarvis.audio: Heard: just hide EMP001
+2026-04-09 22:30:29,596 [INFO] jarvis.audio: Captured audio clip rms=68
+2026-04-09 22:30:29,921 [INFO] jarvis.audio: Heard: by ahead
+2026-04-09 22:30:35,423 [INFO] jarvis.audio: Captured audio clip rms=394
+2026-04-09 22:30:35,868 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-09 22:30:35,874 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-09 22:30:40,282 [INFO] jarvis.audio: Captured audio clip rms=419
+2026-04-09 22:30:40,754 [INFO] jarvis.audio: Heard: hide EMP 101
+2026-04-09 22:30:41,976 [WARNING] jarvis.reasoning: AI name matching failed, falling back to local similarity: HTTPConnectionPool(host='127.0.0.1', port=11434): Max retries exceeded with url: /api/chat (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=11434) at 0x25803c9d310>, 'Connection to 127.0.0.1 timed out. (connect timeout=1.2)'))
+2026-04-09 22:30:41,977 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:30:47,926 [INFO] jarvis.audio: Captured audio clip rms=581
+2026-04-09 22:30:48,260 [INFO] jarvis.audio: Heard: I could not find EMP 101 in the enrolled records
+2026-04-09 22:30:52,161 [INFO] jarvis.audio: Captured audio clip rms=100
+2026-04-09 22:30:52,970 [INFO] jarvis.audio: Heard: Don't worry we don't fight right doesn't matter bad
+2026-04-09 22:31:27,061 [INFO] jarvis.db: [OK] MongoDB connected -> mongodb://localhost:27017 / jarvis_db
+2026-04-09 22:31:29,110 [INFO] jarvis.audio: Audio pipeline ready. provider=groq model=whisper-large-v3-turbo language=en mic_index=None
+2026-04-09 22:31:29,112 [INFO] jarvis.tts: TTS backend selected: powershell_sapi
+2026-04-09 22:31:52,308 [INFO] jarvis.audio: Opening microphone: default microphone
+2026-04-09 22:31:53,263 [INFO] jarvis.audio: Microphone calibrated. energy_threshold=72.24349109885796
+2026-04-09 22:31:55,838 [INFO] jarvis.audio: Captured audio clip rms=100
+2026-04-09 22:31:57,947 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 22:32:04,231 [INFO] jarvis.audio: Captured audio clip rms=112
+2026-04-09 22:32:06,130 [INFO] jarvis.audio: Heard: okay because when I knew to attack him
+2026-04-09 22:32:09,140 [INFO] jarvis.audio: Captured audio clip rms=126
+2026-04-09 22:32:10,721 [INFO] jarvis.audio: Heard: go
+2026-04-09 22:32:18,963 [INFO] jarvis.audio: Captured audio clip rms=208
+2026-04-09 22:32:19,299 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-09 22:32:19,326 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-09 22:32:22,093 [INFO] jarvis.audio: Captured audio clip rms=444
+2026-04-09 22:32:22,361 [INFO] jarvis.audio: Heard: who's on screen
+2026-04-09 22:32:23,849 [INFO] jarvis.core: Focus command resolved target=Viven_G matched=EMP-101
+2026-04-09 22:32:23,850 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:32:31,835 [INFO] jarvis.audio: Captured audio clip rms=625
+2026-04-09 22:32:32,507 [INFO] jarvis.audio: Heard: tracking even underscore G I will isolate them from the crowd when they appear delete we win underscore G record
+2026-04-09 22:32:35,829 [INFO] jarvis.audio: Captured audio clip rms=373
+2026-04-09 22:32:36,077 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-09 22:32:36,181 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-09 22:32:39,912 [INFO] jarvis.audio: Captured audio clip rms=529
+2026-04-09 22:32:40,457 [INFO] jarvis.audio: Heard: delete vven underscore g record
+2026-04-09 22:32:40,868 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:32:45,619 [INFO] jarvis.audio: Captured audio clip rms=659
+2026-04-09 22:32:46,434 [INFO] jarvis.audio: Heard: deleted the record for even underscore G
+2026-04-09 22:32:48,686 [INFO] jarvis.audio: Captured audio clip rms=488
+2026-04-09 22:32:48,994 [INFO] jarvis.audio: Heard: Jarvis who is on the screen?
+2026-04-09 22:32:49,024 [INFO] jarvis.core: Wake word detected in transcript: Jarvis who is on the screen?
+2026-04-09 22:32:49,316 [INFO] jarvis.core: Focus command resolved target=Sridevi matched=EMP-002
+2026-04-09 22:32:49,317 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:32:57,698 [INFO] jarvis.audio: Captured audio clip rms=554
+2026-04-09 22:32:58,107 [INFO] jarvis.audio: Heard: tracking shri debbie i will isolate them from the crowd when they appear Jarvis who's on the screen
+2026-04-09 22:32:58,115 [INFO] jarvis.core: Wake word detected in transcript: tracking shri debbie i will isolate them from the crowd when they appear Jarvis who's on the screen
+2026-04-09 22:32:58,374 [INFO] jarvis.core: Focus command resolved target=Sridevi matched=EMP-002
+2026-04-09 22:32:58,374 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:33:05,122 [INFO] jarvis.audio: Captured audio clip rms=577
+2026-04-09 22:33:05,432 [INFO] jarvis.audio: Heard: tracking shri debbie I will isolate them from the crowd when they appear
+2026-04-09 22:33:09,655 [INFO] jarvis.audio: Captured audio clip rms=74
+2026-04-09 22:33:10,055 [INFO] jarvis.audio: Heard: yeah
+2026-04-09 22:33:16,093 [INFO] jarvis.audio: Captured audio clip rms=305
+2026-04-09 22:33:16,438 [INFO] jarvis.audio: Heard: Jarvis remove Sridevi record
+2026-04-09 22:33:16,449 [INFO] jarvis.core: Wake word detected in transcript: Jarvis remove Sridevi record
+2026-04-09 22:33:16,627 [INFO] jarvis.core: Suppressed overlay marking for target=EMP-002
+2026-04-09 22:33:16,627 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:33:18,549 [INFO] jarvis.audio: Captured audio clip rms=106
+2026-04-09 22:33:18,895 [INFO] jarvis.audio: Heard: Okay
+2026-04-09 22:33:24,979 [INFO] jarvis.audio: Captured audio clip rms=552
+2026-04-09 22:33:25,309 [INFO] jarvis.audio: Heard: okay I will stop marking Sharif until you ask for them again hey Jarvis
+2026-04-09 22:33:25,328 [INFO] jarvis.core: Wake word detected in transcript: okay I will stop marking Sharif until you ask for them again hey Jarvis
+2026-04-09 22:33:25,551 [INFO] jarvis.core: Cleared requested focus target.
+2026-04-09 22:33:25,551 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:33:32,937 [INFO] jarvis.audio: Captured audio clip rms=475
+2026-04-09 22:33:33,309 [INFO] jarvis.audio: Heard: hey Jarvis focus target clear monitoring the full scene again Jarvis
+2026-04-09 22:33:33,317 [INFO] jarvis.core: Wake word detected in transcript: hey Jarvis focus target clear monitoring the full scene again Jarvis
+2026-04-09 22:33:33,646 [INFO] jarvis.core: Focus command resolved target=Sridevi matched=EMP-002
+2026-04-09 22:33:33,647 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:33:37,392 [INFO] jarvis.audio: Captured audio clip rms=704
+2026-04-09 22:33:37,738 [INFO] jarvis.audio: Heard: delete the speed that we record from a database
+2026-04-09 22:33:43,661 [INFO] jarvis.audio: Captured audio clip rms=584
+2026-04-09 22:33:43,985 [INFO] jarvis.audio: Heard: isolate them from the crowd when they appear Jarvis delete the series record from a database
+2026-04-09 22:33:43,993 [INFO] jarvis.core: Wake word detected in transcript: isolate them from the crowd when they appear Jarvis delete the series record from a database
+2026-04-09 22:33:44,216 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:33:48,748 [INFO] jarvis.audio: Captured audio clip rms=544
+2026-04-09 22:33:49,002 [INFO] jarvis.audio: Heard: deleted the record for shri-debi
+2026-04-09 22:33:51,414 [INFO] jarvis.audio: Captured audio clip rms=416
+2026-04-09 22:33:51,767 [INFO] jarvis.audio: Heard: now who is on the screen
+2026-04-09 22:33:55,168 [INFO] jarvis.audio: Captured audio clip rms=530
+2026-04-09 22:33:55,560 [INFO] jarvis.audio: Heard: Jarvis who is on the screen?
+2026-04-09 22:33:55,567 [INFO] jarvis.core: Wake word detected in transcript: Jarvis who is on the screen?
+2026-04-09 22:33:55,864 [INFO] jarvis.core: Cleared requested focus target.
+2026-04-09 22:33:55,864 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:34:02,364 [INFO] jarvis.audio: Captured audio clip rms=554
+2026-04-09 22:34:02,682 [INFO] jarvis.audio: Heard: focus target cleared monitoring the full scene again
+2026-04-09 22:34:10,048 [INFO] jarvis.audio: Captured audio clip rms=231
+2026-04-09 22:34:10,490 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-09 22:34:10,504 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-09 22:34:12,884 [INFO] jarvis.audio: Captured audio clip rms=439
+2026-04-09 22:34:13,169 [INFO] jarvis.audio: Heard: who is on the screen
+2026-04-09 22:34:13,386 [INFO] jarvis.core: Cleared requested focus target.
+2026-04-09 22:34:13,396 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:34:20,182 [INFO] jarvis.audio: Captured audio clip rms=459
+2026-04-09 22:34:20,606 [INFO] jarvis.audio: Heard: focus target cleared monitoring the full scene again
+2026-04-09 22:34:23,667 [INFO] jarvis.audio: Captured audio clip rms=400
+2026-04-09 22:34:24,127 [INFO] jarvis.audio: Heard: Jarvis add a record for this person
+2026-04-09 22:34:24,134 [INFO] jarvis.core: Wake word detected in transcript: Jarvis add a record for this person
+2026-04-09 22:34:24,449 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:34:29,789 [INFO] jarvis.audio: Captured audio clip rms=587
+2026-04-09 22:34:30,170 [INFO] jarvis.audio: Heard: Niven ID 101 create a database record for none with ID none
+2026-04-09 22:34:34,342 [INFO] jarvis.audio: Captured audio clip rms=595
+2026-04-09 22:34:34,633 [INFO] jarvis.audio: Heard: add id 101 and name we win
+2026-04-09 22:34:37,845 [INFO] jarvis.audio: Captured audio clip rms=310
+2026-04-09 22:34:38,226 [INFO] jarvis.audio: Heard: Jadis
+2026-04-09 22:34:42,400 [INFO] jarvis.audio: Captured audio clip rms=532
+2026-04-09 22:34:42,860 [INFO] jarvis.audio: Heard: add name viven and id 101
+2026-04-09 22:34:52,454 [INFO] jarvis.audio: Captured audio clip rms=123
+2026-04-09 22:34:52,903 [INFO] jarvis.audio: Heard: In fact information Orange is reached by右紅 outsider
+2026-04-09 22:34:54,935 [INFO] jarvis.audio: Captured audio clip rms=163
+2026-04-09 22:34:55,359 [INFO] jarvis.audio: Heard: the sendiri once we turn to the addict
+2026-04-09 22:34:59,002 [INFO] jarvis.audio: Captured audio clip rms=59
+2026-04-09 22:34:59,258 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 22:35:00,985 [INFO] jarvis.audio: Captured audio clip rms=61
+2026-04-09 22:35:01,244 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 22:35:04,183 [INFO] jarvis.audio: Captured audio clip rms=64
+2026-04-09 22:35:04,407 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 22:35:08,672 [INFO] jarvis.audio: Captured audio clip rms=185
+2026-04-09 22:35:08,909 [INFO] jarvis.audio: Heard: Jarvis?
+2026-04-09 22:35:08,915 [INFO] jarvis.core: Wake word detected in transcript: Jarvis?
+2026-04-09 22:35:16,824 [INFO] jarvis.audio: Captured audio clip rms=503
+2026-04-09 22:35:17,372 [INFO] jarvis.audio: Heard: add this person's name as Vivint ID as 101 department as CSC
+2026-04-09 22:35:23,390 [INFO] jarvis.audio: Captured audio clip rms=53
+2026-04-09 22:35:23,793 [INFO] jarvis.audio: Heard: bus camera
+2026-04-09 22:35:25,468 [INFO] jarvis.audio: Captured audio clip rms=67
+2026-04-09 22:35:25,807 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 22:35:29,275 [INFO] jarvis.audio: Captured audio clip rms=71
+2026-04-09 22:35:29,564 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 22:35:32,373 [INFO] jarvis.audio: Captured audio clip rms=76
+2026-04-09 22:35:32,610 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 22:35:41,574 [INFO] jarvis.audio: Captured audio clip rms=351
+2026-04-09 22:35:41,900 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-09 22:35:41,907 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-09 22:35:47,932 [INFO] jarvis.audio: Captured audio clip rms=389
+2026-04-09 22:35:48,304 [INFO] jarvis.audio: Heard: add this persons name as vivend ideas 101 in my database
+2026-04-09 22:35:50,843 [INFO] jarvis.audio: Captured audio clip rms=80
+2026-04-09 22:35:51,053 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 22:35:55,497 [INFO] jarvis.audio: Captured audio clip rms=68
+2026-04-09 22:35:56,248 [INFO] jarvis.audio: Heard: In fact Ready Who The Final Heeh me
+2026-04-09 22:35:58,521 [INFO] jarvis.audio: Captured audio clip rms=339
+2026-04-09 22:35:58,952 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-09 22:35:59,112 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-09 22:36:04,185 [INFO] jarvis.audio: Captured audio clip rms=386
+2026-04-09 22:36:04,491 [INFO] jarvis.audio: Heard: add a new record with name vivain id101 in my database
+2026-04-09 22:36:12,406 [INFO] jarvis.audio: Captured audio clip rms=63
+2026-04-09 22:36:13,596 [INFO] jarvis.audio: Heard: and then now it shows patient response and then tell this assistant title hablando
+2026-04-09 22:36:16,940 [INFO] jarvis.audio: Captured audio clip rms=67
+2026-04-09 22:36:17,290 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 22:36:21,814 [INFO] jarvis.audio: Captured audio clip rms=60
+2026-04-09 22:36:22,125 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 22:36:24,773 [INFO] jarvis.audio: Captured audio clip rms=65
+2026-04-09 22:36:25,182 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 22:36:34,037 [INFO] jarvis.audio: Captured audio clip rms=60
+2026-04-09 22:36:34,804 [INFO] jarvis.audio: Heard: a few hoursidal
+2026-04-09 22:36:38,322 [INFO] jarvis.audio: Captured audio clip rms=65
+2026-04-09 22:36:38,611 [INFO] jarvis.audio: Heard: stop
+2026-04-09 22:36:43,727 [INFO] jarvis.audio: Captured audio clip rms=56
+2026-04-09 22:36:44,214 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 22:37:05,479 [INFO] jarvis.audio: Captured audio clip rms=64
+2026-04-09 22:37:05,723 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 22:37:09,046 [INFO] jarvis.audio: Captured audio clip rms=58
+2026-04-09 22:37:09,416 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 22:37:21,279 [INFO] jarvis.audio: Captured audio clip rms=69
+2026-04-09 22:37:21,577 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 22:37:24,179 [INFO] jarvis.audio: Captured audio clip rms=92
+2026-04-09 22:37:24,806 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 22:37:29,698 [INFO] jarvis.audio: Captured audio clip rms=64
+2026-04-09 22:37:29,951 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 22:37:33,064 [INFO] jarvis.audio: Captured audio clip rms=70
+2026-04-09 22:37:33,278 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 22:37:42,784 [INFO] jarvis.audio: Captured audio clip rms=68
+2026-04-09 22:37:43,096 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 22:37:47,006 [INFO] jarvis.audio: Captured audio clip rms=64
+2026-04-09 22:37:47,367 [INFO] jarvis.audio: Heard: take photo record to chi tight
+2026-04-09 22:37:49,113 [INFO] jarvis.audio: Captured audio clip rms=212
+2026-04-09 22:37:49,433 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-09 22:37:49,440 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-09 22:37:51,896 [INFO] jarvis.audio: Captured audio clip rms=329
+2026-04-09 22:37:52,256 [INFO] jarvis.audio: Heard: who is on screen
+2026-04-09 22:37:52,442 [INFO] jarvis.core: Cleared requested focus target.
+2026-04-09 22:37:52,443 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:37:58,988 [INFO] jarvis.audio: Captured audio clip rms=431
+2026-04-09 22:37:59,627 [INFO] jarvis.audio: Heard: focus target cleared monitoring the full scene again
+2026-04-09 22:38:02,436 [INFO] jarvis.audio: Captured audio clip rms=329
+2026-04-09 22:38:02,676 [INFO] jarvis.audio: Heard: Jarvis find Vivian
+2026-04-09 22:38:02,684 [INFO] jarvis.core: Wake word detected in transcript: Jarvis find Vivian
+2026-04-09 22:38:02,688 [INFO] jarvis.core: Focus command resolved target=vivian matched=none
+2026-04-09 22:38:02,688 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:38:07,808 [INFO] jarvis.audio: Captured audio clip rms=460
+2026-04-09 22:38:08,352 [INFO] jarvis.audio: Heard: I could not find Vivian in the enrolled records
+2026-04-09 22:38:13,454 [INFO] jarvis.audio: Captured audio clip rms=367
+2026-04-09 22:38:13,817 [INFO] jarvis.audio: Heard: Jarvis enroll in new record with name Vivian
+2026-04-09 22:38:13,821 [INFO] jarvis.core: Wake word detected in transcript: Jarvis enroll in new record with name Vivian
+2026-04-09 22:38:14,115 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:38:19,670 [INFO] jarvis.audio: Captured audio clip rms=542
+2026-04-09 22:38:20,188 [INFO] jarvis.audio: Heard: create a database record for Vivian with ID none
+2026-04-09 22:38:23,111 [INFO] jarvis.audio: Captured audio clip rms=380
+2026-04-09 22:38:23,340 [INFO] jarvis.audio: Heard: his face vectors which are on screen
+2026-04-09 22:38:26,822 [INFO] jarvis.audio: Captured audio clip rms=317
+2026-04-09 22:38:27,130 [INFO] jarvis.audio: Heard: Jarvis?
+2026-04-09 22:38:27,134 [INFO] jarvis.core: Wake word detected in transcript: Jarvis?
+2026-04-09 22:38:30,863 [INFO] jarvis.audio: Captured audio clip rms=351
+2026-04-09 22:38:31,157 [INFO] jarvis.audio: Heard: add this person to vven record
+2026-04-09 22:38:31,407 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:38:36,872 [INFO] jarvis.audio: Captured audio clip rms=679
+2026-04-09 22:38:37,126 [INFO] jarvis.audio: Heard: create a database record for Vivian with ID not
+2026-04-09 22:38:40,489 [INFO] jarvis.audio: Captured audio clip rms=58
+2026-04-09 22:38:41,156 [INFO] jarvis.audio: Heard: I pivot to show screen
+2026-04-09 22:38:46,049 [INFO] jarvis.audio: Captured audio clip rms=363
+2026-04-09 22:38:46,386 [INFO] jarvis.audio: Heard: Jarvis add embedded record with this face
+2026-04-09 22:38:46,392 [INFO] jarvis.core: Wake word detected in transcript: Jarvis add embedded record with this face
+2026-04-09 22:38:46,794 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:38:52,347 [INFO] jarvis.audio: Captured audio clip rms=680
+2026-04-09 22:38:52,731 [INFO] jarvis.audio: Heard: create a database record for Vivian with ID not
+2026-04-09 22:38:55,036 [INFO] jarvis.audio: Captured audio clip rms=541
+2026-04-09 22:38:56,035 [INFO] jarvis.audio: Heard: Jarvis set the ID to 10105
+2026-04-09 22:38:56,084 [INFO] jarvis.core: Wake word detected in transcript: Jarvis set the ID to 10105
+2026-04-09 22:38:56,544 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:39:00,931 [INFO] jarvis.audio: Captured audio clip rms=592
+2026-04-09 22:39:01,243 [INFO] jarvis.audio: Heard: updated Vivian's record
+2026-04-09 22:39:06,048 [INFO] jarvis.audio: Captured audio clip rms=62
+2026-04-09 22:39:06,355 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 22:39:09,351 [INFO] jarvis.audio: Captured audio clip rms=52
+2026-04-09 22:39:09,877 [INFO] jarvis.audio: Heard: 완
+2026-04-09 22:39:15,082 [INFO] jarvis.audio: Captured audio clip rms=339
+2026-04-09 22:39:15,465 [INFO] jarvis.audio: Heard: Jarvis update vivence record to 101
+2026-04-09 22:39:15,467 [INFO] jarvis.core: Wake word detected in transcript: Jarvis update vivence record to 101
+2026-04-09 22:39:15,875 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:39:23,798 [INFO] jarvis.audio: Captured audio clip rms=486
+2026-04-09 22:39:24,169 [INFO] jarvis.audio: Heard: I need at least one field to update such as department name or notes
+2026-04-09 22:39:25,511 [INFO] jarvis.audio: Captured audio clip rms=402
+2026-04-09 22:39:25,726 [INFO] jarvis.audio: Heard: need
+2026-04-09 22:39:30,949 [INFO] jarvis.audio: Captured audio clip rms=442
+2026-04-09 22:39:31,244 [INFO] jarvis.audio: Heard: Jarvis name is Vivian update to 101
+2026-04-09 22:39:31,250 [INFO] jarvis.core: Wake word detected in transcript: Jarvis name is Vivian update to 101
+2026-04-09 22:39:31,526 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:39:38,650 [INFO] jarvis.audio: Captured audio clip rms=415
+2026-04-09 22:39:39,018 [INFO] jarvis.audio: Heard: I need at least one field to update such as department role name or notes
+2026-04-09 22:39:43,219 [INFO] jarvis.audio: Captured audio clip rms=69
+2026-04-09 22:39:43,669 [INFO] jarvis.audio: Heard: and one sip
+2026-04-09 22:39:45,570 [INFO] jarvis.audio: Captured audio clip rms=419
+2026-04-09 22:39:45,879 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-09 22:39:45,882 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-09 22:39:47,591 [INFO] jarvis.audio: Captured audio clip rms=626
+2026-04-09 22:39:47,904 [INFO] jarvis.audio: Heard: High wash overlay effect
+2026-04-09 22:39:48,212 [INFO] jarvis.core: Queueing grounded voice query: high wash overlay effect
+2026-04-09 22:39:50,252 [WARNING] jarvis.reasoning: Falling back to rules-based reasoning: HTTPConnectionPool(host='127.0.0.1', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=11434): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+2026-04-09 22:39:50,253 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:39:52,426 [INFO] jarvis.audio: Captured audio clip rms=86
+2026-04-09 22:39:53,649 [INFO] jarvis.audio: Heard: Ja
+2026-04-09 22:39:59,724 [INFO] jarvis.audio: Captured audio clip rms=427
+2026-04-09 22:40:00,112 [INFO] jarvis.audio: Heard: known people unknowns one unknown objects no notable objects
+2026-04-09 22:43:34,961 [INFO] jarvis.db: [OK] MongoDB connected -> mongodb://localhost:27017 / jarvis_db
+2026-04-09 22:48:24,704 [INFO] jarvis.db: [OK] MongoDB connected -> mongodb://localhost:27017 / jarvis_db
+2026-04-09 22:49:42,892 [INFO] jarvis.db: [OK] MongoDB connected -> mongodb://localhost:27017 / jarvis_db
+2026-04-09 22:50:32,386 [INFO] jarvis.db: [OK] MongoDB connected -> mongodb://localhost:27017 / jarvis_db
+2026-04-09 22:50:34,474 [INFO] jarvis.audio: Audio pipeline ready. provider=groq model=whisper-large-v3-turbo language=en mic_index=None
+2026-04-09 22:50:34,475 [INFO] jarvis.tts: TTS backend selected: powershell_sapi
+2026-04-09 22:50:56,311 [INFO] jarvis.audio: Opening microphone: default microphone
+2026-04-09 22:50:57,260 [INFO] jarvis.audio: Microphone calibrated. energy_threshold=67.70438337062505
+2026-04-09 22:51:03,272 [INFO] jarvis.audio: Captured audio clip rms=91
+2026-04-09 22:51:05,836 [INFO] jarvis.audio: Heard: cho either
+2026-04-09 22:51:09,268 [INFO] jarvis.audio: Captured audio clip rms=116
+2026-04-09 22:51:09,728 [INFO] jarvis.audio: Heard: social negro
+2026-04-09 22:51:11,930 [INFO] jarvis.audio: Captured audio clip rms=259
+2026-04-09 22:51:12,149 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 22:51:14,705 [INFO] jarvis.audio: Captured audio clip rms=198
+2026-04-09 22:51:15,051 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-09 22:51:15,058 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-09 22:51:22,247 [INFO] jarvis.audio: Captured audio clip rms=299
+2026-04-09 22:51:22,683 [INFO] jarvis.audio: Heard: add this person's name as Vivian ID as 101 Department as CSC
+2026-04-09 22:51:28,171 [INFO] jarvis.audio: Captured audio clip rms=71
+2026-04-09 22:51:28,882 [INFO] jarvis.audio: Heard: back
+2026-04-09 22:51:34,691 [INFO] jarvis.audio: Captured audio clip rms=299
+2026-04-09 22:51:35,033 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 22:51:39,122 [INFO] jarvis.audio: Captured audio clip rms=67
+2026-04-09 22:51:39,525 [INFO] jarvis.audio: Heard: that the platform has already ĐĂ takes back
+2026-04-09 22:51:43,188 [INFO] jarvis.audio: Captured audio clip rms=209
+2026-04-09 22:51:43,589 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-09 22:51:43,592 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-09 22:51:46,701 [INFO] jarvis.audio: Captured audio clip rms=311
+2026-04-09 22:51:47,107 [INFO] jarvis.audio: Heard: add within
+2026-04-09 22:51:48,566 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:51:48,710 [INFO] jarvis.audio: Captured audio clip rms=309
+2026-04-09 22:51:49,005 [INFO] jarvis.audio: Heard: leave 101
+2026-04-09 22:51:50,578 [INFO] jarvis.audio: Captured audio clip rms=293
+2026-04-09 22:51:50,991 [INFO] jarvis.audio: Heard: department CSC
+2026-04-09 22:51:53,494 [INFO] jarvis.audio: Captured audio clip rms=72
+2026-04-09 22:51:53,930 [INFO] jarvis.audio: Heard: goal
+2026-04-09 22:51:59,092 [INFO] jarvis.audio: Captured audio clip rms=1283
+2026-04-09 22:51:59,394 [INFO] jarvis.audio: Heard: edit live face record for Vivian with ID none tracking started now
+2026-04-09 22:52:02,506 [INFO] jarvis.audio: Captured audio clip rms=416
+2026-04-09 22:52:02,775 [INFO] jarvis.audio: Heard: Jarvis add
+2026-04-09 22:52:02,846 [INFO] jarvis.core: Wake word detected in transcript: Jarvis add
+2026-04-09 22:52:03,297 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:52:08,871 [INFO] jarvis.audio: Captured audio clip rms=979
+2026-04-09 22:52:09,327 [INFO] jarvis.audio: Heard: Vivian ID as 101 updated live face record for Vivian with ID none
+2026-04-09 22:52:13,045 [INFO] jarvis.audio: Captured audio clip rms=678
+2026-04-09 22:52:13,325 [INFO] jarvis.audio: Heard: update ID is 101
+2026-04-09 22:52:18,303 [INFO] jarvis.audio: Captured audio clip rms=272
+2026-04-09 22:52:18,545 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-09 22:52:18,606 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-09 22:52:21,512 [INFO] jarvis.audio: Captured audio clip rms=443
+2026-04-09 22:52:21,924 [INFO] jarvis.audio: Heard: update id as 101 for vivian
+2026-04-09 22:52:22,339 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:52:29,957 [INFO] jarvis.audio: Captured audio clip rms=1027
+2026-04-09 22:52:30,321 [INFO] jarvis.audio: Heard: I need at least one field to update such as department role name or notes
+2026-04-09 22:52:31,872 [INFO] jarvis.audio: Captured audio clip rms=344
+2026-04-09 22:52:32,196 [INFO] jarvis.audio: Heard: ID
+2026-04-09 22:52:33,729 [INFO] jarvis.audio: Captured audio clip rms=360
+2026-04-09 22:52:33,949 [INFO] jarvis.audio: Heard: at 101
+2026-04-09 22:52:40,102 [INFO] jarvis.audio: Captured audio clip rms=416
+2026-04-09 22:52:40,458 [INFO] jarvis.audio: Heard: update ID as 101
+2026-04-09 22:52:45,542 [INFO] jarvis.audio: Captured audio clip rms=337
+2026-04-09 22:52:45,886 [INFO] jarvis.audio: Heard: Jarvis update ID as 101
+2026-04-09 22:52:45,891 [INFO] jarvis.core: Wake word detected in transcript: Jarvis update ID as 101
+2026-04-09 22:52:46,322 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:52:53,501 [INFO] jarvis.audio: Captured audio clip rms=919
+2026-04-09 22:52:53,872 [INFO] jarvis.audio: Heard: I need at least one field to update such as department role name or notes
+2026-04-09 22:52:56,993 [INFO] jarvis.audio: Captured audio clip rms=512
+2026-04-09 22:52:57,457 [INFO] jarvis.audio: Heard: update id as 101
+2026-04-09 22:53:04,335 [INFO] jarvis.audio: Captured audio clip rms=83
+2026-04-09 22:53:04,625 [INFO] jarvis.audio: Heard: stop
+2026-04-09 22:53:07,781 [INFO] jarvis.audio: Captured audio clip rms=469
+2026-04-09 22:53:08,108 [INFO] jarvis.audio: Heard: Jarvis hide within
+2026-04-09 22:53:08,276 [INFO] jarvis.core: Wake word detected in transcript: Jarvis hide within
+2026-04-09 22:53:08,286 [INFO] jarvis.core: Suppressed overlay marking for target=NONE
+2026-04-09 22:53:08,287 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:53:14,699 [INFO] jarvis.audio: Captured audio clip rms=1198
+2026-04-09 22:53:15,072 [INFO] jarvis.audio: Heard: okay I will stop marking Vivian until you ask for them again
+2026-04-09 22:53:19,013 [INFO] jarvis.audio: Captured audio clip rms=447
+2026-04-09 22:53:19,372 [INFO] jarvis.audio: Heard: Jarvis give me all the records of objects
+2026-04-09 22:53:19,377 [INFO] jarvis.core: Wake word detected in transcript: Jarvis give me all the records of objects
+2026-04-09 22:53:19,640 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:53:28,163 [INFO] jarvis.audio: Captured audio clip rms=1376
+2026-04-09 22:53:28,723 [INFO] jarvis.audio: Heard: object database records cell phone x159 chair x180 backpack x3
+2026-04-09 22:53:34,617 [INFO] jarvis.audio: Captured audio clip rms=1413
+2026-04-09 22:53:35,118 [INFO] jarvis.audio: Heard: freehat x8 bottle x9 remote x13 tie x2 wineglass x7
+2026-04-09 22:53:39,801 [INFO] jarvis.audio: Captured audio clip rms=296
+2026-04-09 22:53:40,057 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-09 22:53:40,224 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-09 22:53:42,716 [INFO] jarvis.audio: Captured audio clip rms=340
+2026-04-09 22:53:43,029 [INFO] jarvis.audio: Heard: when did you last see cell phone
+2026-04-09 22:53:43,377 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:53:49,148 [INFO] jarvis.audio: Captured audio clip rms=1649
+2026-04-09 22:53:49,479 [INFO] jarvis.audio: Heard: I found 159 records for cell phone
+2026-04-09 22:53:55,729 [INFO] jarvis.audio: Captured audio clip rms=1464
+2026-04-09 22:53:56,134 [INFO] jarvis.audio: Heard: in 2026-04-09T17 colon 22 colon 25.97
+2026-04-09 22:54:01,427 [INFO] jarvis.audio: Captured audio clip rms=1795
+2026-04-09 22:54:01,767 [INFO] jarvis.audio: Heard: two four two plus zero zero colon zero zero fifty eight percent top confidence
+2026-04-09 22:54:04,550 [INFO] jarvis.audio: Captured audio clip rms=261
+2026-04-09 22:54:04,839 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-09 22:54:04,844 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-09 22:54:08,196 [INFO] jarvis.audio: Captured audio clip rms=319
+2026-04-09 22:54:08,481 [INFO] jarvis.audio: Heard: who's on screen
+2026-04-09 22:54:08,815 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:54:16,105 [INFO] jarvis.audio: Captured audio clip rms=987
+2026-04-09 22:54:16,410 [INFO] jarvis.audio: Heard: database records Vivian none Vivian none
+2026-04-09 22:54:19,242 [INFO] jarvis.audio: Captured audio clip rms=347
+2026-04-09 22:54:19,484 [INFO] jarvis.audio: Heard: Jarvis Mark Vivian
+2026-04-09 22:54:19,490 [INFO] jarvis.core: Wake word detected in transcript: Jarvis Mark Vivian
+2026-04-09 22:54:19,765 [INFO] jarvis.core: Focus command resolved target=vivian matched=None
+2026-04-09 22:54:19,765 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:54:23,657 [INFO] jarvis.audio: Captured audio clip rms=1029
+2026-04-09 22:54:24,054 [INFO] jarvis.audio: Heard: tracking Vivian
+2026-04-09 22:54:26,705 [INFO] jarvis.audio: Captured audio clip rms=1595
+2026-04-09 22:54:27,061 [INFO] jarvis.audio: Heard: isolate them from the crowd when they appear
+2026-04-09 22:54:33,795 [INFO] jarvis.audio: Captured audio clip rms=272
+2026-04-09 22:54:34,228 [INFO] jarvis.audio: Heard: Jarvis where is Vivian I can't see
+2026-04-09 22:54:34,235 [INFO] jarvis.core: Wake word detected in transcript: Jarvis where is Vivian I can't see
+2026-04-09 22:54:34,950 [INFO] jarvis.core: Focus command resolved target=vivian matched=NONE
+2026-04-09 22:54:34,950 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:54:38,403 [INFO] jarvis.audio: Captured audio clip rms=974
+2026-04-09 22:54:38,837 [INFO] jarvis.audio: Heard: tracking Vivia
+2026-04-09 22:54:41,439 [INFO] jarvis.audio: Captured audio clip rms=1621
+2026-04-09 22:54:41,707 [INFO] jarvis.audio: Heard: I delayed them from the crowd when they appear
+2026-04-09 22:54:51,040 [INFO] jarvis.audio: Captured audio clip rms=238
+2026-04-09 22:54:51,331 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-09 22:54:51,339 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-09 22:54:55,093 [INFO] jarvis.audio: Captured audio clip rms=388
+2026-04-09 22:54:55,434 [INFO] jarvis.audio: Heard: update vvn id to 101
+2026-04-09 22:54:56,713 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:55:00,972 [INFO] jarvis.audio: Captured audio clip rms=1174
+2026-04-09 22:55:01,365 [INFO] jarvis.audio: Heard: updated Vivian's record
+2026-04-09 22:55:07,188 [INFO] jarvis.audio: Captured audio clip rms=333
+2026-04-09 22:55:07,510 [INFO] jarvis.audio: Heard: what is Vivian's ID
+2026-04-09 22:55:14,263 [INFO] jarvis.audio: Captured audio clip rms=337
+2026-04-09 22:55:14,575 [INFO] jarvis.audio: Heard: Jarvis what is Vivian's ID?
+2026-04-09 22:55:14,617 [INFO] jarvis.core: Wake word detected in transcript: Jarvis what is Vivian's ID?
+2026-04-09 22:55:14,883 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:55:21,646 [INFO] jarvis.audio: Captured audio clip rms=1086
+2026-04-09 22:55:22,052 [INFO] jarvis.audio: Heard: Vivian has ID none roll department notes
+2026-04-09 22:55:25,345 [INFO] jarvis.audio: Captured audio clip rms=338
+2026-04-09 22:55:25,645 [INFO] jarvis.audio: Heard: Jarvis update vivence id to 101
+2026-04-09 22:55:25,706 [INFO] jarvis.core: Wake word detected in transcript: Jarvis update vivence id to 101
+2026-04-09 22:55:25,948 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:55:30,324 [INFO] jarvis.audio: Captured audio clip rms=1005
+2026-04-09 22:55:30,652 [INFO] jarvis.audio: Heard: updated Vivian's record
+2026-04-09 22:55:35,318 [INFO] jarvis.audio: Captured audio clip rms=56
+2026-04-09 22:55:35,568 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 22:55:38,350 [INFO] jarvis.audio: Captured audio clip rms=102
+2026-04-09 22:55:38,744 [INFO] jarvis.audio: Heard: okay
+2026-04-09 22:55:46,267 [INFO] jarvis.audio: Captured audio clip rms=59
+2026-04-09 22:55:46,526 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 22:55:48,795 [INFO] jarvis.audio: Captured audio clip rms=99
+2026-04-09 22:55:49,086 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 22:55:53,729 [INFO] jarvis.audio: Captured audio clip rms=121
+2026-04-09 22:55:54,126 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 22:55:56,488 [INFO] jarvis.audio: Captured audio clip rms=124
+2026-04-09 22:55:57,079 [INFO] jarvis.audio: Heard: go
+2026-04-09 22:56:01,184 [INFO] jarvis.audio: Captured audio clip rms=63
+2026-04-09 22:56:02,295 [INFO] jarvis.audio: Heard: mount
+2026-04-09 22:56:08,373 [INFO] jarvis.audio: Captured audio clip rms=110
+2026-04-09 22:56:09,055 [INFO] jarvis.audio: Heard: okay
+2026-04-09 22:56:14,117 [INFO] jarvis.audio: Captured audio clip rms=84
+2026-04-09 22:56:14,395 [INFO] jarvis.audio: Heard: stop quit
+2026-04-09 22:56:22,727 [INFO] jarvis.audio: Captured audio clip rms=73
+2026-04-09 22:56:23,081 [INFO] jarvis.audio: Heard: I
+2026-04-09 22:56:26,722 [INFO] jarvis.audio: Captured audio clip rms=97
+2026-04-09 22:56:27,198 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 22:56:30,770 [INFO] jarvis.audio: Captured audio clip rms=269
+2026-04-09 22:56:31,222 [INFO] jarvis.audio: Heard: Jarvis who is on screen
+2026-04-09 22:56:31,250 [INFO] jarvis.core: Wake word detected in transcript: Jarvis who is on screen
+2026-04-09 22:56:31,679 [INFO] jarvis.core: Focus command resolved target=vivian matched=101"
+2026-04-09 22:56:31,680 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:56:34,959 [INFO] jarvis.audio: Captured audio clip rms=1112
+2026-04-09 22:56:35,272 [INFO] jarvis.audio: Heard: tracking Vivian
+2026-04-09 22:56:37,998 [INFO] jarvis.audio: Captured audio clip rms=1527
+2026-04-09 22:56:38,657 [INFO] jarvis.audio: Heard: isolate them from the crowd when they appear
+2026-04-09 22:56:41,051 [INFO] jarvis.audio: Captured audio clip rms=285
+2026-04-09 22:56:41,419 [INFO] jarvis.audio: Heard: Jarvis hide within
+2026-04-09 22:56:41,425 [INFO] jarvis.core: Wake word detected in transcript: Jarvis hide within
+2026-04-09 22:56:41,431 [INFO] jarvis.core: Suppressed overlay marking for target=101"
+2026-04-09 22:56:41,431 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:56:47,384 [INFO] jarvis.audio: Captured audio clip rms=1281
+2026-04-09 22:56:47,771 [INFO] jarvis.audio: Heard: okay I will stop marking Vivian until you ask for them again
+2026-04-09 22:56:54,064 [INFO] jarvis.audio: Captured audio clip rms=213
+2026-04-09 22:56:54,710 [INFO] jarvis.audio: Heard: Jarvis mark we win
+2026-04-09 22:56:54,731 [INFO] jarvis.core: Wake word detected in transcript: Jarvis mark we win
+2026-04-09 22:56:56,304 [WARNING] jarvis.reasoning: AI name matching failed, falling back to local similarity: HTTPConnectionPool(host='127.0.0.1', port=11434): Max retries exceeded with url: /api/chat (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=11434) at 0x221bd717f10>, 'Connection to 127.0.0.1 timed out. (connect timeout=1.2)'))
+2026-04-09 22:56:56,305 [INFO] jarvis.core: Focus command resolved target=None matched=none
+2026-04-09 22:56:56,305 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:56:58,047 [INFO] jarvis.audio: Captured audio clip rms=123
+2026-04-09 22:56:58,325 [INFO] jarvis.audio: Heard: yeah this is a good thing
+2026-04-09 22:57:01,458 [INFO] jarvis.audio: Captured audio clip rms=1413
+2026-04-09 22:57:01,774 [INFO] jarvis.audio: Heard: I could not find none in the enrolled records
+2026-04-09 22:57:05,858 [INFO] jarvis.audio: Captured audio clip rms=233
+2026-04-09 22:57:06,267 [INFO] jarvis.audio: Heard: Jarvis mark we win
+2026-04-09 22:57:06,270 [INFO] jarvis.core: Wake word detected in transcript: Jarvis mark we win
+2026-04-09 22:57:07,903 [WARNING] jarvis.reasoning: AI name matching failed, falling back to local similarity: HTTPConnectionPool(host='127.0.0.1', port=11434): Max retries exceeded with url: /api/chat (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=11434) at 0x221bd706290>, 'Connection to 127.0.0.1 timed out. (connect timeout=1.2)'))
+2026-04-09 22:57:07,904 [INFO] jarvis.core: Focus command resolved target=None matched=none
+2026-04-09 22:57:07,904 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:57:13,000 [INFO] jarvis.audio: Captured audio clip rms=1359
+2026-04-09 22:57:13,366 [INFO] jarvis.audio: Heard: I could not find none in the enrolled records
+2026-04-09 22:57:15,537 [INFO] jarvis.audio: Captured audio clip rms=536
+2026-04-09 22:57:15,923 [INFO] jarvis.audio: Heard: Mark Vivian
+2026-04-09 22:57:28,926 [INFO] jarvis.audio: Captured audio clip rms=378
+2026-04-09 22:57:29,235 [INFO] jarvis.audio: Heard: Jarvis Mark Vivian
+2026-04-09 22:57:29,246 [INFO] jarvis.core: Wake word detected in transcript: Jarvis Mark Vivian
+2026-04-09 22:57:29,493 [INFO] jarvis.core: Focus command resolved target=vivian matched=101"
+2026-04-09 22:57:29,493 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:57:33,109 [INFO] jarvis.audio: Captured audio clip rms=1160
+2026-04-09 22:57:33,435 [INFO] jarvis.audio: Heard: tracking Vivian
+2026-04-09 22:57:36,244 [INFO] jarvis.audio: Captured audio clip rms=1536
+2026-04-09 22:57:36,564 [INFO] jarvis.audio: Heard: isolate them from the crowd when they are here
+2026-04-09 22:57:44,317 [INFO] jarvis.audio: Captured audio clip rms=291
+2026-04-09 22:57:44,536 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-09 22:57:44,539 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-09 22:57:47,991 [INFO] jarvis.audio: Captured audio clip rms=273
+2026-04-09 22:57:48,283 [INFO] jarvis.audio: Heard: give me details of Vivian
+2026-04-09 22:57:48,596 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:57:56,016 [INFO] jarvis.audio: Captured audio clip rms=1086
+2026-04-09 22:57:56,373 [INFO] jarvis.audio: Heard: Vivian has ID 101 role engineer department CSE notes
+2026-04-09 22:58:01,266 [INFO] jarvis.audio: Captured audio clip rms=185
+2026-04-09 22:58:01,595 [INFO] jarvis.audio: Heard: No
+2026-04-09 22:58:14,351 [INFO] jarvis.audio: Captured audio clip rms=63
+2026-04-09 22:58:14,703 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 22:58:25,286 [INFO] jarvis.audio: Captured audio clip rms=155
+2026-04-09 22:58:25,557 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 22:58:36,560 [INFO] jarvis.audio: Captured audio clip rms=247
+2026-04-09 22:58:36,904 [INFO] jarvis.audio: Heard: Jarvis who is on screen
+2026-04-09 22:58:36,921 [INFO] jarvis.core: Wake word detected in transcript: Jarvis who is on screen
+2026-04-09 22:58:37,339 [INFO] jarvis.core: Focus command resolved target=vivian matched=101"
+2026-04-09 22:58:37,339 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:58:40,678 [INFO] jarvis.audio: Captured audio clip rms=1153
+2026-04-09 22:58:40,919 [INFO] jarvis.audio: Heard: tracking Vivian
+2026-04-09 22:58:43,703 [INFO] jarvis.audio: Captured audio clip rms=1555
+2026-04-09 22:58:43,993 [INFO] jarvis.audio: Heard: I'll isolate them from the crowd when they appear
+2026-04-09 22:58:45,845 [INFO] jarvis.audio: Captured audio clip rms=362
+2026-04-09 22:58:46,117 [INFO] jarvis.audio: Heard: Jarvis hide we win
+2026-04-09 22:58:46,123 [INFO] jarvis.core: Wake word detected in transcript: Jarvis hide we win
+2026-04-09 22:58:46,130 [INFO] jarvis.core: Suppressed overlay marking for target=101"
+2026-04-09 22:58:46,130 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:58:52,311 [INFO] jarvis.audio: Captured audio clip rms=1217
+2026-04-09 22:58:52,592 [INFO] jarvis.audio: Heard: okay I will stop marking Vivian until you ask for them again
+2026-04-09 22:58:58,422 [INFO] jarvis.audio: Captured audio clip rms=66
+2026-04-09 22:58:58,676 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-09 22:59:02,389 [INFO] jarvis.audio: Captured audio clip rms=162
+2026-04-09 22:59:02,628 [INFO] jarvis.audio: Heard: Jarvis?
+2026-04-09 22:59:02,636 [INFO] jarvis.core: Wake word detected in transcript: Jarvis?
+2026-04-09 22:59:04,769 [INFO] jarvis.audio: Captured audio clip rms=377
+2026-04-09 22:59:05,139 [INFO] jarvis.audio: Heard: pause on screen
+2026-04-09 22:59:05,473 [INFO] jarvis.core: Cleared requested focus target.
+2026-04-09 22:59:05,473 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:59:11,661 [INFO] jarvis.audio: Captured audio clip rms=1173
+2026-04-09 22:59:11,951 [INFO] jarvis.audio: Heard: focus target cleared monitoring the full scene again
+2026-04-09 22:59:14,506 [INFO] jarvis.audio: Captured audio clip rms=300
+2026-04-09 22:59:14,930 [INFO] jarvis.audio: Heard: Jarvis show we win
+2026-04-09 22:59:14,941 [INFO] jarvis.core: Wake word detected in transcript: Jarvis show we win
+2026-04-09 22:59:14,947 [INFO] jarvis.core: Focus command resolved target=we win matched=101"
+2026-04-09 22:59:14,947 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:59:18,322 [INFO] jarvis.audio: Captured audio clip rms=1013
+2026-04-09 22:59:18,634 [INFO] jarvis.audio: Heard: tracking Vivian
+2026-04-09 22:59:22,440 [INFO] jarvis.audio: Captured audio clip rms=1593
+2026-04-09 22:59:22,906 [INFO] jarvis.audio: Heard: I should bet from your spoken request and will isolate them in the crowd
+2026-04-09 22:59:31,137 [INFO] jarvis.audio: Captured audio clip rms=340
+2026-04-09 22:59:31,405 [INFO] jarvis.audio: Heard: Jarvis who is on screen
+2026-04-09 22:59:31,418 [INFO] jarvis.core: Wake word detected in transcript: Jarvis who is on screen
+2026-04-09 22:59:31,776 [INFO] jarvis.core: Focus command resolved target=vivian matched=101"
+2026-04-09 22:59:31,776 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:59:35,349 [INFO] jarvis.audio: Captured audio clip rms=1183
+2026-04-09 22:59:35,704 [INFO] jarvis.audio: Heard: tracking Vivian
+2026-04-09 22:59:38,403 [INFO] jarvis.audio: Captured audio clip rms=1711
+2026-04-09 22:59:38,788 [INFO] jarvis.audio: Heard: isolate them from the crowd when they appear
+2026-04-09 22:59:40,181 [INFO] jarvis.audio: Captured audio clip rms=287
+2026-04-09 22:59:40,530 [INFO] jarvis.audio: Heard: That's great Vivienne
+2026-04-09 22:59:45,264 [INFO] jarvis.audio: Captured audio clip rms=376
+2026-04-09 22:59:45,631 [INFO] jarvis.audio: Heard: Jarvis hide within
+2026-04-09 22:59:45,637 [INFO] jarvis.core: Wake word detected in transcript: Jarvis hide within
+2026-04-09 22:59:45,642 [INFO] jarvis.core: Suppressed overlay marking for target=101"
+2026-04-09 22:59:45,642 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 22:59:52,300 [INFO] jarvis.audio: Captured audio clip rms=1208
+2026-04-09 22:59:52,702 [INFO] jarvis.audio: Heard: okay I will stop marking Vivian until you ask for them again
+2026-04-09 22:59:56,344 [INFO] jarvis.audio: Captured audio clip rms=301
+2026-04-09 22:59:56,594 [INFO] jarvis.audio: Heard: Jarvis watch on screen
+2026-04-09 22:59:56,602 [INFO] jarvis.core: Wake word detected in transcript: Jarvis watch on screen
+2026-04-09 22:59:57,891 [WARNING] jarvis.reasoning: AI name matching failed, falling back to local similarity: HTTPConnectionPool(host='127.0.0.1', port=11434): Max retries exceeded with url: /api/chat (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=11434) at 0x221bd705550>, 'Connection to 127.0.0.1 timed out. (connect timeout=1.2)'))
+2026-04-09 22:59:57,964 [INFO] jarvis.core: Focus command resolved target=on screen matched=none
+2026-04-09 22:59:57,964 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 23:00:06,439 [INFO] jarvis.audio: Captured audio clip rms=1105
+2026-04-09 23:00:06,805 [INFO] jarvis.audio: Heard: I could not find on screen in the enrolled records Jarvis add a record named Sridevi
+2026-04-09 23:00:06,957 [INFO] jarvis.core: Wake word detected in transcript: I could not find on screen in the enrolled records Jarvis add a record named Sridevi
+2026-04-09 23:00:07,347 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 23:00:16,235 [INFO] jarvis.audio: Captured audio clip rms=1578
+2026-04-09 23:00:16,544 [INFO] jarvis.audio: Heard: I can see multiple faces right now bring one person interview or lock onto them first then ask again
+2026-04-09 23:00:20,790 [INFO] jarvis.audio: Captured audio clip rms=309
+2026-04-09 23:00:21,070 [INFO] jarvis.audio: Heard: Jarvis add a record name Sridevi
+2026-04-09 23:00:21,078 [INFO] jarvis.core: Wake word detected in transcript: Jarvis add a record name Sridevi
+2026-04-09 23:00:21,480 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 23:00:29,760 [INFO] jarvis.audio: Captured audio clip rms=1519
+2026-04-09 23:00:30,086 [INFO] jarvis.audio: Heard: I can see multiple faces right now bring one person interview or lock onto them first then ask again
+2026-04-09 23:00:32,935 [INFO] jarvis.audio: Captured audio clip rms=525
+2026-04-09 23:00:33,189 [INFO] jarvis.audio: Heard: Jarvis add a record name Sridevi
+2026-04-09 23:00:33,198 [INFO] jarvis.core: Wake word detected in transcript: Jarvis add a record name Sridevi
+2026-04-09 23:00:33,575 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 23:00:40,962 [INFO] jarvis.audio: Captured audio clip rms=1457
+2026-04-09 23:00:41,330 [INFO] jarvis.audio: Heard: created live face record for shri devi with ID EMP 101 tracking started now
+2026-04-09 23:00:43,211 [INFO] jarvis.audio: Captured audio clip rms=578
+2026-04-09 23:00:43,550 [INFO] jarvis.audio: Heard: at必cessed right
+2026-04-09 23:00:48,002 [INFO] jarvis.audio: Captured audio clip rms=364
+2026-04-09 23:00:48,673 [INFO] jarvis.audio: Heard: sir gigantic
+2026-04-09 23:00:52,845 [INFO] jarvis.audio: Captured audio clip rms=369
+2026-04-09 23:00:53,845 [INFO] jarvis.audio: Heard: this принцип does not mean to be in a way to react or to email any relevant mudar
+2026-04-09 23:00:59,016 [INFO] jarvis.audio: Captured audio clip rms=420
+2026-04-09 23:00:59,289 [INFO] jarvis.audio: Heard: Jarvis where is Vivian?
+2026-04-09 23:00:59,293 [INFO] jarvis.core: Wake word detected in transcript: Jarvis where is Vivian?
+2026-04-09 23:01:00,224 [INFO] jarvis.core: Focus command resolved target=vivian matched=101"
+2026-04-09 23:01:00,224 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 23:01:06,531 [INFO] jarvis.audio: Captured audio clip rms=1388
+2026-04-09 23:01:06,838 [INFO] jarvis.audio: Heard: I will isolate them from the crowd
+2026-04-09 23:01:12,041 [INFO] jarvis.audio: Captured audio clip rms=264
+2026-04-09 23:01:12,373 [INFO] jarvis.audio: Heard: Jarvis hide even
+2026-04-09 23:01:12,377 [INFO] jarvis.core: Wake word detected in transcript: Jarvis hide even
+2026-04-09 23:01:12,384 [INFO] jarvis.core: Suppressed overlay marking for target=101"
+2026-04-09 23:01:12,385 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-09 23:01:18,477 [INFO] jarvis.audio: Captured audio clip rms=1221
+2026-04-09 23:01:18,826 [INFO] jarvis.audio: Heard: okay I will stop marking Vivian until you ask for them again
+2026-04-10 07:29:44,748 [INFO] jarvis.db: [OK] MongoDB connected -> mongodb://localhost:27017 / jarvis_db
+2026-04-10 07:29:47,088 [INFO] jarvis.audio: Audio pipeline ready. provider=groq model=whisper-large-v3-turbo language=en mic_index=None
+2026-04-10 07:29:47,090 [INFO] jarvis.tts: TTS backend selected: powershell_sapi
+2026-04-10 07:30:10,135 [INFO] jarvis.audio: Opening microphone: default microphone
+2026-04-10 07:30:11,137 [INFO] jarvis.audio: Microphone calibrated. energy_threshold=43.413603906024925
+2026-04-10 07:30:14,288 [INFO] jarvis.audio: Captured audio clip rms=35
+2026-04-10 07:30:16,074 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-10 07:30:20,578 [INFO] jarvis.audio: Captured audio clip rms=51
+2026-04-10 07:30:21,888 [INFO] jarvis.audio: Heard: And non-Its of the
+2026-04-10 07:30:28,342 [INFO] jarvis.audio: Captured audio clip rms=67
+2026-04-10 07:30:29,497 [INFO] jarvis.audio: Heard: in later time
+2026-04-10 07:30:36,933 [INFO] jarvis.audio: Captured audio clip rms=27
+2026-04-10 07:30:37,590 [INFO] jarvis.audio: Heard: In a moment you push up and mostrar to the würdensheet of the будем
+2026-04-10 07:30:39,545 [INFO] jarvis.audio: Captured audio clip rms=36
+2026-04-10 07:30:39,833 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-10 07:30:41,973 [INFO] jarvis.audio: Captured audio clip rms=28
+2026-04-10 07:30:42,345 [INFO] jarvis.audio: Heard: See you
+2026-04-10 07:30:48,340 [INFO] jarvis.audio: Captured audio clip rms=39
+2026-04-10 07:30:49,290 [INFO] jarvis.audio: Heard: Turn off camera
+2026-04-10 07:30:52,901 [INFO] jarvis.audio: Captured audio clip rms=31
+2026-04-10 07:30:53,288 [INFO] jarvis.audio: Heard: direction
+2026-04-10 07:30:57,588 [INFO] jarvis.audio: Captured audio clip rms=39
+2026-04-10 07:30:58,165 [INFO] jarvis.audio: Heard: OK yeah
+2026-04-10 07:31:03,179 [INFO] jarvis.audio: Captured audio clip rms=54
+2026-04-10 07:31:03,489 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-10 07:31:08,135 [INFO] jarvis.audio: Captured audio clip rms=76
+2026-04-10 07:31:08,506 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-10 07:31:13,848 [INFO] jarvis.audio: Captured audio clip rms=113
+2026-04-10 07:31:14,137 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-10 07:31:18,619 [INFO] jarvis.audio: Captured audio clip rms=195
+2026-04-10 07:31:19,872 [INFO] jarvis.audio: Heard: click hair
+2026-04-10 07:31:27,957 [INFO] jarvis.audio: Captured audio clip rms=91
+2026-04-10 07:31:28,390 [INFO] jarvis.audio: Heard: stop quit stop quit stop quit stop quit you
+2026-04-10 07:31:33,590 [INFO] jarvis.audio: Captured audio clip rms=77
+2026-04-10 07:31:34,311 [INFO] jarvis.audio: Heard: Right now
+2026-04-10 07:31:38,695 [INFO] jarvis.audio: Captured audio clip rms=73
+2026-04-10 07:31:39,362 [INFO] jarvis.audio: Heard: so blame
+2026-04-10 07:31:45,215 [INFO] jarvis.audio: Captured audio clip rms=99
+2026-04-10 07:31:46,763 [INFO] jarvis.audio: Heard: There is no
+2026-04-10 07:31:52,105 [INFO] jarvis.audio: Captured audio clip rms=75
+2026-04-10 07:31:53,460 [INFO] jarvis.audio: Heard: stop quit front
+2026-04-10 07:32:12,566 [INFO] jarvis.db: [OK] MongoDB connected -> mongodb://localhost:27017 / jarvis_db
+2026-04-10 07:32:15,117 [INFO] jarvis.audio: Audio pipeline ready. provider=groq model=whisper-large-v3-turbo language=en mic_index=None
+2026-04-10 07:32:15,119 [INFO] jarvis.tts: TTS backend selected: powershell_sapi
+2026-04-10 07:32:43,832 [INFO] jarvis.audio: Opening microphone: default microphone
+2026-04-10 07:32:44,771 [INFO] jarvis.audio: Microphone calibrated. energy_threshold=47.679329672017914
+2026-04-10 07:32:46,182 [INFO] jarvis.audio: Captured audio clip rms=42
+2026-04-10 07:32:48,555 [INFO] jarvis.audio: Heard: synopsis
+2026-04-10 07:32:53,726 [INFO] jarvis.audio: Captured audio clip rms=62
+2026-04-10 07:32:54,796 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-10 07:33:01,698 [INFO] jarvis.audio: Captured audio clip rms=68
+2026-04-10 07:33:02,172 [INFO] jarvis.audio: Heard: Europe
+2026-04-10 07:33:08,522 [INFO] jarvis.audio: Captured audio clip rms=65
+2026-04-10 07:33:08,831 [INFO] jarvis.audio: Heard: okay
+2026-04-10 07:33:10,954 [INFO] jarvis.audio: Captured audio clip rms=71
+2026-04-10 07:33:11,524 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-10 07:33:15,886 [INFO] jarvis.audio: Captured audio clip rms=153
+2026-04-10 07:33:17,155 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-10 07:33:17,162 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-10 07:33:23,627 [INFO] jarvis.audio: Captured audio clip rms=155
+2026-04-10 07:33:24,671 [INFO] jarvis.audio: Heard: who's on screen?
+2026-04-10 07:33:26,436 [INFO] jarvis.audio: Captured audio clip rms=117
+2026-04-10 07:33:26,806 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-10 07:33:31,292 [INFO] jarvis.audio: Captured audio clip rms=81
+2026-04-10 07:33:31,666 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-10 07:33:37,238 [INFO] jarvis.audio: Captured audio clip rms=86
+2026-04-10 07:33:37,911 [INFO] jarvis.audio: Heard: close
+2026-04-10 07:33:39,832 [INFO] jarvis.audio: Captured audio clip rms=161
+2026-04-10 07:33:40,268 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-10 07:33:40,374 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-10 07:33:43,500 [INFO] jarvis.audio: Captured audio clip rms=181
+2026-04-10 07:33:44,395 [INFO] jarvis.audio: Heard: who is on the screen
+2026-04-10 07:33:45,966 [INFO] jarvis.core: Focus command resolved target=Viven matched=101"
+2026-04-10 07:33:45,966 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-10 07:33:48,272 [INFO] jarvis.audio: Captured audio clip rms=65
+2026-04-10 07:33:48,566 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-10 07:33:53,881 [INFO] jarvis.audio: Captured audio clip rms=1573
+2026-04-10 07:33:54,193 [INFO] jarvis.audio: Heard: tracking Vivan I will isolate them from the crowd when they appear
+2026-04-10 07:33:57,066 [INFO] jarvis.audio: Captured audio clip rms=139
+2026-04-10 07:33:57,455 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-10 07:33:57,461 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-10 07:34:01,097 [INFO] jarvis.audio: Captured audio clip rms=224
+2026-04-10 07:34:01,411 [INFO] jarvis.audio: Heard: give me all the object records recorded
+2026-04-10 07:34:01,774 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-10 07:34:10,349 [INFO] jarvis.audio: Captured audio clip rms=1492
+2026-04-10 07:34:11,706 [INFO] jarvis.audio: Heard: Object database records cell phone X301 remote X61 laptop X1
+2026-04-10 07:34:17,881 [INFO] jarvis.audio: Captured audio clip rms=1504
+2026-04-10 07:34:18,192 [INFO] jarvis.audio: Heard: cut x4 wineglass x10 backpack x3 cat x8
+2026-04-10 07:34:23,256 [INFO] jarvis.audio: Captured audio clip rms=137
+2026-04-10 07:34:23,584 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-10 07:34:23,605 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-10 07:34:25,626 [INFO] jarvis.audio: Captured audio clip rms=240
+2026-04-10 07:34:25,939 [INFO] jarvis.audio: Heard: hide we win
+2026-04-10 07:34:25,952 [INFO] jarvis.core: Suppressed overlay marking for target=101"
+2026-04-10 07:34:25,952 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-10 07:34:32,655 [INFO] jarvis.audio: Captured audio clip rms=1065
+2026-04-10 07:34:33,028 [INFO] jarvis.audio: Heard: okay I will stop marking even until you ask for them again
+2026-04-10 07:34:38,900 [INFO] jarvis.audio: Captured audio clip rms=235
+2026-04-10 07:34:39,396 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-10 07:34:39,402 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-10 07:34:41,859 [INFO] jarvis.audio: Captured audio clip rms=292
+2026-04-10 07:34:42,323 [INFO] jarvis.audio: Heard: Mark Vivian again
+2026-04-10 07:34:44,103 [WARNING] jarvis.reasoning: AI name matching failed, falling back to local similarity: HTTPConnectionPool(host='127.0.0.1', port=11434): Max retries exceeded with url: /api/chat (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=11434) at 0x1eb8edad110>, 'Connection to 127.0.0.1 timed out. (connect timeout=1.2)'))
+2026-04-10 07:34:44,104 [INFO] jarvis.core: Focus command resolved target=None matched=none
+2026-04-10 07:34:44,105 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-10 07:34:46,337 [INFO] jarvis.audio: Captured audio clip rms=70
+2026-04-10 07:34:46,624 [INFO] jarvis.audio: Heard: hot
+2026-04-10 07:34:49,196 [INFO] jarvis.audio: Captured audio clip rms=1600
+2026-04-10 07:34:49,492 [INFO] jarvis.audio: Heard: I find none in the enrolled records
+2026-04-10 07:34:54,624 [INFO] jarvis.audio: Captured audio clip rms=219
+2026-04-10 07:34:54,918 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-10 07:34:54,951 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-10 07:34:57,240 [INFO] jarvis.audio: Captured audio clip rms=380
+2026-04-10 07:34:57,479 [INFO] jarvis.audio: Heard: mark within
+2026-04-10 07:34:59,126 [WARNING] jarvis.reasoning: AI name matching failed, falling back to local similarity: HTTPConnectionPool(host='127.0.0.1', port=11434): Max retries exceeded with url: /api/chat (Caused by ConnectTimeoutError(<HTTPConnection(host='127.0.0.1', port=11434) at 0x1eb8edae5d0>, 'Connection to 127.0.0.1 timed out. (connect timeout=1.2)'))
+2026-04-10 07:34:59,126 [INFO] jarvis.core: Focus command resolved target=None matched=none
+2026-04-10 07:34:59,127 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-10 07:35:04,302 [INFO] jarvis.audio: Captured audio clip rms=1461
+2026-04-10 07:35:04,852 [INFO] jarvis.audio: Heard: I could not find none in the enrolled records
+2026-04-10 07:35:13,995 [INFO] jarvis.audio: Captured audio clip rms=372
+2026-04-10 07:35:14,278 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-10 07:35:14,322 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-10 07:35:16,782 [INFO] jarvis.audio: Captured audio clip rms=401
+2026-04-10 07:35:17,039 [INFO] jarvis.audio: Heard: Mark Vivian
+2026-04-10 07:35:17,362 [INFO] jarvis.core: Focus command resolved target=Viven matched=101"
+2026-04-10 07:35:17,362 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-10 07:35:24,074 [INFO] jarvis.audio: Captured audio clip rms=1462
+2026-04-10 07:35:24,325 [INFO] jarvis.audio: Heard: tracking beven I will isolate them from the crowd when they appear
+2026-04-10 07:35:26,360 [INFO] jarvis.audio: Captured audio clip rms=346
+2026-04-10 07:35:26,664 [INFO] jarvis.audio: Heard: take me win
+2026-04-10 07:35:30,996 [INFO] jarvis.audio: Captured audio clip rms=307
+2026-04-10 07:35:31,696 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-10 07:35:31,853 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-10 07:35:35,050 [INFO] jarvis.audio: Captured audio clip rms=368
+2026-04-10 07:35:35,574 [INFO] jarvis.audio: Heard: delete record within
+2026-04-10 07:35:35,988 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-10 07:35:38,475 [INFO] jarvis.audio: Captured audio clip rms=58
+2026-04-10 07:35:38,962 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-10 07:35:41,113 [INFO] jarvis.audio: Captured audio clip rms=1519
+2026-04-10 07:35:41,355 [INFO] jarvis.audio: Heard: deleted the record for even
+2026-04-10 07:35:47,233 [INFO] jarvis.audio: Captured audio clip rms=55
+2026-04-10 07:35:48,067 [INFO] jarvis.audio: Heard: Yes
+2026-04-10 07:35:49,639 [INFO] jarvis.audio: Captured audio clip rms=54
+2026-04-10 07:35:49,909 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-10 07:35:55,323 [INFO] jarvis.audio: Captured audio clip rms=271
+2026-04-10 07:35:56,156 [INFO] jarvis.audio: Heard: Jarvis who is on screen?
+2026-04-10 07:35:56,170 [INFO] jarvis.core: Wake word detected in transcript: Jarvis who is on screen?
+2026-04-10 07:35:56,570 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-10 07:36:03,072 [INFO] jarvis.audio: Captured audio clip rms=1120
+2026-04-10 07:36:03,529 [INFO] jarvis.audio: Heard: database records Sridevi EMP 101
+2026-04-10 07:36:09,792 [INFO] jarvis.audio: Captured audio clip rms=376
+2026-04-10 07:36:10,296 [INFO] jarvis.audio: Heard: Jarvis add a new record for this face named viven
+2026-04-10 07:36:10,416 [INFO] jarvis.core: Wake word detected in transcript: Jarvis add a new record for this face named viven
+2026-04-10 07:36:10,731 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-10 07:36:18,966 [INFO] jarvis.audio: Captured audio clip rms=1407
+2026-04-10 07:36:19,298 [INFO] jarvis.audio: Heard: Updated live face record for even with ID EMP 101 tracking started now
+2026-04-10 07:36:22,290 [INFO] jarvis.audio: Captured audio clip rms=384
+2026-04-10 07:36:22,571 [INFO] jarvis.audio: Heard: update department to CSC
+2026-04-10 07:36:26,941 [INFO] jarvis.audio: Captured audio clip rms=294
+2026-04-10 07:36:27,185 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-10 07:36:27,189 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-10 07:36:30,409 [INFO] jarvis.audio: Captured audio clip rms=354
+2026-04-10 07:36:31,383 [INFO] jarvis.audio: Heard: update department to CSC
+2026-04-10 07:36:32,348 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-10 07:36:36,145 [INFO] jarvis.audio: Captured audio clip rms=1034
+2026-04-10 07:36:36,606 [INFO] jarvis.audio: Heard: updated Beavis record
+2026-04-10 07:36:38,968 [INFO] jarvis.audio: Captured audio clip rms=382
+2026-04-10 07:36:39,269 [INFO] jarvis.audio: Heard: create vivant's role to engineer
+2026-04-10 07:36:41,311 [INFO] jarvis.audio: Captured audio clip rms=277
+2026-04-10 07:36:41,624 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-10 07:36:43,707 [INFO] jarvis.audio: Captured audio clip rms=240
+2026-04-10 07:36:44,081 [INFO] jarvis.audio: Heard: Jarvis?
+2026-04-10 07:36:44,085 [INFO] jarvis.core: Wake word detected in transcript: Jarvis?
+2026-04-10 07:36:47,422 [INFO] jarvis.audio: Captured audio clip rms=390
+2026-04-10 07:36:47,824 [INFO] jarvis.audio: Heard: update vven role to engineer
+2026-04-10 07:36:48,437 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-10 07:36:52,118 [INFO] jarvis.audio: Captured audio clip rms=858
+2026-04-10 07:36:52,432 [INFO] jarvis.audio: Heard: updated Beaven's record
+2026-04-10 07:36:56,409 [INFO] jarvis.audio: Captured audio clip rms=357
+2026-04-10 07:36:56,678 [INFO] jarvis.audio: Heard: Jarvis even deleted this record
+2026-04-10 07:36:56,679 [INFO] jarvis.core: Wake word detected in transcript: Jarvis even deleted this record
+2026-04-10 07:36:56,988 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-10 07:37:04,012 [INFO] jarvis.audio: Captured audio clip rms=924
+2026-04-10 07:37:04,589 [INFO] jarvis.audio: Heard: deleted the record for me there is who's on screen
+2026-04-10 07:37:09,651 [INFO] jarvis.audio: Captured audio clip rms=214
+2026-04-10 07:37:10,091 [INFO] jarvis.audio: Heard: Jarvis?
+2026-04-10 07:37:10,103 [INFO] jarvis.core: Wake word detected in transcript: Jarvis?
+2026-04-10 07:37:12,504 [INFO] jarvis.audio: Captured audio clip rms=302
+2026-04-10 07:37:12,800 [INFO] jarvis.audio: Heard: who is on the screen?
+2026-04-10 07:37:13,132 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-10 07:37:18,514 [INFO] jarvis.audio: Captured audio clip rms=1791
+2026-04-10 07:37:18,870 [INFO] jarvis.audio: Heard: I do not have any person record stored yet
+2026-04-10 07:37:24,893 [INFO] jarvis.audio: Captured audio clip rms=347
+2026-04-10 07:37:25,247 [INFO] jarvis.audio: Heard: so create a person name Vivian
+2026-04-10 07:37:29,660 [INFO] jarvis.audio: Captured audio clip rms=355
+2026-04-10 07:37:29,958 [INFO] jarvis.audio: Heard: Jarvis create a person name Vive
+2026-04-10 07:37:29,964 [INFO] jarvis.core: Wake word detected in transcript: Jarvis create a person name Vive
+2026-04-10 07:37:30,518 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-10 07:37:38,147 [INFO] jarvis.audio: Captured audio clip rms=1677
+2026-04-10 07:37:39,895 [INFO] jarvis.audio: Heard: created live face record for beat with id none tracking started now
+2026-04-10 07:37:44,383 [INFO] jarvis.audio: Captured audio clip rms=236
+2026-04-10 07:37:44,602 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-10 07:37:44,613 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-10 07:37:47,015 [INFO] jarvis.audio: Captured audio clip rms=385
+2026-04-10 07:37:47,801 [INFO] jarvis.audio: Heard: change id to 101
+2026-04-10 07:37:48,086 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-10 07:37:52,564 [INFO] jarvis.audio: Captured audio clip rms=1004
+2026-04-10 07:37:52,900 [INFO] jarvis.audio: Heard: updated beefs record
+2026-04-10 07:37:57,241 [INFO] jarvis.audio: Captured audio clip rms=438
+2026-04-10 07:37:57,504 [INFO] jarvis.audio: Heard: change department to CSC
+2026-04-10 07:38:01,338 [INFO] jarvis.audio: Captured audio clip rms=218
+2026-04-10 07:38:02,319 [INFO] jarvis.audio: Heard: F
+2026-04-10 07:38:08,842 [INFO] jarvis.audio: Captured audio clip rms=287
+2026-04-10 07:38:09,822 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-10 07:38:09,848 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-10 07:38:14,551 [INFO] jarvis.audio: Captured audio clip rms=416
+2026-04-10 07:38:14,913 [INFO] jarvis.audio: Heard: change Vivens ID to 101 department to CSC
+2026-04-10 07:38:17,682 [INFO] jarvis.audio: Captured audio clip rms=69
+2026-04-10 07:38:18,190 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-10 07:38:21,943 [INFO] jarvis.audio: Captured audio clip rms=427
+2026-04-10 07:38:22,286 [INFO] jarvis.audio: Heard: Jarvis what all objects are there on screen
+2026-04-10 07:38:22,323 [INFO] jarvis.core: Wake word detected in transcript: Jarvis what all objects are there on screen
+2026-04-10 07:38:22,640 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-10 07:38:30,137 [INFO] jarvis.audio: Captured audio clip rms=1166
+2026-04-10 07:38:31,196 [INFO] jarvis.audio: Heard: object database records cell phone x 774 remote x 151
+2026-04-10 07:38:37,700 [INFO] jarvis.audio: Captured audio clip rms=1444
+2026-04-10 07:38:38,857 [INFO] jarvis.audio: Heard: chair X 198 cup X 4 wineglass X 10 backpack X 3 cat X
+2026-04-10 07:38:40,459 [INFO] jarvis.audio: Captured audio clip rms=399
+2026-04-10 07:38:40,720 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-10 07:38:40,763 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-10 07:38:43,254 [INFO] jarvis.audio: Captured audio clip rms=319
+2026-04-10 07:38:43,489 [INFO] jarvis.audio: Heard: what object is there on screen
+2026-04-10 07:38:43,909 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-10 07:38:46,161 [INFO] jarvis.audio: Captured audio clip rms=73
+2026-04-10 07:38:46,558 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-10 07:38:52,621 [INFO] jarvis.audio: Captured audio clip rms=1284
+2026-04-10 07:38:52,906 [INFO] jarvis.audio: Heard: object database records cell phone x7 89 remote x151 laptop x
+2026-04-10 07:38:59,362 [INFO] jarvis.audio: Captured audio clip rms=1420
+2026-04-10 07:39:00,177 [INFO] jarvis.audio: Heard: chair X 198 cup X4 line glass X10 backpack X3 cat X
+2026-04-10 07:39:07,439 [INFO] jarvis.audio: Captured audio clip rms=223
+2026-04-10 07:39:07,737 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-10 07:39:07,752 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-10 07:39:09,800 [INFO] jarvis.audio: Captured audio clip rms=353
+2026-04-10 07:39:10,112 [INFO] jarvis.audio: Heard: who's on screen
+2026-04-10 07:39:10,423 [INFO] jarvis.core: Focus command resolved target=vive matched=NONE
+2026-04-10 07:39:10,423 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-10 07:39:17,174 [INFO] jarvis.audio: Captured audio clip rms=1662
+2026-04-10 07:39:17,482 [INFO] jarvis.audio: Heard: I will isolate them from the crowd when they appear
+2026-04-10 07:39:22,934 [INFO] jarvis.audio: Captured audio clip rms=319
+2026-04-10 07:39:23,234 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-10 07:39:23,353 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-10 07:39:26,001 [INFO] jarvis.audio: Captured audio clip rms=378
+2026-04-10 07:39:26,530 [INFO] jarvis.audio: Heard: update name to be when
+2026-04-10 07:39:26,909 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-10 07:39:34,472 [INFO] jarvis.audio: Captured audio clip rms=1090
+2026-04-10 07:39:34,909 [INFO] jarvis.audio: Heard: I need at least one field to update such as department role name or notes
+2026-04-10 07:39:37,343 [INFO] jarvis.audio: Captured audio clip rms=393
+2026-04-10 07:39:37,654 [INFO] jarvis.audio: Heard: update name to viven
+2026-04-10 07:39:45,737 [INFO] jarvis.audio: Captured audio clip rms=74
+2026-04-10 07:39:46,157 [INFO] jarvis.audio: Heard: okay
+2026-04-10 07:39:50,721 [INFO] jarvis.audio: Captured audio clip rms=206
+2026-04-10 07:39:51,688 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-10 07:39:51,691 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-10 07:39:54,361 [INFO] jarvis.audio: Captured audio clip rms=227
+2026-04-10 07:39:54,654 [INFO] jarvis.audio: Heard: update name to Vivian
+2026-04-10 07:39:55,076 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-10 07:40:01,267 [INFO] jarvis.audio: Captured audio clip rms=834
+2026-04-10 07:40:01,618 [INFO] jarvis.audio: Heard: I need at least one field to update such as department role name
+2026-04-10 07:40:03,221 [INFO] jarvis.audio: Captured audio clip rms=487
+2026-04-10 07:40:03,563 [INFO] jarvis.audio: Heard: there
+2026-04-10 07:40:06,396 [INFO] jarvis.audio: Captured audio clip rms=57
+2026-04-10 07:40:06,840 [INFO] jarvis.audio: Heard: go
+2026-04-10 07:40:11,084 [INFO] jarvis.audio: Captured audio clip rms=186
+2026-04-10 07:40:12,059 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-10 07:40:17,002 [INFO] jarvis.audio: Captured audio clip rms=66
+2026-04-10 07:40:17,414 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-10 07:40:20,146 [INFO] jarvis.audio: Captured audio clip rms=52
+2026-04-10 07:40:20,563 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-10 07:40:27,506 [INFO] jarvis.audio: Captured audio clip rms=333
+2026-04-10 07:40:27,936 [INFO] jarvis.audio: Heard: Jarvis had a new record
+2026-04-10 07:40:28,047 [INFO] jarvis.core: Wake word detected in transcript: Jarvis had a new record
+2026-04-10 07:40:28,558 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-10 07:40:35,845 [INFO] jarvis.audio: Captured audio clip rms=1538
+2026-04-10 07:40:36,129 [INFO] jarvis.audio: Heard: updated live face record for beat with ID not tracking started now
+2026-04-10 07:40:37,867 [INFO] jarvis.audio: Captured audio clip rms=630
+2026-04-10 07:40:38,279 [INFO] jarvis.audio: Heard: ID to 101
+2026-04-10 07:40:42,591 [INFO] jarvis.audio: Captured audio clip rms=69
+2026-04-10 07:40:43,297 [INFO] jarvis.audio: Transcription was empty for the latest audio clip.
+2026-04-10 07:40:48,774 [INFO] jarvis.audio: Captured audio clip rms=351
+2026-04-10 07:40:49,033 [INFO] jarvis.audio: Heard: Jarvis
+2026-04-10 07:40:49,037 [INFO] jarvis.core: Wake word detected in transcript: Jarvis
+2026-04-10 07:40:51,864 [INFO] jarvis.audio: Captured audio clip rms=593
+2026-04-10 07:40:52,307 [INFO] jarvis.audio: Heard: update ID to one of a
+2026-04-10 07:40:52,628 [INFO] jarvis.tts: Speaking response with TTS via powershell_sapi.
+2026-04-10 07:41:00,503 [INFO] jarvis.audio: Captured audio clip rms=994
+2026-04-10 07:41:00,807 [INFO] jarvis.audio: Heard: I need at least one field to update such as department role name or note
+2026-04-10 07:41:03,100 [INFO] jarvis.audio: Captured audio clip rms=433
+2026-04-10 07:41:05,578 [INFO] jarvis.audio: Heard: touch post laughs
+2026-04-10 07:41:06,153 [INFO] jarvis.db: MongoDB connection closed.
+2026-04-10 07:41:06,159 [WARNING] jarvis.db: Failed to fetch person NONE from MongoDB: Cannot use MongoClient after close
+2026-04-10 07:41:06,160 [WARNING] jarvis.db: Failed to read recognition history for NONE: Cannot use MongoClient after close
+2026-04-10 07:41:06,219 [WARNING] jarvis.db: Failed to read recognition logs from MongoDB: Cannot use MongoClient after close
+2026-04-10 07:41:06,220 [WARNING] jarvis.db: Failed to read object logs from MongoDB: Cannot use MongoClient after close
+2026-04-10 07:42:09,942 [INFO] jarvis.db: [OK] MongoDB connected -> mongodb://localhost:27017 / jarvis_db
+2026-04-10 07:42:12,322 [INFO] jarvis.audio: Audio pipeline ready. provider=groq model=whisper-large-v3-turbo language=en mic_index=None
+2026-04-10 07:42:12,324 [INFO] jarvis.tts: TTS backend selected: powershell_sapi
+2026-04-10 07:42:38,857 [INFO] jarvis.audio: Opening microphone: default microphone
+2026-04-10 07:42:39,861 [INFO] jarvis.audio: Microphone calibrated. energy_threshold=155.448589814253
+2026-04-10 07:42:43,132 [INFO] jarvis.audio: Captured audio clip rms=180
+2026-04-10 07:42:44,977 [INFO] jarvis.audio: Heard: ν ipewaduiges all allow evice under
+2026-04-10 07:42:46,591 [INFO] jarvis.audio: Captured audio clip rms=285
+2026-04-10 07:42:46,896 [INFO] jarvis.audio: Heard: yes
+2026-04-10 07:42:49,337 [INFO] jarvis.audio: Captured audio clip rms=183
+2026-04-10 07:42:50,072 [INFO] jarvis.audio: Heard: so
+2026-04-10 07:42:54,364 [INFO] jarvis.audio: Captured audio clip rms=135
+2026-04-10 07:42:55,398 [INFO] jarvis.audio: Heard: what's happening military school
+2026-04-10 07:42:58,209 [INFO] jarvis.db: MongoDB connection closed.

@@ -10,6 +10,5 @@ ultralytics>=8.2.0
 
 SpeechRecognition>=3.10.0
 PyAudio>=0.2.14
-faster-whisper>=1.0.3
 pyttsx3>=2.90
 mss>=10.0.0
