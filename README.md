@@ -194,3 +194,5 @@ AUDIO_MIN_RMS=140
 - object memory is stored by label with count and last seen time
 - face memory is stored locally and can also sync to MongoDB
 - if Ollama is unavailable, the assistant falls back to rules-based reasoning
+
+inspired from imf tech
