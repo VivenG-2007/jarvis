@@ -195,4 +195,4 @@ AUDIO_MIN_RMS=140
 - face memory is stored locally and can also sync to MongoDB
 - if Ollama is unavailable, the assistant falls back to rules-based reasoning
 
-inspired from imf tech
+inspired from imf tech and jarvis
